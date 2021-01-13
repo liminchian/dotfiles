@@ -30,7 +30,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
 antigen theme romkatv/powerlevel10k
 # kitten
-alias termpdf="$HOME/termpdf.py/termpdf.py"
+alias icat="kitty +kitten icat"
 # Tell Antigen that you're done.
 antigen apply
 
