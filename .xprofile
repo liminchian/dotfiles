@@ -1,0 +1,9 @@
+PATH=/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/lib:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/git:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/heroku:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/pip:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/lein:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/command-not-found:/home/larvasei/.antigen/bundles/robbyrussell/oh-my-zsh/plugins/autojump:/home/larvasei/.antigen/bundles/zsh-users/zsh-syntax-highlighting:/home/larvasei/.antigen/bundles/romkatv/powerlevel10k:~/.bin
+export XIM_PROGRAM=ibus
+export XIM=ibus
+export GTK_IM_MODULE=ibus
+export QT_IM_MODULE=ibus
+export GLFW_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+ibus &
+LANG=zh_TW.UTF-8
