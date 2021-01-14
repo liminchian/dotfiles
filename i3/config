@@ -29,8 +29,7 @@ new_float  pixel 5
 
 for_window [class="kitty"] border none
 for_window [class="kitty"] floating enable
-for_window [class="vimiv"] border none
-for_window [class="vimiv"] floating enable
+for_window [class="feh"] floating enable
 
 font pango:scientifica 8
 # }}}
