@@ -9,10 +9,6 @@ source ~/antigen.zsh
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
-# 預設常用路徑
-cd ~/Database
-# 預設 python 環境
-source ~/Database/Sei/bin/activate
 # 預設編輯器爲Neovim
 EDITOR=nvim
 export EDITOR
@@ -28,7 +24,8 @@ antigen bundle hlissner/zsh-autopair
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 # Load the theme.
-antigen theme romkatv/powerlevel10k
+#antigen theme romkatv/powerlevel10k
+antigen theme dracula/zsh
 # kitten
 alias icat="kitty +kitten icat"
 # Tell Antigen that you're done.

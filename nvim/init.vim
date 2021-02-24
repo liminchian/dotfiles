@@ -2,26 +2,34 @@ call plug#begin('~/.vim/plugged')
 "=========================基礎設定=====================================
 Plug 'tpope/vim-surround'                                             | "符號補全
 Plug 'scrooloose/nerdcommenter'                                       | "註解快捷
-Plug 'kien/ctrlp.vim'                                                 | "模糊搜尋
-Plug 'majutsushi/tagbar'                                              | "Outliner
-Plug 'farmergreg/vim-lastplace'                                       | "最後的編輯位置
+Plug 'kien/ctrlp.vim'                                                 | "檔案模糊搜尋
+Plug 'farmergreg/vim-lastplace'                                       | "最後編輯位置
 Plug 'tpope/vim-fugitive'                                             | "Git工具
-Plug 'easymotion/vim-easymotion'                                      | "超速移動
 Plug 'rhysd/open-pdf.vim'                                             | "PDF閱讀器
+Plug 'mileszs/ack.vim'                                                | "文檔全局搜索
+Plug 'junegunn/vim-emoji'                                             | "表情符號支援
+Plug 'sjl/gundo.vim'                                                  | "Undo 樹
 "=========================終端操作===================================== 
 Plug 'christoomey/vim-tmux-navigator'                                 | "視窗間移動
-Plug 'jpalardy/vim-slime'                                             | "程式碼傳遞至終端
-Plug 'kassio/neoterm'                                                 | "終端重複利用
+Plug 'voldikss/vim-floaterm'                                          | "浮動終端
 "=========================外觀與狀態===================================
+Plug 'scrooloose/syntastic'                                           | "語法檢查
 Plug 'vim-airline/vim-airline'                                        | "狀態列
 Plug 'vim-airline/vim-airline-themes'                                 | "狀態列主題
 Plug 'joshdick/onedark.vim'                                           | "主題設定
+Plug 'dracula/vim', { 'as': 'dracula' }                               | "主題設定
 Plug 'sheerun/vim-polyglot'                                           | "圖形支援
 Plug 'airblade/vim-gitgutter'                                         | "Git狀態
+Plug 'APZelos/blamer.nvim'                                            | "Git修改資訊
+Plug 'xuyuanp/nerdtree-git-plugin'                                    | "檔案樹Git支援
 Plug 'ryanoasis/vim-devicons'                                         | "圖示支援
 Plug 'scrooloose/nerdtree'                                            | "檔案樹
 Plug 'luochen1990/rainbow'                                            | "彩色括弧
 Plug 'yggdroot/indentline'                                            | "縮排線
+Plug 'sakshamgupta05/vim-todo-highlight'                              | "Todo 高亮
+Plug 'junegunn/limelight.vim'                                         | "局部高亮
+Plug 'junegunn/goyo.vim'                                              | "專注模式
+Plug 'mattesgroeger/vim-bookmarks'                                    | "書籤
 "=========================語法設定=====================================
 Plug 'plasticboy/vim-markdown'                                        | "Markdown語法高亮
 Plug 'godlygeek/tabular'                                              | "Markdown語法表格
@@ -30,9 +38,7 @@ Plug 'JuliaEditorSupport/julia-vim'                                   | "Julia�
 Plug 'Vimjas/vim-python-pep8-indent'                                  | "Python 縮排指南
 Plug 'heavenshell/vim-pydocstring', {'do': 'make install'}            | "Python 說明文件字串支援
 Plug 'elzr/vim-json'                                                  | "Json語法高亮
-Plug 'mattn/emmet-vim'                                                | "Html標籤快捷
 Plug 'neoclide/coc.nvim', {'branch': 'release'}                       | "自動補全
-Plug 'itchyny/vim-cursorword'                                         | "將光標位置的文字劃上底線
 call plug#end()
 
 "+---------------+
@@ -48,10 +54,11 @@ set fileencoding=utf-8
 set termencoding=utf-8
 set relativenumber
 set cursorline
-colorscheme onedark
 set tabstop=4
 set shiftwidth=4
 set ai
+set smartindent
+set cindent
 set smarttab
 set incsearch
 set nowrapscan
@@ -63,76 +70,140 @@ set splitright
 set display+=lastline
 set ruler
 syntax on
-filetype indent on
 filetype off
 set wildmenu
 set wildmode=full
 set scrolloff=4
 let &t_ut=''
-let g:onedark_allpw_italics = 1
-let g:airline_theme = 'onedark'
+colorscheme dracula
+let g:airline_theme = 'dracula'
 if (has("termguicolors"))
   set termguicolors
 endif
-let g:rainbow_active = 0
-let g:indentLine_enabled = 0
+nnoremap <F4> :GundoToggle<CR>
+augroup two_space_indent
+      au! FileType c,cpp,markdown set tabstop=2
+      au! FileType c,cpp,markdown set shiftwidth=2
+augroup END
+
+"+------------+
+"| indentline |
+"+------------+
+let g:indentLine_enabled = 1
+augroup indentline
+    au VimEnter,BufRead,BufNewFile *.md,*.cpp,*.h,*.cc,*.vim exec "IndentLinesDisable"
+augroup END
 let g:indentLine_char_list = ['|']
 
-"+---------+
-"| neoterm |
-"+---------+
-let g:neoterm_default_mod = "below"
-let g:neoterm_bracketed_paste = 1
-let g:neoterm_size = 12 
-nnoremap ` :Ttoggle<CR>
-vnoremap <leader>` :TREPLSendSelection<CR>
-nnoremap <leader>` :TREPLSendLine<CR>
+"+-----------+
+"| bookmarks |
+"+-----------+
+let g:bookmark_highlight_lines = 1
+let g:bookmark_sign = '☕'
+let g:bookmark_no_default_key_mappings = 1
+function! BookmarkMapKeys()
+    nmap mm :BookmarkToggle<CR>
+    nmap mi :BookmarkAnnotate<CR>
+    nmap mn :BookmarkNext<CR>
+    nmap mp :BookmarkPrev<CR>
+	nmap ma :BookmarkShowAll<CR>
+	nmap mc :BookmarkClear<CR>
+    nmap mx :BookmarkClearAll<CR>
+    nmap mkk :BookmarkMoveUp
+    nmap mjj :BookmarkMoveDown
+endfunction
+function! BookmarkUnmapKeys()
+    unmap mm
+    unmap mi
+    unmap mn
+    unmap mp
+    unmap ma
+    unmap mc
+    unmap mx
+    unmap mkk
+    unmap mjj
+endfunction
+autocmd BufEnter * :call BookmarkMapKeys()
+autocmd BufEnter NERD_tree_* :call BookmarkUnmapKeys()
+
+"+-----------+
+"| floatterm |
+"+-----------+
+let g:floaterm_autoclose = 1
+let g:floaterm_height = 0.7
+let g:floaterm_width = 0.75
+nnoremap <silent>` :FloatermToggle<CR>
+vnoremap <leader>` :FloatermSend<CR>:FloatermToggle<CR>
+nnoremap <leader>` :FloatermSend<CR>:FloatermToggle<CR>
+
+au FileType python exec "FloatermNew ipython"
+au FileType julia exec "FloatermNew julia"
 
 autocmd TermOpen * setlocal nonumber norelativenumber
 
-tnoremap <silent>jk <C-\><C-n>
+tnoremap <silent>` <C-\><C-n>:FloatermToggle<CR>
 tnoremap <C-j> <C-\><C-n>:TmuxNavigateDown<CR>
 tnoremap <C-k> <C-\><C-n>:TmuxNavigateUp<CR>
 tnoremap <C-h> <C-\><C-n>:TmuxNavigateLeft<CR>
 tnoremap <C-l> <C-\><C-n>:TmuxNavigateRight<CR>
 
-"+------------+
-"| easymotion |
-"+------------+
-" <Leader>f{char} to move to {char}
-map  <Leader>f <Plug>easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
+"+---------+
+"| rainbow |
+"+---------+
+let g:rainbow_active = 1
 
-" s{char}{char} to move to {char}{char}
-nmap s <Plug>(easymotion-overwin-f2)
-map  / <Plug>(easymotion-sn)
-map  n <Plug>(easymotion-next)
+"+----------------+
+"| todo-highlight |
+"+----------------+
+let g:todo_highlight_config = {
+      \   'REVIEW': {
+      \     'gui_fg_color': '#000000',
+      \     'gui_bg_color': '#09ba00',
+      \  },
+      \   'NOTE': {
+      \     'gui_fg_color': '#000000',
+      \     'gui_bg_color': '#0384fc',
+      \  },
+      \  'TODO': {
+      \  'gui_fg_color': '#000000',
+      \  'gui_bg_color': '#ffbd2a',
+      \  },
+      \  'FIXME': {
+      \  'gui_fg_color': '#000000',
+      \  'gui_bg_color': '#f06292',
+      \  }
+      \}
 
-" Move to line
-map <Leader>l <Plug>(easymotion-lineforward)
-map <Leader>j <Plug>(easymotion-j)
-map <Leader>k <Plug>(easymotion-k)
-map <Leader>h <Plug>(easymotion-linebackward)
-
-" Move to word
-map  <Leader>w <Plug>(easymotion-bd-w)
-nmap <Leader>w <Plug>(easymotion-overwin-w)
+"+-----+
+"| ack |
+"+-----+
+cnoreabbrev Ack Ack!
 
 "+----------+
 "| nerdtree |
 "+----------+
-nmap <F2> :NERDTreeToggle<CR>
 let NERDTreeShowHidden = 1
+nmap <F2> :NERDTreeToggle<CR>
 
-"+--------+
-"| tagbar |
-"+--------+
-nmap <F3> :TagbarToggle<CR>
+"+-----------+
+"| syntastic |
+"+-----------+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_loc_list_height = 3
 
 "+-------------+
 "| vim-airline |
 "+-------------+
 let g:airline#extensions#tabline#enabled = 1
+
 nnoremap <leader><CR> :bnext<CR>
 nnoremap <leader><backspace> :bprevious<CR>
 nmap <leader>1 :bfirst<CR>
@@ -145,48 +216,50 @@ nmap <leader>7 :bfirst<CR>:7bn<CR>
 nmap <leader>8 :bfirst<CR>:8bn<CR>
 nmap <leader>9 :bfirst<CR>:9bn<CR>
 
-"+-------+
-"| emmet |
-"+-------+
-xmap <leader>, <C-Y>,
-
 "+------------------+
 "| markdown setting |
 "+------------------+
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_json_frontmatter = 1
+let g:goyo_width = 100
+let g:goyo_height = "100%"
+
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+au VimEnter,BufRead,BufNewFile *.md set filetype=markdown
 
 "+----------------+
 "| python setting |
 "+----------------+
-let g:pydocstring_doq_path = "/home/larvasei/Database/Sei/bin/doq"
+let g:python3_host_prog = '/usr/bin/python3'
 let g:pydocstring_formatter = 'google'
+let g:syntastic_python_checkers = ['pylint', 'mypy']
 nmap <leader>ss <Plug>(pydocstring)
-au FileType python exec "1T ipython"
 
 "+---------------+
 "| julia setting |
 "+---------------+
 let g:syntastic_julia_checkers = 1
 let g:latex_to_unicode_tab = 1
-inoremap <C-TAB> <C-X><C-O>
+let g:syntastic_julia_checkers = ['StaticLint.jl']
 runtime macros/matchit.vim
+inoremap <C-TAB> <C-X><C-O>
 au VimEnter,BufRead,BufNewFile *.jl set filetype=julia
-au FileType julia exec "1T julia"
 
-"+-----------+
-"| gitgutter |
-"+-----------+
+"+-----+
+"| git |
+"+-----+
 function! GitStatus()
   let [a,m,r] = GitGutterGetHunkSummary()
   return printf('+%d ~%d -%d', a, m, r)
 endfunction
 set statusline+=%{GitStatus()}
+
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
+nmap <F8> :GitGutterLineHighlightsToggle<CR>
 
 let g:gitgutter_override_sign_column_highlight = 1
-
 let g:gitgutter_sign_added = '▎'
 let g:gitgutter_sign_modified = '▎'
 let g:gitgutter_sign_removed = '▏'
@@ -198,7 +271,9 @@ highlight GitGutterAdd    ctermbg=green
 highlight GitGutterChange ctermbg=blue
 highlight GitGutterDelete ctermbg=red
 
-nmap <F8> :GitGutterLineHighlightsToggle<CR>
+let g:blamer_enabled = 1
+let g:blamer_delay = 500
+let g:blamer_date_format = '%Y-%m-%d %H:%M'
 
 "+-----------------+
 "| MarkdownPreview |
@@ -210,7 +285,7 @@ let g:mkdp_auto_start = 0
 " set to 1, the nvim will auto close current preview window when change
 " from markdown buffer to another buffer
 " default: 1
-let g:mkdp_auto_close = 0
+let g:mkdp_auto_close = 0 
 
 " set to 1, the vim will refresh markdown when save the buffer or
 " leave from insert mode, default 0 is auto refresh markdown as you edit or
@@ -277,11 +352,11 @@ let g:mkdp_preview_options = {
 
 " use a custom markdown style must be absolute path
 " like '/Users/username/markdown.css' or expand('~/markdown.css')
-let g:mkdp_markdown_css = '/home/larvasei/markdown.themes/gitbook-azure.css'
+let g:mkdp_markdown_css = '/home/larvasei/markdown.themes/obsidian.css'
 
 " use a custom highlight style must absolute path
 " like '/Users/username/highlight.css' or expand('~/highlight.css')
-let g:mkdp_highlight_css = ''
+let g:mkdp_highlight_css = '~/markdown.themes/styles/googlecode.css'
 
 " use a custom port to start server or random for empty
 let g:mkdp_port = ''
@@ -307,11 +382,12 @@ let g:coc_global_extensions = [
   \ 'coc-julia',
   \ 'coc-pyright',
   \ 'coc-tabnine',
-  \ 'coc-clangd',
   \ 'coc-vimlsp',
   \ 'coc-highlight',
-  \ 'coc-vimtex',
-  \ 'coc-markdownlint'
+  \ 'coc-markdownlint',
+  \ 'coc-emoji',
+  \ 'coc-clangd',
+  \ 'coc-floaterm'
   \ ]
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -380,6 +456,7 @@ nmap <silent> gr <Plug>(coc-references)
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
+	
   if (index(['vim','help'], &filetype) >= 0)
     execute 'h '.expand('<cword>')
   elseif (coc#rpc#ready())
@@ -478,6 +555,4 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>o
-
-autocmd CursorHold * silent call CocActionAsync('highlight')
 

@@ -1,12 +1,12 @@
 # vim:filetype=i3
 
 # Set colors from xrdb. Colors must be set in xrdb before i3 config is loaded.
-set_from_resource $base00 color0  #0860f2
-set_from_resource $base01 color18 #333333
-set_from_resource $base02 color19 #dadada
-set_from_resource $base03 color8  #333333
-set_from_resource $base04 color20 #000000
-set_from_resource $base05 color7  #0860f2
+set_from_resource $base00 color0  #00A9A5
+set_from_resource $base01 color18 #13191c
+set_from_resource $base02 color19 #fefefe
+set_from_resource $base03 color8  #0860f2
+set_from_resource $base04 color20 #333333
+set_from_resource $base05 color7  #dadada
 set_from_resource $base06 color21 #000000
 set_from_resource $base07 color15 #000000
 set_from_resource $base08 color1  #000000
@@ -19,17 +19,18 @@ set_from_resource $base0E color5  #000000
 set_from_resource $base0F color17 #000000
 
 #class                  border  backgr. text    indicator
-client.focused          $base05 $base05 $base02 $base05
-client.focused_inactive $base03 $base03 $base02 $base03
-client.unfocused        $base03 $base03 $base02 $base00
-client.urgent           $base01 $base01 $base05 $base00
+client.focused          $base00 $base00 $base02 $base00
+client.focused_inactive $base00 $base01 $base02 $base00
+client.unfocused        $base01 $base01 $base02 $base00
+client.urgent           $base00 $base01 $base02 $base00
 
-new_window pixel 5
-new_float  pixel 5
+new_window pixel 3
+new_float  pixel 3
 
 for_window [class="kitty"] border none
 for_window [class="kitty"] floating enable
 for_window [class="feh"] floating enable
+for_window [class="wine"] floating enable
 
 font pango:scientifica 8
 # }}}
@@ -119,7 +120,7 @@ bindsym $sup+Shift+l  resize grow   width  1 px or 1 ppt
 # }}}
 
 # Gaps {{{
-gaps inner 10
+gaps inner 18
 gaps outer 0
 
 bindsym $mod+minus       gaps inner all minus 5
@@ -238,10 +239,11 @@ bindsym $mod+Shift+r restart
 exec_always --no-startup-id [[ -e ~/.background/color ]] && hsetroot -solid "$(< ~/.background/color)"
 exec_always --no-startup-id xfce4-panel
 exec        --no-startup-id xset r rate 280 40
-exec        --no-startup-id unclutter
-exec        --no-startup-id nm-applet
-exec        --no-startup-id dunst
 exec        --no-startup-id flameshot
+
+# exec        --no-startup-id unclutter
+# exec        --no-startup-id nm-applet
+# exec        --no-startup-id dunst
 
 # }}}
 
