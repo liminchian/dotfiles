@@ -1,0 +1,14 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6ngjYOfisgIFt60eisEHvkiwnNCvLMfdi8W2PVaA3zltscjgAHayER6PYImQhwq+kCesCkvHDefHIft34JqQyNshrsWvNf+hedqU52kufdZIguakmlEc4elQDBDpI4Us6S1XoKqCli7yppUZz+IpDAbfJHplldlw5ugBnN8HRBz3njPBcgBQ8hmhuUVb7CJxChnQOT20WRvqmTwpLPo1IasTil/c9sPUZJhRTjri9/bSwyiZ+1uXgLMAat7EBIbpVfvzBNtLMjSQ7D6GzGCvqAsrZUsCj6pf8ZEmpb39kj9JS5x4gYW01axFojkQSr7YcpX+MflHf/86xNOMb2vG6QIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "options_page": "options.html",
+   "permissions": [ "tabs", "webRequest", "webRequestBlocking", "http://*/", "https://*/" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.4.6"
+}

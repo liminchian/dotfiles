@@ -1,0 +1,8 @@
+2021/02/14-07:49:13.665 18ea Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/14-07:49:13.665 18ea Recovering log #13
+2021/02/14-07:49:13.665 18ea Reusing old log /home/larvasei/.config/chromium/Default/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/000013.log 
+2021/02/14-07:49:16.036 24ac Level-0 table #17: started
+2021/02/14-07:49:16.036 24ac Level-0 table #17: 0 bytes OK
+2021/02/14-07:49:16.038 24ac Delete type=0 #13
+2021/02/14-07:49:16.038 24ac Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/14-07:49:16.038 24ac Manual compaction at level-1 from (begin) .. (end); will stop at (end)

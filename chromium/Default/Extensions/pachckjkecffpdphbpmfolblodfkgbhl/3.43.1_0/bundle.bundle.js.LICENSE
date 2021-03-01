@@ -1,0 +1,745 @@
+/*!
+ * jQuery JavaScript Library v2.2.4
+ * http://jquery.com/
+ *
+ * Includes Sizzle.js
+ * http://sizzlejs.com/
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license
+ * http://jquery.org/license
+ *
+ * Date: 2016-05-20T17:23Z
+ */
+
+/*!
+ * Sizzle CSS Selector Engine v2.2.1
+ * http://sizzlejs.com/
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license
+ * http://jquery.org/license
+ *
+ * Date: 2015-10-17
+ */
+
+/*!
+  Copyright (c) 2015 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ * numbro.js
+ * version : 1.11.1
+ * author : Företagsplatsen AB
+ * license : MIT
+ * http://www.foretagsplatsen.se
+ */
+
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+/*! @license DOMPurify | (c) Cure53 and other contributors | Released under the Apache license 2.0 and Mozilla Public License 2.0 | github.com/cure53/DOMPurify/blob/2.0.8/LICENSE */
+
+/*! Fabric.js Copyright 2008-2015, Printio (Juriy Zaytsev, Maxim Chernyak) */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+
+/*!
+ * The buffer module from node.js, for the browser.
+ *
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
+ * @license  MIT
+ */
+
+/** @license React v16.10.1
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v16.10.1
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v0.16.2
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Bulgarian
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Czech
+ * locale: Czech Republic
+ * author : Jan Pesa : https://github.com/smajl (based on work from Anatoli Papirovski : https://github.com/apapirovski)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Danish
+ * locale: Denmark
+ * author : Michael Storgaard : https://github.com/mstorgaard
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : German
+ * locale: Austria
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : German
+ * locale: Switzerland
+ * author : Michael Piefel : https://github.com/piefel (based on work from Marco Krage : https://github.com/sinky)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : German
+ * locale: Germany
+ * author : Marco Krage : https://github.com/sinky
+ *
+ * Generally useful in Germany, Austria, Luxembourg, Belgium
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : German
+ * locale: Liechtenstein
+ * author : Michael Piefel : https://github.com/piefel (based on work from Marco Krage : https://github.com/sinky)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Greek (el)
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : English
+ * locale: Australia
+ * author : Benedikt Huss : https://github.com/ben305
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : English
+ * locale: United Kingdom of Great Britain and Northern Ireland
+ * author : Dan Ristic : https://github.com/dristic
+ */
+
+/*!
++ * numbro.js language configuration
+ * language : English
+ * locale: Ireland
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : English
+ * locale: New Zealand
+ * author : Benedikt Huss : https://github.com/ben305
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : English
+ * locale: South Africa
+ * author : Stewart Scott https://github.com/stewart42
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Argentina
+ * author : Hernan Garcia : https://github.com/hgarcia
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Chile
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Colombia
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Costa Rica
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Spain
+ * author : Hernan Garcia : https://github.com/hgarcia
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Mexico
+ * author : Joe Bordes : https://github.com/joebordes
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Nicaragua
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Peru
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: Puerto Rico
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Spanish
+ * locale: El Salvador
+ * author : Gwyn Judd : https://github.com/gwynjudd
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Estonian
+ * locale: Estonia
+ * author : Illimar Tambek : https://github.com/ragulka
+ *
+ * Note: in Estonian, abbreviations are always separated
+ * from numbers with a space
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Farsi
+ * locale: Iran
+ * author : neo13 : https://github.com/neo13
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Finnish
+ * locale: Finland
+ * author : Sami Saada : https://github.com/samitheberber
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Filipino (Pilipino)
+ * locale: Philippines
+ * author : Michael Abadilla : https://github.com/mjmaix
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : French
+ * locale: Canada
+ * author : Léo Renaud-Allaire : https://github.com/renaudleo
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : French
+ * locale: Switzerland
+ * author : Adam Draper : https://github.com/adamwdraper
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : French
+ * locale: France
+ * author : Adam Draper : https://github.com/adamwdraper
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Hebrew
+ * locale : IL
+ * author : Eli Zehavi : https://github.com/eli-zehavi
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Hungarian
+ * locale: Hungary
+ * author : Peter Bakondy : https://github.com/pbakondy
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Indonesian
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Italian
+ * locale: Switzerland
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Italian
+ * locale: Italy
+ * author : Giacomo Trombi : http://cinquepunti.it
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Japanese
+ * locale: Japan
+ * author : teppeis : https://github.com/teppeis
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Korean
+ * author (numbro.js Version): Randy Wilander : https://github.com/rocketedaway
+ * author (numeral.js Version) : Rich Daley : https://github.com/pedantic-git
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Latvian
+ * locale: Latvia
+ * author : Lauris Bukšis-Haberkorns : https://github.com/Lafriks
+ */
+
+/*!
+ * numbro.js language configuration
+ * language: Norwegian Bokmål
+ * locale: Norway
+ * author : Benjamin Van Ryseghem
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Norwegian Bokmål (nb)
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Dutch
+ * locale: Belgium
+ * author : Dieter Luypaert : https://github.com/moeriki
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Dutch
+ * locale: Netherlands
+ * author : Dave Clayton : https://github.com/davedx
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Norwegian Nynorsk (nn)
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Polish
+ * locale : Poland
+ * author : Dominik Bulaj : https://github.com/dominikbulaj
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Portuguese
+ * locale : Brazil
+ * author : Ramiro Varandas Jr : https://github.com/ramirovjr
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Portuguese
+ * locale : Portugal
+ * author : Diogo Resende : https://github.com/dresende
+ */
+
+/*!
+ * numeral.js language configuration
+ * language : Romanian
+ * author : Andrei Alecu https://github.com/andreialecu
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Romanian (ro)
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Russian
+ * locale : Russsia
+ * author : Anatoli Papirovski : https://github.com/apapirovski
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Russian
+ * locale : Ukraine
+ * author : Anatoli Papirovski : https://github.com/apapirovski
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Slovak
+ * locale : Slovakia
+ * author : Jan Pesa : https://github.com/smajl (based on work from Ahmed Al Hafoudh : http://www.freevision.sk)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Slovene
+ * locale: Slovenia
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Serbian (sr)
+ * country : Serbia (Cyrillic)
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Swedish
+ * locale : Sweden
+ * author : Benjamin Van Ryseghem (benjamin.vanryseghem.com)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Thai
+ * locale : Thailand
+ * author : Sathit Jittanupat : https://github.com/jojosati
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Turkish
+ * locale : Turkey
+ * author : Ecmel Ercan : https://github.com/ecmel,
+ *          Erhan Gundogan : https://github.com/erhangundogan,
+ *          Burak Yiğit Kaya: https://github.com/BYK
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Ukrainian
+ * locale : Ukraine
+ * author : Michael Piefel : https://github.com/piefel (with help from Tetyana Kuzmenko)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : simplified chinese
+ * locale : China
+ * author : badplum : https://github.com/badplum
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Chinese traditional
+ * locale: Macau
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Chinese simplified
+ * locale: Singapore
+ * author : Tim McIntosh (StayinFront NZ)
+ */
+
+/*!
+ * numbro.js language configuration
+ * language : Chinese (Taiwan)
+ * author (numbro.js Version): Randy Wilander : https://github.com/rocketedaway
+ * author (numeral.js Version) : Rich Daley : https://github.com/pedantic-git
+ */
+
+/**
+ * @license
+ * Lodash <https://lodash.com/>
+ * Copyright OpenJS Foundation and other contributors <https://openjsf.org/>
+ * Released under MIT license <https://lodash.com/license>
+ * Based on Underscore.js 1.8.3 <http://underscorejs.org/LICENSE>
+ * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
+ */
+
+/** @license React v16.13.0
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/*!
+ * Chart.js v2.8.0
+ * https://www.chartjs.org
+ * (c) 2019 Chart.js Contributors
+ * Released under the MIT License
+ */
+
+/*! jQuery UI - v1.12.0 - 2016-07-08
+* http://jqueryui.com
+* Includes: widget.js, position.js, data.js, disable-selection.js, effect.js, effects/effect-blind.js, effects/effect-bounce.js, effects/effect-clip.js, effects/effect-drop.js, effects/effect-explode.js, effects/effect-fade.js, effects/effect-fold.js, effects/effect-highlight.js, effects/effect-puff.js, effects/effect-pulsate.js, effects/effect-scale.js, effects/effect-shake.js, effects/effect-size.js, effects/effect-slide.js, effects/effect-transfer.js, focusable.js, form-reset-mixin.js, jquery-1-7.js, keycode.js, labels.js, scroll-parent.js, tabbable.js, unique-id.js, widgets/accordion.js, widgets/autocomplete.js, widgets/button.js, widgets/checkboxradio.js, widgets/controlgroup.js, widgets/datepicker.js, widgets/dialog.js, widgets/draggable.js, widgets/droppable.js, widgets/menu.js, widgets/mouse.js, widgets/progressbar.js, widgets/resizable.js, widgets/selectable.js, widgets/selectmenu.js, widgets/slider.js, widgets/sortable.js, widgets/spinner.js, widgets/tabs.js, widgets/tooltip.js
+* Copyright jQuery Foundation and other contributors; Licensed MIT */
+
+/*!
+ * jQuery UI Widget 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Position 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * http://api.jqueryui.com/position/
+ */
+
+/*!
+ * jQuery UI :data 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery Color Animations v2.1.2
+ * https://github.com/jquery/jquery-color
+ *
+ * Copyright 2014 jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ * Date: Wed Jan 16 08:47:09 2013 -0600
+ */
+
+/*!
+ * jQuery UI Focusable 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Support for jQuery core 1.7.x 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ *
+ */
+
+/*!
+ * jQuery UI Autocomplete 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Controlgroup 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Checkboxradio 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Button 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Datepicker 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Draggable 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Resizable 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Dialog 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Droppable 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Spinner 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Tabs 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*!
+ * jQuery UI Tooltip 1.12.0
+ * http://jqueryui.com
+ *
+ * Copyright jQuery Foundation and other contributors
+ * Released under the MIT license.
+ * http://jquery.org/license
+ */
+
+/*! jQuery Timepicker Addon - v1.6.3 - 2016-04-20
+* http://trentrichardson.com/examples/timepicker
+* Copyright (c) 2016 Trent Richardson; Licensed MIT */
+
+/*! Moment Duration Format v1.3.0
+ *  https://github.com/jsmreese/moment-duration-format 
+ *  Date: 2014-07-15
+ *
+ *  Duration format plugin function for the Moment.js library
+ *  http://momentjs.com/
+ *
+ *  Copyright 2014 John Madhavan-Reese
+ *  Released under the MIT license
+ */
+
+/** @license React v16.13.1
+ * react-is.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/** @license React v0.18.0
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */

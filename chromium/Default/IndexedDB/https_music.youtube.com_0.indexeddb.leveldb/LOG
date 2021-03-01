@@ -1,0 +1,5 @@
+2021/01/24-22:31:48.252 534 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_music.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/24-22:31:50.857 523 Level-0 table #5: started
+2021/01/24-22:31:50.861 523 Level-0 table #5: 1169 bytes OK
+2021/01/24-22:31:50.868 523 Delete type=0 #3
+2021/01/24-22:31:50.868 523 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

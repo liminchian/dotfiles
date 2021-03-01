@@ -24,13 +24,14 @@ client.focused_inactive $base00 $base01 $base02 $base00
 client.unfocused        $base01 $base01 $base02 $base00
 client.urgent           $base00 $base01 $base02 $base00
 
-new_window pixel 3
-new_float  pixel 3
 
 for_window [class="kitty"] border none
 for_window [class="kitty"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="wine"] floating enable
+
+new_window pixel 3
+new_float  pixel 3
 
 font pango:scientifica 8
 # }}}
@@ -68,8 +69,8 @@ set $workspace22 "22"
 workspace_layout stacking 
 
 # workspaces move
-bindsym $sup+Tab workspace next
-bindsym $sup+Shift+Tab workspace prev
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
 
 # terminals
 bindsym $mod+grave  exec --no-startup-id $terminal
@@ -237,13 +238,15 @@ bindsym $mod+Shift+r restart
 
 # Autostart {{{
 exec_always --no-startup-id [[ -e ~/.background/color ]] && hsetroot -solid "$(< ~/.background/color)"
+#exec_always --no-startup-id $ HOME/.config/polybar/launch.sh
 exec_always --no-startup-id xfce4-panel
 exec        --no-startup-id xset r rate 280 40
 exec        --no-startup-id flameshot
+exec        --no-startup-id compton -b
+exec        --no-startup-id dunst
 
-# exec        --no-startup-id unclutter
-# exec        --no-startup-id nm-applet
-# exec        --no-startup-id dunst
+#exec        --no-startup-id unclutter
+#exec        --no-startup-id nm-applet
 
 # }}}
 

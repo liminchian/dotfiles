@@ -1,0 +1,34 @@
+{
+   "author": "Philippe Partarrieu",
+   "background": {
+      "persistent": false,
+      "scripts": [ "src/js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "src/img/dracula128.png",
+         "16": "src/img/dracula16.png",
+         "48": "src/img/dracula48.png"
+      },
+      "default_title": "Toggle Dracula Theme"
+   },
+   "content_scripts": [ {
+      "js": [ "driver.js" ],
+      "matches": [ "https://www.messenger.com/", "https://www.messenger.com/t/*", "https://www.facebook.com/messages/t/*" ]
+   } ],
+   "description": "Change the appearance of Facebook Messenger",
+   "homepage_url": "https://github.com/dracula/fb-messenger",
+   "icons": {
+      "128": "src/img/dracula128.png",
+      "16": "src/img/dracula16.png",
+      "48": "src/img/dracula48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0X2HlczbzFjK7r67Za5C1pdsGYjT+s0zXmhppAKXiAfOi2hETc5xLprfmcF+BOVQi3Z8ijoRIwlIncLGeYq+M6F2h+jl0nhoDwmXTLvisLxNQAxdIpwSx11UUJSiAEM5ncTHkvHSOeqm0pm7Iaz3tmGPApAw6GM7XDx6Mqeuucvfvk+0VPy8ydOQzm90h1ANmoqxmU/dLcS0sKw3+PXSPlUs2+u0DxXZO9wQoqGF74HWpCzY/c4RALHT5ICSiT42AXm4/EU5K7/q5Yayc3rkVTszF/tpjIRUuF8olh6Nd3B9xpg1N3Uw9zcwL21PjRjnPx46r5Bflw8ByLznzvjdewIDAQAB",
+   "manifest_version": 2,
+   "name": "Dracula Theme for Facebook Messenger",
+   "permissions": [ "activeTab", "storage" ],
+   "short_name": "Dracula Facebook Messenger",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.1",
+   "web_accessible_resources": [ "src/css/dracula.css" ]
+}

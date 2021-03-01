@@ -1,0 +1,5 @@
+2021/01/24-22:31:58.384 6df Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_tensorflow-dot-devsite-v2-prod-3p.appspot.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/24-22:32:31.062 521 Level-0 table #5: started
+2021/01/24-22:32:31.066 521 Level-0 table #5: 1259 bytes OK
+2021/01/24-22:32:31.070 521 Delete type=0 #3
+2021/01/24-22:32:31.070 521 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

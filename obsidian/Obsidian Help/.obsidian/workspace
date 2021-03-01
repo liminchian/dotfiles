@@ -1,0 +1,104 @@
+{
+  "main": {
+    "id": "27e3d2649e961fa2",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae950e2c71116d80",
+        "type": "leaf",
+        "active": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Start here.md",
+            "mode": "source"
+          }
+        },
+        "group": "0c0a1f22d2f776fa"
+      },
+      {
+        "id": "fb303009a40d0bd0",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Start here.md",
+            "mode": "preview"
+          }
+        },
+        "group": "0c0a1f22d2f776fa"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "82d83acf5ef56588",
+    "type": "split",
+    "children": [
+      {
+        "id": "764b69f1941a5ebf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5608ff02eeb426e4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "3f9e7db3e03c03cf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "531e40fa888073a0",
+    "type": "split",
+    "children": [
+      {
+        "id": "2244a0095cb2c3ec",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "950190562f879ef4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Start here.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "Start here.md"
+  ]
+}

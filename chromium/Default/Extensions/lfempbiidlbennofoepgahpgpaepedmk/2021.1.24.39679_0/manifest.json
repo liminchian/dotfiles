@@ -1,0 +1,67 @@
+{
+   "app": {
+      "display_mode": "standalone",
+      "icon_color": "#D4D4D4",
+      "launch": {
+         "web_url": "https://discourse.julialang.org/"
+      },
+      "linked_icons": [ {
+         "size": 512,
+         "url": "https://aws1.discourse-cdn.com/business5/uploads/julialang/optimized/2X/b/bb208c777f13315f2d97aaff9b96d4f774cfee80_2_512x512.png"
+      } ],
+      "theme_color": "rgba(255,255,255,1)"
+   },
+   "description": "The Julia programming language forum: discuss usage, development, packages, and community.",
+   "icons": {
+      "128": "icons/128.png",
+      "256": "icons/256.png",
+      "32": "icons/32.png",
+      "48": "icons/48.png",
+      "512": "icons/512.png",
+      "64": "icons/64.png",
+      "96": "icons/96.png"
+   },
+   "key": "mQysRc5QEOLAjqsqasSnnBvqAnV09R+/N81+uVHoAwE=",
+   "name": "JuliaLang",
+   "url_handlers": {
+      "scope": {
+         "matches": [ "https://discourse.julialang.org/*" ],
+         "title": "JuliaLang"
+      }
+   },
+   "version": "2021.1.24.39679",
+   "web_app_linked_shortcut_items": [ {
+      "name": "Create a new Topic",
+      "shortcut_item_icons": [  ],
+      "url": "https://discourse.julialang.org/new-topic"
+   }, {
+      "name": "Inbox",
+      "shortcut_item_icons": [ {
+         "size": 150,
+         "url": "https://sjc3.discourse-cdn.com/business5/svg-sprite/discourse.julialang.org/icon/222222/envelope.svg"
+      } ],
+      "url": "https://discourse.julialang.org/my/messages"
+   }, {
+      "name": "Bookmarks",
+      "shortcut_item_icons": [  ],
+      "url": "https://discourse.julialang.org/my/bookmarks"
+   }, {
+      "name": "Top",
+      "shortcut_item_icons": [  ],
+      "url": "https://discourse.julialang.org/top"
+   } ],
+   "web_app_shortcut_icons": {
+      "0": {
+
+      },
+      "1": {
+
+      },
+      "2": {
+
+      },
+      "3": {
+
+      }
+   }
+}

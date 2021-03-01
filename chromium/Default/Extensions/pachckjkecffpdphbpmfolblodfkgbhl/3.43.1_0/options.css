@@ -1,0 +1,61 @@
+body {
+  background: #549dd2;
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 0;
+}
+
+.vidiq-options {
+  max-width: 40%;
+  min-width: 500px;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  background: #ddd;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #444;
+  border-bottom: 1px solid #444;
+  padding-bottom: 15px;
+}
+
+img {
+  width: 100px;
+  opacity: 0.9;
+  position: relative;
+  top: 8px;
+}
+
+label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.settings {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 50px;
+}
+
+.setting,
+.sub-setting {
+  text-align: left;
+  font-size: 20px;
+  color: #444;
+  line-height: 40px;
+}
+
+.sub-setting {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 40px;
+}
+
+.note {
+  font-size: 12px;
+  margin-left: 25px;
+  line-height: 1.2;
+}

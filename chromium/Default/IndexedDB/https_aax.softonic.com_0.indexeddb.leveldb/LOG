@@ -1,0 +1,8 @@
+2021/02/03-18:28:16.507 f28 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_aax.softonic.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/03-18:28:16.508 f28 Recovering log #4
+2021/02/03-18:28:16.508 f28 Reusing old log /home/larvasei/.config/chromium/Default/IndexedDB/https_aax.softonic.com_0.indexeddb.leveldb/000004.log 
+2021/02/03-18:28:19.078 f2d Level-0 table #8: started
+2021/02/03-18:28:19.078 f2d Level-0 table #8: 0 bytes OK
+2021/02/03-18:28:19.080 f2d Delete type=0 #4
+2021/02/03-18:28:19.080 f2d Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/03-18:28:19.080 f2d Manual compaction at level-1 from (begin) .. (end); will stop at (end)

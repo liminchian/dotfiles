@@ -1,0 +1,5 @@
+2021/02/28-23:45:02.125 25918 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_aax.forbes.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/28-23:45:21.233 25b3e Level-0 table #5: started
+2021/02/28-23:45:21.235 25b3e Level-0 table #5: 1503 bytes OK
+2021/02/28-23:45:21.237 25b3e Delete type=0 #3
+2021/02/28-23:45:21.237 25b3e Manual compaction at level-0 from (begin) .. (end); will stop at (end)

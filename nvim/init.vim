@@ -1,17 +1,17 @@
 call plug#begin('~/.vim/plugged')
 "=========================基礎設定=====================================
-Plug 'tpope/vim-surround'                                             | "符號補全
-Plug 'scrooloose/nerdcommenter'                                       | "註解快捷
 Plug 'kien/ctrlp.vim'                                                 | "檔案模糊搜尋
-Plug 'farmergreg/vim-lastplace'                                       | "最後編輯位置
 Plug 'tpope/vim-fugitive'                                             | "Git工具
 Plug 'rhysd/open-pdf.vim'                                             | "PDF閱讀器
 Plug 'mileszs/ack.vim'                                                | "文檔全局搜索
 Plug 'junegunn/vim-emoji'                                             | "表情符號支援
 Plug 'sjl/gundo.vim'                                                  | "Undo 樹
-"=========================終端操作===================================== 
+"=========================操作設定===================================== 
 Plug 'christoomey/vim-tmux-navigator'                                 | "視窗間移動
 Plug 'voldikss/vim-floaterm'                                          | "浮動終端
+Plug 'tpope/vim-surround'                                             | "符號補全
+Plug 'scrooloose/nerdcommenter'                                       | "註解快捷
+Plug 'farmergreg/vim-lastplace'                                       | "最後編輯位置
 "=========================外觀與狀態===================================
 Plug 'scrooloose/syntastic'                                           | "語法檢查
 Plug 'vim-airline/vim-airline'                                        | "狀態列

@@ -2,9 +2,9 @@
 Encoding=UTF-8
 Version=0.9.4
 Type=Application
-Name=compton
+Name=視窗透明效果
 Comment=
-Exec=compton
+Exec=picom
 OnlyShowIn=XFCE;
 RunHook=0
 StartupNotify=false

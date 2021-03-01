@@ -1,0 +1,5 @@
+2021/02/28-23:46:23.585 2585c Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_41e74d990b7ad4707a01a13e0e4ebeac.safeframe.googlesyndication.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/28-23:46:26.800 25873 Level-0 table #5: started
+2021/02/28-23:46:26.803 25873 Level-0 table #5: 439 bytes OK
+2021/02/28-23:46:26.805 25873 Delete type=0 #3
+2021/02/28-23:46:26.805 25873 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

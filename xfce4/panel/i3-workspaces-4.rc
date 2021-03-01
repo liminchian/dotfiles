@@ -1,9 +1,9 @@
 normal_color=2531945
 focused_color=9433252
-urgent_color=16711680
+urgent_color=15049994
 mode_color=16711680
 visible_color=0
-strip_workspace_numbers=false
-auto_detect_outputs=false
-output=
+strip_workspace_numbers=true
+auto_detect_outputs=true
+output=HDMI-0
 

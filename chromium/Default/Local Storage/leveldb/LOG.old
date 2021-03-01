@@ -1,0 +1,18 @@
+2021/03/01-11:34:29.959 3 Reusing MANIFEST /home/larvasei/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2021/03/01-11:34:29.960 3 Recovering log #456
+2021/03/01-11:34:29.960 3 Reusing old log /home/larvasei/.config/chromium/Default/Local Storage/leveldb/000456.log 
+2021/03/01-12:42:34.001 10 Level-0 table #460: started
+2021/03/01-12:42:34.006 10 Level-0 table #460: 18104 bytes OK
+2021/03/01-12:42:34.010 10 Delete type=0 #456
+2021/03/01-12:42:34.011 12 Compacting 4@0 + 1@1 files
+2021/03/01-12:42:34.065 12 Generated table #461@0: 3873 keys, 2058219 bytes
+2021/03/01-12:42:34.065 12 Compacted 4@0 + 1@1 files => 2058219 bytes
+2021/03/01-12:42:34.067 12 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/03/01-12:42:34.069 12 Delete type=2 #451
+2021/03/01-12:42:34.069 12 Delete type=2 #460
+2021/03/01-12:42:34.069 12 Delete type=2 #457
+2021/03/01-12:42:34.069 12 Delete type=2 #454
+2021/03/01-12:42:34.069 12 Delete type=2 #449
+2021/03/01-13:51:27.379 26 Level-0 table #463: started
+2021/03/01-13:51:27.382 26 Level-0 table #463: 19879 bytes OK
+2021/03/01-13:51:27.384 26 Delete type=0 #459

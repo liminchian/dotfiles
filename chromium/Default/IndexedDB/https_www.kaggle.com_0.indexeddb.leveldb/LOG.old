@@ -1,0 +1,5 @@
+2021/02/27-10:49:09.280 2f72 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.kaggle.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/27-10:52:51.769 2f8a Level-0 table #5: started
+2021/02/27-10:52:51.772 2f8a Level-0 table #5: 5183 bytes OK
+2021/02/27-10:52:51.774 2f8a Delete type=0 #3
+2021/02/27-10:52:51.774 2f8a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

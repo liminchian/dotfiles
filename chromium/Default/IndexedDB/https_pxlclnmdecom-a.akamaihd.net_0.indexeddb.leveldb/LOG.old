@@ -1,0 +1,15 @@
+2021/02/28-23:45:03.910 25918 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_pxlclnmdecom-a.akamaihd.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/28-23:45:03.911 25918 Recovering log #7
+2021/02/28-23:45:03.911 25918 Reusing old log /home/larvasei/.config/chromium/Default/IndexedDB/https_pxlclnmdecom-a.akamaihd.net_0.indexeddb.leveldb/000007.log 
+2021/02/28-23:45:05.997 2585c Level-0 table #12: started
+2021/02/28-23:45:06.000 2585c Level-0 table #12: 760 bytes OK
+2021/02/28-23:45:06.001 2585c Delete type=0 #7
+2021/02/28-23:45:06.001 2585c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/28-23:45:06.001 2585c Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x06\x00b\x00a\x00f\x00p\x00_\x00t' @ 74 : 1
+2021/02/28-23:45:06.001 2585c Compacting 1@1 + 1@2 files
+2021/02/28-23:45:06.003 2585c Generated table #13@1: 20 keys, 625 bytes
+2021/02/28-23:45:06.003 2585c Compacted 1@1 + 1@2 files => 625 bytes
+2021/02/28-23:45:06.005 2585c compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/02/28-23:45:06.005 2585c Delete type=2 #9
+2021/02/28-23:45:06.005 2585c Delete type=2 #12
+2021/02/28-23:45:06.005 2585c Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x06\x00b\x00a\x00f\x00p\x00_\x00t' @ 74 : 1 .. (end); will stop at (end)

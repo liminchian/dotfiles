@@ -1,0 +1,5 @@
+2021/02/07-21:54:17.264 116f1 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_kanneg881.gitbook.io_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/07-21:54:55.662 11685 Level-0 table #5: started
+2021/02/07-21:54:55.664 11685 Level-0 table #5: 1118 bytes OK
+2021/02/07-21:54:55.666 11685 Delete type=0 #3
+2021/02/07-21:54:55.666 11685 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

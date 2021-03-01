@@ -1,0 +1,15 @@
+2021/02/14-10:51:41.711 afed Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/14-10:51:41.711 afed Recovering log #4
+2021/02/14-10:51:41.711 afed Reusing old log /home/larvasei/.config/chromium/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/000004.log 
+2021/02/14-10:52:07.363 a8ca Level-0 table #8: started
+2021/02/14-10:52:07.365 a8ca Level-0 table #8: 190 bytes OK
+2021/02/14-10:52:07.366 a8ca Delete type=0 #4
+2021/02/14-10:52:07.367 a8ca Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/14-10:52:07.367 a8ca Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x00\x00\x00\x05' @ 179 : 1
+2021/02/14-10:52:07.367 a8ca Compacting 1@1 + 1@2 files
+2021/02/14-10:52:07.368 a8ca Generated table #9@1: 55 keys, 1015 bytes
+2021/02/14-10:52:07.368 a8ca Compacted 1@1 + 1@2 files => 1015 bytes
+2021/02/14-10:52:07.369 a8ca compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/02/14-10:52:07.370 a8ca Delete type=2 #5
+2021/02/14-10:52:07.370 a8ca Delete type=2 #8
+2021/02/14-10:52:07.370 a8ca Manual compaction at level-1 from '\x00\x00\x00\x00\x05' @ 179 : 1 .. (end); will stop at (end)

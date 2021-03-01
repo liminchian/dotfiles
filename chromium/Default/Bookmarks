@@ -1,0 +1,279 @@
+{
+   "checksum": "c88d63258e832832256c7cc151dddb2b",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13246164606740554",
+            "guid": "47c2b869-fbe5-434d-b231-a90a5daefaa9",
+            "id": "6",
+            "name": "Chrome 線上應用程式商店",
+            "type": "url",
+            "url": "https://chrome.google.com/webstore/category/extensions"
+         }, {
+            "children": [ {
+               "date_added": "13235061910000000",
+               "guid": "b260c369-d49d-4e4e-b916-a62bb7459ffe",
+               "id": "8",
+               "name": "1.7 million+ Stunning Free Images to Use Anywhere - Pixabay",
+               "type": "url",
+               "url": "https://pixabay.com/"
+            }, {
+               "date_added": "13235065164000000",
+               "guid": "5d72ec26-d66d-4ada-9929-7a04e714f621",
+               "id": "9",
+               "name": "免費圖庫相片 · Pexels",
+               "type": "url",
+               "url": "https://www.pexels.com/zh-tw/"
+            }, {
+               "date_added": "13246678948721345",
+               "guid": "44c875a9-7734-4217-8ddd-a5aeca14cb55",
+               "id": "10",
+               "name": "Beautiful Free Images & Pictures | Unsplash",
+               "type": "url",
+               "url": "https://unsplash.com/"
+            } ],
+            "date_added": "13255972306901681",
+            "date_modified": "13255972306901681",
+            "guid": "74514477-07be-4ece-bc83-de0bf9fa6787",
+            "id": "7",
+            "name": "image",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13236189787000000",
+               "guid": "68d4dd9f-7272-4054-ad7b-64b72b533983",
+               "id": "12",
+               "name": "Neovim + LanguageServer.jl",
+               "type": "url",
+               "url": "https://blog.kdheepak.com/neovim-languageserver-julia.html"
+            } ],
+            "date_added": "13255972306902395",
+            "date_modified": "13255972306902395",
+            "guid": "82cc8faa-e037-417a-b04e-bc6320690807",
+            "id": "11",
+            "name": "Vim",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13246985845250699",
+               "guid": "8d20b249-e539-45ad-8286-5c284df6728c",
+               "id": "15",
+               "name": "JuliaHub",
+               "type": "url",
+               "url": "https://juliahub.com/ui/Home"
+            }, {
+               "date_added": "13235062042000000",
+               "guid": "1f449cdd-7b42-4292-aa84-5ec8323c879b",
+               "id": "16",
+               "name": "JuliaAcademy",
+               "type": "url",
+               "url": "https://juliaacademy.com/"
+            }, {
+               "date_added": "13237791748000000",
+               "guid": "4e7e3022-0977-4ab0-a56d-7413bda64ff0",
+               "id": "17",
+               "name": "The Fast Track to Julia",
+               "type": "url",
+               "url": "https://juliadocs.github.io/Julia-Cheat-Sheet/"
+            } ],
+            "date_added": "13255972306902751",
+            "date_modified": "13255972306902751",
+            "guid": "0721b767-8f1d-4059-8846-74142812e1cc",
+            "id": "14",
+            "name": "Julia",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13237997231000000",
+               "guid": "5622e559-c02d-4996-ac05-9537fb3b622a",
+               "id": "19",
+               "name": "C++ Reference Card.pmd - ,c++refcard.pdf",
+               "type": "url",
+               "url": "https://www.cs.ccu.edu.tw/~damon/oop/,c++refcard.pdf"
+            }, {
+               "date_added": "13239299942000000",
+               "guid": "5f12eb3c-2541-4505-b0c3-38cc4e5cce40",
+               "id": "20",
+               "name": "Studytonight - Best place to Learn Coding Online",
+               "type": "url",
+               "url": "https://www.studytonight.com/"
+            } ],
+            "date_added": "13255972306903107",
+            "date_modified": "13255972306903107",
+            "guid": "d2e92da7-7b24-4443-bd80-253f7f503727",
+            "id": "18",
+            "name": "C lang",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13236705880000000",
+               "guid": "2d37fbe5-46fd-497b-834c-ff819cda07d2",
+               "id": "22",
+               "name": "LeeMeng - 進入 NLP 世界的最佳橋樑：寫給所有人的自然語言處理與深度學習入門指南",
+               "type": "url",
+               "url": "https://leemeng.tw/shortest-path-to-the-nlp-world-a-gentle-guide-of-natural-language-processing-and-deep-learning-for-everyone.html#30-%E7%A7%92%E9%87%8D%E8%A6%81%E8%A8%8A%E6%81%AF"
+            }, {
+               "date_added": "13253987618523004",
+               "guid": "4a8beaeb-0aa2-4483-b387-23366db9f5a6",
+               "id": "23",
+               "name": "【實戰篇】 解析 Python 之父寫的 web crawler 異步爬蟲 | Max行銷誌",
+               "type": "url",
+               "url": "https://www.maxlist.xyz/2020/04/05/async-python-crawler-snippets/"
+            }, {
+               "date_added": "13254238407404822",
+               "guid": "184a69d6-3144-4b84-859c-82b4f0f95bbf",
+               "id": "24",
+               "name": "How to create a Python library. Ever wanted to create a Python library… | by Kia Eisinga | Analytics Vidhya | Medium",
+               "type": "url",
+               "url": "https://medium.com/analytics-vidhya/how-to-create-a-python-library-7d5aea80cc3f"
+            }, {
+               "date_added": "13255232539296135",
+               "guid": "e575531a-9e14-4315-b84b-02cd9009899c",
+               "id": "25",
+               "name": "NLP-LOVE/ML-NLP: 此项目是机器学习(Machine Learning)、深度学习(Deep Learning)、NLP面试中常考到的知识点和代码实现，也是作为一个算法工程师必会的理论基础知识。",
+               "type": "url",
+               "url": "https://github.com/NLP-LOVE/ML-NLP"
+            } ],
+            "date_added": "13255972306903295",
+            "date_modified": "13255972306903295",
+            "guid": "fdcc7e6f-589f-4af1-944a-8961eb275a6a",
+            "id": "21",
+            "name": "Python",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13248626572019261",
+               "guid": "2bd457ab-b0e5-472f-8d43-2c8bf3c180b0",
+               "id": "27",
+               "name": "如何清理Arch Linux Linux",
+               "type": "url",
+               "url": "https://averagelinuxuser.com/clean-arch-linux/"
+            }, {
+               "date_added": "13248022036115512",
+               "guid": "ef108da0-8f4f-4f70-a7b7-7f17a66843a5",
+               "id": "28",
+               "name": "manilarome/the-glorious-dotfiles: A glorified personal dot files",
+               "type": "url",
+               "url": "https://github.com/manilarome/the-glorious-dotfiles"
+            }, {
+               "date_added": "13249067141769473",
+               "guid": "af1395af-4c09-4410-88d8-81ed4bcfc3d7",
+               "id": "29",
+               "name": "GitHub - reedrw/dotfiles: my dotfiles",
+               "type": "url",
+               "url": "https://github.com/reedrw/dotfiles"
+            }, {
+               "date_added": "13249211530589423",
+               "guid": "10749609-d5e3-4e09-a5bf-afdb664ee45b",
+               "id": "30",
+               "name": "GitHub - adi1090x/rofi: Rofi Based Custom Applets And Menus.",
+               "type": "url",
+               "url": "https://github.com/adi1090x/rofi"
+            }, {
+               "date_added": "13251304458234028",
+               "guid": "26bd4506-960e-407c-abc7-ad85d787f497",
+               "id": "31",
+               "name": "Ask HN: What do you use to manage dotfiles? ",
+               "type": "url",
+               "url": "https://news.ycombinator.com/item?id=11070797"
+            }, {
+               "date_added": "13252928076087938",
+               "guid": "c6e865e8-9378-440d-875e-100d6791ec0e",
+               "id": "32",
+               "name": "Linux/Unix 常用的終端機命令整理 Cheat Sheet for Linux/Unix Terminal | Mr. Opengate",
+               "type": "url",
+               "url": "https://mropengate.blogspot.com/2018/01/linuxunix-cheat-sheet-for-linuxunix.html"
+            } ],
+            "date_added": "13255972306904314",
+            "date_modified": "13255972306904314",
+            "guid": "0454b727-f770-4bbf-a6d8-004bb54419fb",
+            "id": "26",
+            "name": "Linux",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13245994265000000",
+               "guid": "af827a84-14f8-4138-8c2f-657f5fa215fd",
+               "id": "34",
+               "name": "LeetCode",
+               "type": "url",
+               "url": "https://leetcode.com/"
+            }, {
+               "date_added": "13254238287645678",
+               "guid": "c00a8f5c-f147-43cf-8bc4-ba05c734a0ea",
+               "id": "35",
+               "name": "Google 開源專案風格指南 (繁體中文版) — Google 開源專案風格指南",
+               "type": "url",
+               "url": "https://tw-google-styleguide.readthedocs.io/en/latest/index.html"
+            }, {
+               "date_added": "13254244548659079",
+               "guid": "9d430f59-755b-46c0-852f-63d6e1e8251c",
+               "id": "36",
+               "name": "去找吧!我把程式自學資源秘笈都放在這裡了!! #超詳盡的免費網路教學資源統整 #這麼用心的整理不收藏嗎? - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天",
+               "type": "url",
+               "url": "https://ithelp.ithome.com.tw/articles/10230188"
+            }, {
+               "date_added": "13254244765170286",
+               "guid": "2a917d1b-3009-43ca-9a0a-6d432b4b3525",
+               "id": "37",
+               "name": "VisuAlgo - visualising data structures and algorithms through animation",
+               "type": "url",
+               "url": "https://visualgo.net/en"
+            }, {
+               "date_added": "13254409999076491",
+               "guid": "4a018417-daf4-4090-9541-2580352f6c74",
+               "id": "38",
+               "name": "MNIST handwritten digit database, Yann LeCun, Corinna Cortes and Chris Burges",
+               "type": "url",
+               "url": "http://yann.lecun.com/exdb/mnist/"
+            }, {
+               "date_added": "13258986488337075",
+               "guid": "54ce3a94-b162-4c30-a124-d4015116b6f4",
+               "id": "40",
+               "name": "5 Gorgeous Examples Of Truly Customized Linux Desktops",
+               "type": "url",
+               "url": "https://www.forbes.com/sites/jasonevangelho/2019/02/14/5-gorgeous-examples-of-truly-customized-linux-desktops/?sh=7ad6eaee572e"
+            } ],
+            "date_added": "13255972306904819",
+            "date_modified": "13258986488337075",
+            "guid": "5d647c6e-a657-4f71-896f-24a097811479",
+            "id": "33",
+            "name": "基礎",
+            "type": "folder"
+         } ],
+         "date_added": "13255972303885184",
+         "date_modified": "13246164606740554",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "書籤列",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13255972303885185",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "其他書籤",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [ {
+            "date_added": "13109215638223457",
+            "guid": "3da79760-96cf-4fc0-965b-82b2e13c358a",
+            "id": "5",
+            "name": "國家教育研究院雙語詞彙、學術名詞暨辭書資訊網",
+            "type": "url",
+            "url": "http://terms.naer.edu.tw/"
+         } ],
+         "date_added": "13255972303885186",
+         "date_modified": "13109215638223457",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "行動版書籤",
+         "type": "folder"
+      }
+   },
+   "sync_metadata": "CscBCqYBCIiBAhKfARKMAQgCEk4KBgoCYm0QARAzGhIJgM1sEnG8BQAhgM1sEnG8BQAiFAkapiMhcbwFABABGQ1LFRCHVDXpMhgKFggCEfzx0iFxvAUAGAAhAAAAAAAAAAASOAoGCgJiZBAAEDMaEgmAzWwScbwFACGAzWwScbwFADIYChYIAhH88dIhcbwFABgAIQAAAAAAAAAAIABIiZ+93v4ucM6aq8P+LhIAIAEqGG9ON1ZKR0o0VksrV0xTMEVOZFJmQVE9PRKtAggeEqgCChxrcG0yK0ttSWwzanVyUVFwblAyeFRTbGpFMEk9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubmV2Z3dYdERUOVRyZi9VK0wyUWJUTkswWllkY056Q21iTHJacWhKbUNyYzZQbzdiRy9ZRUViVm1PdmtVTEZqQjFSTlZlLzB5MWp2M3RKWHNIRXRaZTlkbVVqSzdrdGNuR1lta0ZzRzh6ZU5Jak9vUWJablNqUVVCU0NVbWpXZFFVN1hvV3c9PRgAIAAoADDkzszH0o7tAjjdqtaO2i5A3arWjtouShxVS2ZuTi9mcTNoaGgxT3crcTU4enp1MFF0b1U9Wh8iHf96UkNGbmI0UmhTQUF1cUI4UVh2OEhibStYTzg9ZRXwRsUSrQIIGhKoAgocODlTWTQybjVoN1NONEpLaHZCNjBqWkVyZldnPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbndmMytnWmpGOGV1RktTcldCYkNmSWoyRlFMZFN0U2l2SWRYdXVJaVVjL0FzaGxwY0Z6QXBBNGQ4SHBqSUE3NGlGWTk0NGhlNjRHUTk3Y1c5eDZOOTJrYUlyL2p2QjBsVzFxcGVVbkQ5Wi9CUGxBMmlCN3V6SXpQTk1YSjRCSzF3a3NlS3NRPT0YACAAKAAwi9aPx9KO7QI4gr7B4c4uQIK+weHOLkocSVVTSmp3RzNjSDlVYjJWY05MT1YwN0VwNUpjPVofIh30aHVNSWhocTlmU2xuVGdoM3NIOFp2aDJUVnpvPWUAAAAAEqwCCAwSpwIKHGVXRXE3TkZIQ0xTMm1jN0FxanRHS0Z2eDBHcz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW53ZjMrZ1pqRjhldUZLU3JXQmJDZklnOEZTem9yVVM1YTRVZkNTbUZsdWdNVzNQOTV6SXhzT0dMZGQxQ2lFVVpDNGo3b2cxZk9sMm1zdnZXVzBzaHNzUnB6akhtN0d2OFlHd0I3aDBwc2h4cldxS0NSRlZhdFV1eHUvVTQzTkRoYzcvMUNCdz09GAAgACgAMI3QitzDou4COIK+weHOLkCCvsHhzi5KHFVJZkhkUnFDbVV0a3QveGVlMSs3S0o2bG5MST1aHiIcZjRCRnBXTUlkbGt6SERKUU5kSWw1T2tJZUNBPWVZ6XMgEq0CCBESqAIKHDdGVXU5OEJ6dGxuZ2tJUVpmbFRYL01YdVJHcz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW53ZjMrZ1pqRjhldUZLU3JXQmJDZklxSWMyVUtjaXQ1MzREcUNtckVWV1lmY3hDcXo3bXdnYVFqRE8xbzBubWFBUGZwYjFVYXFIMjhab05JSVhEV2k3WS9hY2ViT0l6S0x6NzIwc2xTMzlETk5uZU1UdXZhbkJKYVdyOGRlbWxXVGpSaGJBdz09GAAgACgAMOTOzMfSju0COIK+weHOLkCCvsHhzi5KHEdmdlh1S0VSZWxjZWkyQ3NQU2V3YVBOTmM5QT1aHyId3i80WEhRK0c4KytScUVVOU5HaTFaWHFqQmZUST1lAAAAABKsAggTEqcCChxYZnFNSlphL24zT1d4a3A2KzhIQUxzK1h5ZUk9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJdVlDZXZUK0oreHg2K3NlRWg3RUZya3BBaHJMd2dBdTBOV2RscjY5aEZuOGxabHNIL1pjUVdURDJlY2E0WHZOQUMxVW1rcTlhV2dObkJSMWJuRXZnMWh0ZTRXOUhXQ2xiUHhPVVYvc25KbWJRRVdHemc9PRgAIAAoADCgrP/r8rjtAjiCvsHhzi5Agr7B4c4uShxveVF5Yml6L1NTaGFvL29IMzlvMmFSbmJ2MEU9Wh4iHG45VWNFNnVpcnAvYTFVTTQvbjVBWEhWV09sND1l/woGxxKsAggWEqcCChxrZlMvMGhCeUJlQnVMdVJNNXNSMFpQZkdLSEk9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJb2ZNcHp4a3VNeUg3amJva3dya3lDaERiVk12MGpyRXBPRXRQWDV0SjBvVEJiTm9XVzZkSmpuYkcwUS9xWkV1b3BEZzNCUi9MNkdrOUpOejZ5VmFnUC8vUjVOUHRFS1NRcDBYSjh0TitZRmxkc1pwUmc9PRgAIAAoADCwj7mPirftAjiCvsHhzi5Agr7B4c4uShw2UENEV3M5bTBNVmllSnBRK1hxdFVlNzNubm89Wh4iHE90TitpZk5vc2hnYVIwc2p2MFJNVU44TTM3RT1lXYLd0hLDAQgDEr4BChx5NVdFMjd1STZ2WC9EZUlTSEp6bmpNcXVXV3M9EmZaOkFEcXRBWnh1VDcwd2hwN0JLcWZYZkRTNHYydWZDY0VVNHRWN3ljM1p5L0tPaUVGbUphMHNNSndIdGV3ajQ1ZFJsRkZvRXVOVk9VanBnT1NhK0dBQmZkWGt3NEFRaXNMVEZRPT0YACAAKAAwjPCsvuS07gI4AEAAShw3OWwrTFJFVXBpYUV2REQrRzQzY3BYU3R3QmM9WgBlAAAAABKsAggbEqcCChx5NVBaSHQ0ejUwQzRrSERlejUwNnl4dXhTVUE9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubXJPZGZtQWI2VDVsNVphZTBPeWRMd29IcGxpbmpteFVkZmdZdEhVUlU5cFpTTVpzbXlUdGFJV1NiUTRCbExCMUg5UG9qQVJLU1I2NG9McGRhT3VoRlloOE9mcjcvMzNZQTc1QXhZNzhXc1FTempRaTNDRG0yeitiZ2wvS0c3SDBreEJzbVE9PRgAIAAoADD3iJOslt3uAjjzpd/31y5A45CavPguShwwSDRCN0VvTWFXRXFJYk5ZTWppcGN2Rk8ybnM9Wh4iHHJyL05xT3ZOSEhCcnkyU0wxVHBlRnBQQkt2dz1lrYq/uBKtAggVEqgCChw2NmZSUlgwNEV5MWZmc1IzN3Zrd0lWNUozbDg9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJdTNKL3htTFBGaVM4SGZLSFpUVkI4bjBmSDVpdXFPUzYrQmFFOTNoaGpqRm1XRUc1b0FveGw1TGN2bHNxY3ZvbldzN1lJcE1mcS9uQXlhNFp4SGxTODZuY1ZWZUwyRmJMdHBtVE5iMnRYaVM0QUUvTEE9PRgAIAAoADCL1o/H0o7tAjiCvsHhzi5Agr7B4c4uShx1bkhqUWMzWlZSblFVVjd1SExram1IZ3Vic1U9Wh8iHek2dGJRYnJHaUU4NEZJdTlvYW9vNHo2R0EwVjA9ZQAAAAASrQIIIxKoAgocY2JDemM3MEVPbUhTVUU5WTdCNGhvMzNDcW13PRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbm5ldmd3WHREVDlUcmYvVStMMlFiVEhKakNBRHBsVGtCY0ZxY0E0VTNzak01aGtmUVFmNnNwdmREUjA0c3Q5aHFJSGhQdjA4clUvdU1zMHNGemczdS93MmFuRzVicUFPQ210eTNoV2t3Y25HN0phLzlmMFRnbWRXRzdBa1lsSmgwMDRFNGpnPT0YACAAKAAwjoOa5qiC7gI4nZ7P6+wuQJ2ez+vsLkocaUsxZkl5Zk9ra0ladGNnMW52aUFpTlh0eGJjPVofIh3baDhiOGg5UjEvWUhVS2d4eFY0OUJsbTBCRFhFPWUA+Pb8EsMBCAISvgEKHHpEVkdycnRaTGRNKzRCVHliZytIQ09yV2d5bz0SZlo6QURxdEFaekx5d0J5cGt2b2lGdlR0YVVyMGV0ZEFpY1BNQUZXK1U3cEFaZE42MllCbHF1KzdBWU5CbE5KRkV5T29VZnZYZFpkQWJjNzhYSVM0UVhzSzZza0ZZRUNYOWhkMVE9PRgAIAAoADCM8Ky+5LTuAjgAQABKHDV1c3kvY3BmcGkxRXRvQkhEZ1hJczBxYjRyQT1aAGUAAAAAEqwCCAcSpwIKHHdpMXhVVGprUGlDeWh4WE9hODJyQW5CVmQ1Yz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW53ZjMrZ1pqRjhldUZLU3JXQmJDZkltUGc1Y2dLRzdoblU1OG5PZktxWVJaTWk0U3QyK2V6MlV4WEhaWVp1cVVQenc1MGZ6d2VjQlhDT2lVcjdKMWw2V2wvYWExTUV5MG5qL2JKd3FNTTJBR001aVNvUmJieWM1eFp4L2FYbTVTS2lGSTB0QT09GAAgACgAMIvWj8fSju0COIK+weHOLkCCvsHhzi5KHFVibk9ISjZnRnlybWdpR0R1QmttSzYvb1Z5ST1aHiIcTytOMG1UU3cydjM1UDZNWk56UHE1bXgvZkxrPWUAAAAAEq0CCB0SqAIKHFVPOFhncFZhbVdZV0lZMk05YnBOR1lmTWxmcz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW5uZXZnd1h0RFQ5VHJmL1UrTDJRYlRLd3E3VVFQRkptVllkTzZYN0pRcWErU2FvVHRaaS96ZjlKSzFGdUowQTA0TkdMdEpUcjNiR3EvRTZKQytTSVlNalRZSEFRZktkcHhxM0l2WXFzNWlNYlRGWmJESGZFUjRhbmNXWjE3c01zaU9SZEFuUT09GAAgACgAMOTOzMfSju0COInF6cnZLkCJxenJ2S5KHDYxeDB0SXhZQjJCeTRRRWkxbWFoZkNSbm9PTT1aHyId/lRsQkZOQVR2RWlyaHY4RCtIaDY2ZHhUemNVQT1lFfBGxRKtAggYEqgCChxWWnpIOTJmNkJ3ZjVFeE44UGxmQUZOMitHeWs9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubmV2Z3dYdERUOVRyZi9VK0wyUWJUUEdPY2tsd2ZFR0ZhOE1sbUZGYnlhVzRseEJPTWx4US9Ydld0bUFjY0MyTlU5SlNYWTcxcXh4aXo3SXRKdGJEZm9pdlo5TFNlK2t6bzdORGczMlZwTnFaZGRiK2ttS01SaDljaW4raE1lYldSQkwzVVE9PRgAIAAoADDtw8CfqYLuAjjtxdbr7C5A7cXW6+wuShwvTW9BbVRGWCtmcm5ReEQrQ1MyMEk2MnZmYUE9Wh8iHe54NnF5dlV6dEdWQUplcjY3b1czaXYrb0Q1Yjg9Zf4PpksSrQIIIRKoAgocNHVPYUg1bjdndHhRTThHMFhSSTRoa290c1pBPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbm5ldmd3WHREVDlUcmYvVStMMlFiVEZrNTFzU3NKcTAvTWtrQ1pCNlk3QjZmb1dJNHdBbGt3NmF0cFZ4TFRqTzh5TnJ4UCttNkZtQkFvd2xIbEE4dEZUeEZDaldsa0ZTTWVpaFNuSjlTdkN3WDZTeXRRcmtHVzlwYkk4MEZLN2dXMHBsQ2d3PT0YACAAKAAwi9aPx9KO7QI4y97SwdouQMve0sHaLkocSFNvMi9TZm0wQW9JWi9CUkw3ZDFscXVva1FNPVofIh3+S1FOZCsrdnRrOWVGVkR3UmNBVmdVV1JVdFRBPWUAAAAAEq0CCCUSqAIKHEhTZ0dYVU5xYWdTMjJwcXAzYlo5aGtKT0xhcz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW5uZXZnd1h0RFQ5VHJmL1UrTDJRYlRGZmhrTlZoQ253OTd5ZmNFZUE0SHJ6elZTOFZPck5aY2FQVmFsM1l2MXlKWWpVQy9rRkQ2eGEzMGhUc1lYZ09mbGxiMUVDb3lERGhyOVo5NUFQMHlYWWcwenhjRmVPTXg0Nm9HMW5nTEtHZTdYZWdydz09GAAgACgAMNPAiPXAgu4COPLL2u7sLkDyy9ru7C5KHFBhdTJrZklhdFp3UStKZGZFbEVzeE4wU01xVT1aHyId9ld3cjRtaWd6QkkwUGxEQzVYb2xwbEJMbUt2OD1lHU9voRKsAggLEqcCChxraDZlb2xMYytvSmVBekhJV3FqclNpVTFzVWc9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FuOTJpbm13Q0ZrdWxvK3hTbVVLUlB2bU93TzNBUytkSDN1bE9QT1JzMkVKajE4UTc1cVA0MFEyRWUwc1V6MnZ1eWZTVWRNeW9iQ05ZRXpFQWpPSDNtZG1GcXVJbTJDbnFYT0NTa2R6TkE1ZGZQWmpxT0JSZlVLOUVieHJkVTYzbzNvajRlQVE9PRgAIAAoADDZr8DYw6LuAjil1Kz78C5ApdSs+/AuShxnb1poMVhGSWVxTTduMS83S0tkSVUyUGp4YXc9Wh4iHFNUTW5aYkprSUxXZ3V2OHJnbW91SVB3N2U1WT1lAAAAABKsAggJEqcCChxvMCt2S2ZvdUZXZGVxbU1pbVAwOHZlRG9KTXc9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJa3FpbDdKMGl6NStTbG9renZxZTdKY2NrU3l6eWoyajU1ajI0czlTWURVcjBneVFZNSswNE1ZcmtLVzJsZU1zQlg4QllxVHJXT0FjaTB1M29aU0FOUHd3YklvQnMwcmtZcHFRS0IyTmJDdkc4Vm4xa3c9PRgAIAAoADDkzszH0o7tAjiCvsHhzi5Agr7B4c4uShxHbmhNNlVBeVJvaDIrdlMvYzlZWWMrS3hVMlk9Wh4iHHJZeEplNGhGVmhsVTRJRzVJazdnaDZFaVcrND1lun3UARKtAggXEqgCChwwNDlpY3B6STZzaU12a3JHVUhhTnlCYzJWZGc9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubmV2Z3dYdERUOVRyZi9VK0wyUWJUUEpTeUV4dmVhTkZBVGg2dmdDeHFicXAydDQyUExMeU9WN2N1NWt5Ui9FWFlFTnkwdVFEK0xBQXNoZk9wcmJTN1AwMHZPR1A5Wk94NkJpQjVWakFJVTF0ZDZSSHVkOUZEbkN6YjV0ZEVLcmVvS0JReGc9PRgAIAAoADDAjPX7gvvtAjjbzYv06y5A282L9OsuShxsK3hQcC8zVkJpajRSZC84elJRZC9neEY1b2M9Wh8iHdxDd05kVk5hY2s5Tmg4S2tIYWFGbndCMmhCcDQ9ZV2xB/oSqwEIARKmAQocL0VLTGFVVXlNZGJLRWsxQmEyVWlueURuZjdJPRJOWjpBRHF0QVp3K3hWdEE5bFVpQm9DVHNWRVBXUTU5bWc4SmRMclhhQkRCeFZpaVBwUTBpK0dhaVVVUWxvM09HRTZ3Mjh6MEhMMnJDYXNiGAAgACgAMIzwrL7ktO4COABAAEocVStHR0l0WkVEcFpzSVNsT1VhSVR1SUxkTW5JPVoAZQAAAAASrQIIChKoAgocbXV4dU0rVVpObWhxL0locDFLSGRITytQSGJjPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbndmMytnWmpGOGV1RktTcldCYkNmSWlaYTQydnNlSGFPSW9BVVI2ZjYyOHRsaFVFTXlRRlNrQmNZTXN6VVc1Z1AvMEQrb3d0Zi9EYmNrTkt2dFR4TXNucnhXRk9RSmxoTkVOeWxsZkJRQmdTbEJOWXl6QW4xUFAvRnJkRC8rRXBMRVdzSU93PT0YACAAKAAw5M7Mx9KO7QI48eaF19AuQPHmhdfQLkocb3NDdnJMRzE0NU9aaC8rSXYwd25NQWQrUFdBPVofIh25bUUraGY2ZHl6WUM1YTQ2NnIvVkhxZTJET0xNPWW6XaqgEq0CCBkSqAIKHEp4dFlxZVFPVVc1enVpSUxGTVVrYXRUYkRVaz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW45MmlubXdDRmt1bG8reFNtVUtSUHZ0NjE3bHBJbGM1MjB2eVRRVUNKbnEwOHRQeDVPZGtibE1jZGdmQWkwcjZYaC9INlRLWUwwRUNsdmVqeG5uNkJwMEVCampDZEJMblF1VGdIZytkb0N3bllEN3I1MkNhUk01ckpXNHR1VkxmdzlFZmpwdz09GAAgACgAMO7wr9egn+4COKDF28XwLkCgxdvF8C5KHFd4YTkxNnNYc2NpVFVOSGtKRTdBaXZqTGVxMD1aHyId9zJoeEZ2ekc3OGN0N21keFFCU3RkZHk2Q29idz1lFfBGxRKtAggoEqgCChxFSnJBSFhFVkxma2xFb3ZTRkltSXh5UG9ROXM9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FuTmV1a0JmM3FCYTNOYzJXK1RNWHppRDZzS3hJaFpuNjR5SXF1MFhOeVlXYlIyWDFCY2RHbGQvVFFlTmtsREpzL3hQU1EwZkVEcDVsNXdJUUhJZnNOaEREV3BBVDJkR05IMEZCV1dvU1ZFbXYyYXpES3hJUU5lUEppR0N5dGdYcFRVVDN2NUE9PRgAIAIoAjCw07KQwYzvAjiRtN7D/i5AlLTew/4uShxKS2gvdkRxNVBTekM5b0dMR20rTWFBNXVPRDg9Wh8iHf1hN0tycUhKa0NLd254eFJrNWUvZi96Z2hNSUE9ZcQfs7ASrgIIHxKpAgocTXh2enZGNEF3eEhFZVRuVHdzZ21wR0huY3VvPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbm5ldmd3WHREVDlUcmYvVStMMlFiVEFycXJWOTUvR0FMOFZ0eTM5MlZJYzZNRnU5cThRZ3ZFV3ZwbVRrT2Fjdm5URjNyeGRQbS8waXE2cml0MitlSVFhRkV1RVAyK1FQUUw0K21IVkRhZnF3QlptWVBTMUptL1VZNi9NZzF6TTg4cGV2alF3PT0YACAAKAAwnYSMufes7QI4+r/U9OEuQPq/1PThLkocQlFkalJ4dWdRNHhIQlluRmlOcVZVdjc0LzlJPVogIh7/vWRSNmhuUVVwczIzZ3kwQ3U2ZlMvUlRUMlZQdz1lm7W9lRKsAggPEqcCChxxdCt0dEZxMzNnTStSNnZYVWR2cTd5N0tmWHM9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJanlGYmRueis0SGtGQUFYaGtYUmQ2bTl1ak8xQTdWdmZ4N0tSZlNHTGNWbEE2WVhKUzBETkd6SWxuMWFlaWh0NnlzWWJnWXVaV3BGc3RyVG9jYWtEWDBLN3djWlZnOW9YWkFEaDdpQVVDWW85WkpTOFE9PRgAIAAoADDkzszH0o7tAjiCpLHp0S5AgqSx6dEuShw4SHRheHVPNmhmZWtFYlp2eWNBemUwRVZwa289Wh4iHGt3bWFoS1hRNTRSbyswMk9jWjVnRHp4QjVuUT1laEqkjhKtAggGEqgCChxiWkNHNS81VWtUN1RVTTUzNEhJQWw2L1luV2c9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJZ2J1SjZreEtFQmhhMGU3YzBZYmZsaDVCTS9UclVhTUdUcTJuK1JqTU00Y0JTMnFBSmc0U1cyM2N3R0Z5bktjVm1EclZid2FYSFJJUDNnQkg4WW0rRi9RcWpmU1YvdFhPb3ZzbjhSWXFNRzJQemMvRUE9PRgAIAMoAzDbiMfk2PDuAjiU7uThzi5Aq6qB/PouShxUa1o5YndwZDJPeHFaa3Y0YlpEd3NsTGoxYkk9Wh8iHSdtZTA4TEZwUWliMGtvcyswYWFWSk5jbjB6ZDA9ZRoVM1gSrQIIEhKoAgocOS9mMVdiaW8rZUhsM3Y1QmlKcWtUYnh2eDRvPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbndmMytnWmpGOGV1RktTcldCYkNmSWprN2ZEL2JzdmtCRm5KWXlIU3NCSFhEb1J2bE9ZUDc0Um9CK0JOZ0Zra3VzTldPTnBCemNVWUhBcjl5WjNWejUrckVmQkVoNVhYcnVwVldNRTdJa21LQU1maW1HTkMzYkE3Y1lwR1pxSExZUTM0d3ZBPT0YACAAKAAwi9aPx9KO7QI4gr7B4c4uQIK+weHOLkocSkZFMXpFTVpFai9Nb0RuQy93Z1BnYUxvNWpZPVofIh3TV0wyU1Z5QVJIcURtYWdraDRPTmpudE9XYm4wPWUAAAAAEq0CCBQSqAIKHHJ3bWJmVkV3L2NXZGFuQVNZS2VyTkZ5aW91WT0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW53ZjMrZ1pqRjhldUZLU3JXQmJDZkloa3hldEdKTzFBTEtuZ2t6WjdBaWFwMzlPakRGMGZoWlhXTHJrUE1LK3JmeXdqakFSUFM0TWRDT3pocFNVRFYwQzFmcnZveDV3Y3d4U3RGZ0RKeXk5UEdWZnF1Zi9VNmVyZ3FhRm0yS0Y5M0ZuZnNxUT09GAAgACgAMPexxoCAvO0COIK+weHOLkCCvsHhzi5KHFNHeHdzRTdhaXltTERjQmFST2U5dzNDWkhtUT1aHyIdtzFwcHBpd3hoY2dDbi9BMDNkdHE2UTdhL2U4bz1lbKluxhKtAggmEqgCChxsR0RwNmkwSUVzbEtoYkU3Q25Cb0lUY01JMUE9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubmV2Z3dYdERUOVRyZi9VK0wyUWJUQk92V0lQaVo1d294dGtYL3VWM2YrVlFPVzBSSytML3V5TU5GcS9aRG96aWtUTW5qcmt5UmU5am02bVVzRjg1Sk1rUlZaTG44NVlkN0dPczdnVUpOcE03bzNYV25PSVduaEJRNVhqamhxUDd4YWRuM0E9PRgAIAAoADCBlfS7qIfuAjjk1b+97S5A5NW/ve0uShxvODliN2NPMlFvZTNTWFBXOVN4ZXVHakZlN3c9Wh8iHftRcHdNUEsraUJNRGtKeEk0cEJSb29kVnVGaVk9ZQAAAAASrgIIIBKpAgocQVBHbFlSTmlydkI0Z0NCV1duaEx5bkJobHZNPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbm5ldmd3WHREVDlUcmYvVStMMlFiVEwxbG5SMEk2Z080eTI4TG1PZ0J1c0JUWTJQTU9lZ0VaK3BLbzJzYy9QUmNRYTZGNTNBOGMwNjQ2cmd0cmZuS2k3QmxtQzNCSnRBYStGRnQzZHNFWlg3dmlCamZhZzd5Tnd1RDlMSWV5aHpTWlBXOWt3PT0YACAAKAAw46nb7pfc7QI4uKLu+ucuQLii7vrnLkocUktqNW1aUzFXQmY3ZTVEOE5tc1hyOG1iVTBjPVogIh7/7y80T1hMMkRWWnpjWExweTZpcElXODNmZERZaz1ltwFTaBKsAggQEqcCChxXS0UxVnd4RWlCK0VCNGxDUld3TGwvbUJDdXM9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJZ3Q5OUFCWE8rVnpsY2tZSWZlVk10dUR2Lzg1dVZHM1BrYlhCMlNQeU95cWtTeVV3REpsOEZWeDRSU1NrN2o1aHpYYzhKQnhadjdoQmx4cFdHTDdHKzh2MlhJZGJaemtjSTd1RTFUdUk5VUJLS2tXN3c9PRgAIAAoADDkzszH0o7tAjiCvsHhzi5Agr7B4c4uShx4cjA5ZW0wTUZBc2VpYWNxNHEyT2JidDlPcUE9Wh4iHHp3Q3JxdzFHMFpTM2dIWVZMKzZ6RVhvdHN2Yz1lAAAAABKtAggkEqgCChxuUkRXNmhXWlBpUVBsT1dONHR2MnJ3UFdYdjA9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1FubmV2Z3dYdERUOVRyZi9VK0wyUWJUSGMva2lTL3RWOWxJVUVVREtkVCt4MzlCaGxScmdhS1NqMHdpd29vdmJaNG5DVDBkVXdMSXNlTmQ4dmdrdTh1ZnBYRTVTdGpleWRuWmlqdzNaNUpHbWdEUXlEYWJRWkZleEVmUU9nWXhCOC9DaWFFN2c9PRgAIAAoADC8zZGPwILuAjizsM3u7C5As7DN7uwuShxVSzBpR2JXNmtSdzAyR2dLWjlKeDlOSTVkNkU9Wh8iHe1uWVkyUGtUaEk5ZlgycVNKbS9RMDRtTTVTelU9ZUPRSI4SrQIIIhKoAgocMitNaFpRQ3hOTUNrSnNmU1VKdUpheHhaZFBFPRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbndmMytnWmpGOGV1RktTcldCYkNmSWg0OFQwZXNoU0ZYMWFFUUxObGhjUUhvZkhTellQSDhURDNQYkRWZi95SkRYQ1UycTUvVHZpQ0ZwRU1FOUcyMGoyTGdyQlNDKzRkb1RzVCtJVU9GS054RHY1Ty9QU1l5Z3hiYlhhRjRXYmVKMzY4SFlnPT0YACADKAMwmcyOiZKO7wI4g77B4c4uQOrdvd7+LkocbHR2dDRMRVdtZm02ZjU5M1FvMG10UEhCaUlJPVofIh23T3VHOTNqNFFpalUrT0dzOVhhSFQwMElkT29rPWUkBDAWEq0CCBwSqAIKHGJxQjdpanBuVXcxS0V2QUVxSE9lZncxT1Zldz0SpgFaOkFEcXRBWncrcGhPWktJay9SZ1BNTjkyVkpnUW53ZjMrZ1pqRjhldUZLU3JXQmJDZkl0a3VkY2pCZjRDZHFkalY5T00xRW1vcC9hKzFxMmhIaWF2ZlJ4QityMXZDSUZTMkZSZVg4QUZMTWtwNS95TVR2M0hLZlRVakFoWXRBNWt5SENzZ3ZobVlyT2orUTUwSlp5MnZpV0JXZHN6STN5Wm1lUT09GAAgACgAMOTOzMfSju0COJOtvdfVLkCTrb3X1S5KHFhxNGMvZndya0RJREU0Y0phNURxQUNPWmpDST1aHyIdvTJCQ014RlJHaU9tZUtUNFJTZ2JvVFhBc1FqOD1lFfBGxRKtAggOEqgCChxKMU85OWkwUWRONkU3eGdxL1BkU2dDbnQwU1U9EqYBWjpBRHF0QVp3K3BoT1pLSWsvUmdQTU45MlZKZ1Fud2YzK2daakY4ZXVGS1NyV0JiQ2ZJcmtOVUQzczVySXM4Zld1d3FmK0FGVDRieUZsaENVclhDT1VOZjAwa0ZlaGZNTHZuWnFXdzVUMXFhSWJUaDFoNUlFMmk1WnVsbXhzaWFUT3hFV2JMVForU0pyK2ZKOUZ6OGt1NTU3cWJLdGdiQ0pwYVE9PRgAIAAoADCL1o/H0o7tAjiCvsHhzi5Agr7B4c4uShxDU1pQelFPczV6K09jZjkvb3FQa1luV3dmNUk9Wh8iHadNUTExNVJkdGFUekZQRkJXb1B6ZlQ0VDVWS0k9ZQAAAAASrAIIBRKnAgocM0I2SkM3TTN0K1BoNnhIbTdKREUrbHIraTE0PRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbmkxNlVnMWxYU3htdjFEc2lCMWdvNzNwKy9Fb0xTM2NMd0N3QVNWSklQQVY3WStDYngyRmhCa0ZpWHdXa3FBZFAvcFdyNEdiODQ1cndYeGxqN0RFcW5DVy9wb1FjM1VaK1NpZkJiTmdVZ3l2M0szR1lldTNBZkZQbVFHcUVIdUlEcGRhR3BRPT0YACAAKAAw5M7Mx9KO7QI42ZW3y9AqQNmVt8vQKkocRlNwZ3RJeXM2VENlS3hIY2Z4SG5ad01YNGdZPVoeIhxnVzZNbFF0K1VxMUZHbFdjWDZvQWhBcG5XOU09ZQAAAAASrAIICBKnAgocODY4dVRBa3BxWFJQKzRBcGZIcWVORlh0QUI4PRKmAVo6QURxdEFadytwaE9aS0lrL1JnUE1OOTJWSmdRbndmMytnWmpGOGV1RktTcldCYkNmSWh5MWw1ZjZvdTBzNmUveFl4a3dDSFhSUDg5WUxidGxQVFgvZGZxSWExcGVlK2dSNFkvU215UU8yY0JWcnBqQU1WQzNXaUdHRE5SK0tzV3N5TFZwTFlRNHJoSzl4U2tSNFlrdkRydFNkTkJZTWZHYXRnPT0YACAAKAAw/NSlrOTg7gI4gr7B4c4uQLDHq/f4LkocRzZiUCtOcENYM2NuU0J2SXg5ZmZueVR1UHQ4PVoeIhxSYjlTN3d5WFBCdFFwVG0xdXN0ZWpmZUhqdkU9ZTTR6GEYASC6xb7e/i4=",
+   "version": 1
+}

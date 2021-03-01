@@ -1,0 +1,5 @@
+2021/02/28-23:46:59.807 2585c Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.techradar.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/28-23:47:46.380 25b3d Level-0 table #5: started
+2021/02/28-23:47:46.384 25b3d Level-0 table #5: 5433 bytes OK
+2021/02/28-23:47:46.387 25b3d Delete type=0 #3
+2021/02/28-23:47:46.387 25b3d Manual compaction at level-0 from (begin) .. (end); will stop at (end)

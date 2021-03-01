@@ -1,0 +1,9 @@
+2021/03/01-11:34:29.945 3f1f Reusing MANIFEST /home/larvasei/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2021/03/01-11:34:29.946 3f1f Recovering log #367
+2021/03/01-11:34:29.946 3f1f Reusing old log /home/larvasei/.config/chromium/Default/Sync Data/LevelDB/000367.log 
+2021/03/01-11:40:11.742 458e Level-0 table #371: started
+2021/03/01-11:40:11.748 458e Level-0 table #371: 112966 bytes OK
+2021/03/01-11:40:11.752 458e Delete type=0 #367
+2021/03/01-12:43:48.158 6e05 Level-0 table #373: started
+2021/03/01-12:43:48.161 6e05 Level-0 table #373: 108480 bytes OK
+2021/03/01-12:43:48.165 6e05 Delete type=0 #370

@@ -1,0 +1,6 @@
+2021/02/28-20:40:57.193 19403 Reusing MANIFEST /home/larvasei/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/02/28-20:40:57.196 19403 Recovering log #40
+2021/02/28-20:40:57.196 19403 Reusing old log /home/larvasei/.config/discord/Local Storage/leveldb/000040.log 
+2021/02/28-21:42:58.397 193ef Level-0 table #45: started
+2021/02/28-21:42:58.399 193ef Level-0 table #45: 10607 bytes OK
+2021/02/28-21:42:58.401 193ef Delete type=0 #40

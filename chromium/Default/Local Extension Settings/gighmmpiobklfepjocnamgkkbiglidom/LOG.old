@@ -1,0 +1,49 @@
+2021/03/01-11:34:30.928 3f20 Reusing MANIFEST /home/larvasei/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2021/03/01-11:34:30.929 3f20 Recovering log #2012
+2021/03/01-11:34:30.929 3f20 Reusing old log /home/larvasei/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/002012.log 
+2021/03/01-11:35:34.040 3f20 Level-0 table #2016: started
+2021/03/01-11:35:34.113 3f20 Level-0 table #2016: 5942714 bytes OK
+2021/03/01-11:35:34.116 3f20 Delete type=0 #2012
+2021/03/01-11:39:33.926 435d Level-0 table #2018: started
+2021/03/01-11:39:34.004 435d Level-0 table #2018: 5942586 bytes OK
+2021/03/01-11:39:34.006 435d Delete type=0 #2015
+2021/03/01-11:39:34.007 3f12 Compacting 4@0 + 2@1 files
+2021/03/01-11:39:34.093 3f12 Generated table #2019@0: 3 keys, 5942782 bytes
+2021/03/01-11:39:34.096 3f12 Generated table #2020@0: 9 keys, 515 bytes
+2021/03/01-11:39:34.096 3f12 Compacted 4@0 + 2@1 files => 5943297 bytes
+2021/03/01-11:39:34.097 3f12 compacted to: files[ 0 2 1 0 0 0 0 ]
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2008
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2013
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2009
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2011
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2018
+2021/03/01-11:39:34.097 3f12 Delete type=2 #2016
+2021/03/01-12:35:33.821 5a65 Level-0 table #2022: started
+2021/03/01-12:35:33.877 5a65 Level-0 table #2022: 5942725 bytes OK
+2021/03/01-12:35:33.879 5a65 Delete type=0 #2017
+2021/03/01-12:35:34.082 5a65 Level-0 table #2024: started
+2021/03/01-12:35:34.143 5a65 Level-0 table #2024: 5942588 bytes OK
+2021/03/01-12:35:34.145 5a65 Delete type=0 #2021
+2021/03/01-12:39:24.214 6bfe Level-0 table #2026: started
+2021/03/01-12:39:24.271 6bfe Level-0 table #2026: 5942778 bytes OK
+2021/03/01-12:39:24.273 6bfe Delete type=0 #2023
+2021/03/01-13:35:33.924 7772 Level-0 table #2028: started
+2021/03/01-13:35:34.009 7772 Level-0 table #2028: 5943024 bytes OK
+2021/03/01-13:35:34.011 7772 Delete type=0 #2025
+2021/03/01-13:35:34.013 7b9d Compacting 4@0 + 2@1 files
+2021/03/01-13:35:34.155 7b9d Generated table #2029@0: 3 keys, 5942781 bytes
+2021/03/01-13:35:34.158 7b9d Generated table #2030@0: 9 keys, 515 bytes
+2021/03/01-13:35:34.158 7b9d Compacted 4@0 + 2@1 files => 5943296 bytes
+2021/03/01-13:35:34.160 7b9d compacted to: files[ 0 2 1 0 0 0 0 ]
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2019
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2020
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2024
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2022
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2028
+2021/03/01-13:35:34.160 7b9d Delete type=2 #2026
+2021/03/01-13:35:34.245 7b9d Level-0 table #2032: started
+2021/03/01-13:35:34.317 7b9d Level-0 table #2032: 5942585 bytes OK
+2021/03/01-13:35:34.320 7b9d Delete type=0 #2027
+2021/03/01-13:41:27.327 7d9d Level-0 table #2034: started
+2021/03/01-13:41:27.387 7d9d Level-0 table #2034: 5942779 bytes OK
+2021/03/01-13:41:27.411 7d9d Delete type=0 #2031

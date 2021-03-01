@@ -1,0 +1,5 @@
+2021/02/03-22:36:00.028 727a Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.filehorse.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/03-22:44:35.507 79dc Level-0 table #5: started
+2021/02/03-22:44:35.510 79dc Level-0 table #5: 9125 bytes OK
+2021/02/03-22:44:35.511 79dc Delete type=0 #3
+2021/02/03-22:44:35.512 79dc Manual compaction at level-0 from (begin) .. (end); will stop at (end)
