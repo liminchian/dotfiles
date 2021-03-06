@@ -12,6 +12,7 @@
       <property name="icon-size" type="uint" value="0"/>
       <property name="size" type="uint" value="20"/>
       <property name="plugin-ids" type="array">
+        <value type="int" value="8"/>
         <value type="int" value="4"/>
         <value type="int" value="2"/>
         <value type="int" value="3"/>
@@ -24,7 +25,7 @@
         <value type="int" value="11"/>
       </property>
       <property name="background-style" type="uint" value="2"/>
-      <property name="leave-opacity" type="uint" value="65"/>
+      <property name="leave-opacity" type="uint" value="60"/>
       <property name="background-rgba" type="array">
         <value type="double" value="0.333333"/>
         <value type="double" value="0.000000"/>
@@ -36,6 +37,7 @@
       <property name="nrows" type="uint" value="1"/>
       <property name="length-adjust" type="bool" value="true"/>
       <property name="background-image" type="string" value="/home/larvasei/.config/image/sky.mp4"/>
+      <property name="enter-opacity" type="uint" value="90"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -58,6 +60,9 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="discordcanary"/>
+        <value type="string" value="slack"/>
+        <value type="string" value="livewallpaper-indicator"/>
         <value type="string" value="electron"/>
         <value type="string" value="stacer"/>
         <value type="string" value="ibus-engine-chewing"/>
@@ -103,7 +108,7 @@
     <property name="plugin-4" type="string" value="i3-workspaces"/>
     <property name="plugin-7" type="string" value="pulseaudio">
       <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
-      <property name="mpris-players" type="string" value="chromium.instance103397;chromium.instance13116;chromium.instance13787;chromium.instance15300;chromium.instance16126;chromium.instance1818;chromium.instance22731;chromium.instance2794;chromium.instance3385;chromium.instance7019;chromium.instance7876;chromium.instance8015;chromium.instance9141;spotify"/>
+      <property name="mpris-players" type="string" value="chromium.instance103397;chromium.instance1226;chromium.instance12937;chromium.instance13116;chromium.instance13787;chromium.instance142718;chromium.instance148537;chromium.instance15300;chromium.instance16126;chromium.instance1690;chromium.instance16985;chromium.instance1818;chromium.instance22731;chromium.instance2793;chromium.instance2794;chromium.instance3385;chromium.instance66548;chromium.instance6838;chromium.instance6941;chromium.instance7019;chromium.instance7876;chromium.instance8015;chromium.instance88084;chromium.instance903;chromium.instance9141;chromium.instance93796;firefox.instance116457;firefox.instance137663;firefox.instance139091;spotify"/>
       <property name="enable-wnck" type="bool" value="true"/>
     </property>
     <property name="plugin-1" type="string" value="weather">
@@ -146,5 +151,6 @@
         <property name="label2" type="int" value="17"/>
       </property>
     </property>
+    <property name="plugin-8" type="string" value="cpugraph"/>
   </property>
 </channel>

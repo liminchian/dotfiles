@@ -47,6 +47,7 @@ call plug#end()
 inoremap <silent>jk <Esc>
 command! W w
 nnoremap <silent>qq :wqa<CR>
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 set nowrap
 set nu
 set encoding=utf-8
@@ -85,6 +86,7 @@ augroup two_space_indent
       au! FileType c,cpp,markdown set tabstop=2
       au! FileType c,cpp,markdown set shiftwidth=2
 augroup END
+au! BufRead,VimEnter *.png,*.jpg,*jpeg exec "!feh %"
 
 "+------------+
 "| indentline |
@@ -99,7 +101,6 @@ let g:indentLine_char_list = ['|']
 "| bookmarks |
 "+-----------+
 let g:bookmark_highlight_lines = 1
-let g:bookmark_sign = '☕'
 let g:bookmark_no_default_key_mappings = 1
 function! BookmarkMapKeys()
     nmap mm :BookmarkToggle<CR>
