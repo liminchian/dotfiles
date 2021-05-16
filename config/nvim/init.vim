@@ -29,7 +29,7 @@ Plug 'ryanoasis/vim-devicons'                                         | "圖示�
 Plug 'scrooloose/nerdtree'                                            | "檔案樹
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'                        | "檔案樹圖標主題
 Plug 'luochen1990/rainbow'                                            | "彩色括弧
-Plug 'yggdroot/indentline'                                            | "縮排線
+Plug 'nathanaelkane/vim-indent-guides'                                | "縮排區塊
 Plug 'sakshamgupta05/vim-todo-highlight'                              | "Todo 高亮
 Plug 'junegunn/limelight.vim'                                         | "局部高亮
 Plug 'junegunn/goyo.vim'                                              | "專注模式
@@ -95,8 +95,8 @@ set ruler
 set wildmenu
 set wildmode=full
 set scrolloff=4
-set lcs+=space:‧
-set list
+"set lcs+=space:‧
+"set list
 
 "+--------+
 "| others |
@@ -141,18 +141,49 @@ nmap <nowait>7 :bfirst<CR>:7bn<CR>
 nmap <nowait>8 :bfirst<CR>:8bn<CR>
 nmap <nowait>9 :bfirst<CR>:9bn<CR>
 
-"+------------+
-"| indentline |
-"+------------+
-let g:indentLine_enabled = 1
-au VimEnter,BufRead,BufNewFile .* exec "IndentLinesEnable"
-au VimEnter,BufRead,BufNewFile *.md,*.cpp,*.h,*.cc,*.vim exec "IndentLinesDisable"
-let g:indentLine_char_list = ['|']
+"+---------------+
+"| indent guides |
+"+---------------+
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_size = 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#332b36
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#2a3834
 
 "+---------+
 "| rainbow |
 "+---------+
 let g:rainbow_active = 1
+let g:rainbow_conf = {
+\   'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick'],
+\   'ctermfgs': ['lightblue', 'lightyellow', 'lightcyan', 'lightmagenta'],
+\   'guis': [''],
+\   'cterms': [''],
+\   'operators': '_,_',
+\   'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/{/ end=/}/ fold'],
+\   'separately': {
+\       '*': {},
+\       'markdown': {
+\           'parentheses_options': 'containedin=markdownCode contained',
+\       },
+\       'lisp': {
+\       'guifgs': ['royalblue3', 'darkorange3', 'seagreen3', 'firebrick', 'darkorchid3'],
+\       },
+\       'haskell': {
+\           'parentheses': ['start=/(/ end=/)/ fold', 'start=/\[/ end=/\]/ fold', 'start=/\v\{\ze[^-]/ end=/}/ fold'],
+\       },
+\       'vim': {
+\           'parentheses_options': 'containedin=vimFuncBody',
+\       },
+\       'perl': {
+\           'syn_name_prefix': 'perlBlockFoldRainbow',
+\       },
+\       'stylus': {
+\           'parentheses': ['start=/{/ end=/}/ fold contains=@colorableGroup'],
+\       },
+\       'css': 0,
+\   }
+\}
 
 "+----------------+
 "| todo-highlight |
