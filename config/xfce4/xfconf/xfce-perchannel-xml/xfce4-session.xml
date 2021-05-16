@@ -5,9 +5,9 @@
     <property name="FailsafeSessionName" type="empty"/>
     <property name="LockCommand" type="empty"/>
     <property name="SessionName" type="string" value="Default"/>
-    <property name="SaveOnExit" type="bool" value="false"/>
+    <property name="SaveOnExit" type="bool" value="true"/>
     <property name="StartAssistiveTechnologies" type="bool" value="false"/>
-    <property name="AutoSave" type="bool" value="false"/>
+    <property name="AutoSave" type="bool" value="true"/>
     <property name="PromptOnLogout" type="bool" value="true"/>
   </property>
   <property name="sessions" type="empty">
@@ -36,5 +36,8 @@
   </property>
   <property name="security" type="empty">
     <property name="EnableTcp" type="bool" value="false"/>
+  </property>
+  <property name="shutdown" type="empty">
+    <property name="LockScreen" type="bool" value="false"/>
   </property>
 </channel>
