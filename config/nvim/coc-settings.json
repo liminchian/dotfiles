@@ -4,12 +4,30 @@
     "markdown",
     "python",
     "julia",
-    "cpp",
     "json"
   ],
+  "coc.preferences.enableMarkdown": true,
   "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "autopep8",
+  "python.formatting.provider": "black",
   "highlight.colorNames.enable": true,
   "coc.source.file.enable": true,
-  "floaterm.completion.enable": true
+  "floaterm.completion.enable": true,
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp", "objc", "objcpp", "cc"],
+      "rootPatterns": [
+        ".ccls",
+        "compile_commands.json",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls"
+        }
+      }
+    }
+  }
 }
