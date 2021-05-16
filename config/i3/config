@@ -29,9 +29,10 @@ for_window [class="kitty"] border none
 for_window [class="kitty"] floating enable
 for_window [class="feh"] floating enable
 for_window [class="wine"] floating enable
+for_window [instance="^origin.exe$" class="Wine"] floating enable, fullscreen disable
 
-new_window pixel 3
-new_float  pixel 3
+new_window pixel 2
+new_float  pixel 2
 
 font pango:scientifica 8
 # }}}
