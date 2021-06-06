@@ -1,5 +1,0 @@
-2021/02/27-14:28:38.379 5d19 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_api.gamer.com.tw_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/27-14:30:51.663 5cef Level-0 table #5: started
-2021/02/27-14:30:51.666 5cef Level-0 table #5: 7708 bytes OK
-2021/02/27-14:30:51.668 5cef Delete type=0 #3
-2021/02/27-14:30:51.668 5cef Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,5 +1,0 @@
-2021/03/01-00:05:42.755 29d39 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_fontawesome.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/01-00:06:14.410 29778 Level-0 table #5: started
-2021/03/01-00:06:14.412 29778 Level-0 table #5: 4111 bytes OK
-2021/03/01-00:06:14.414 29778 Delete type=0 #3
-2021/03/01-00:06:14.414 29778 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

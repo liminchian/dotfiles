@@ -1,5 +1,0 @@
-2021/02/01-21:05:41.501 1e84 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_udn.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/01-21:06:25.748 1fe0 Level-0 table #5: started
-2021/02/01-21:06:25.750 1fe0 Level-0 table #5: 4153 bytes OK
-2021/02/01-21:06:25.752 1fe0 Delete type=0 #3
-2021/02/01-21:06:25.752 1fe0 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

@@ -1,5 +1,0 @@
-2021/02/20-22:39:13.188 5015 Reusing MANIFEST /home/larvasei/.config/discord/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/21-00:48:40.537 b388 Level-0 table #5: started
-2021/02/21-00:48:40.539 b388 Level-0 table #5: 1308 bytes OK
-2021/02/21-00:48:40.540 b388 Delete type=0 #3
-2021/02/21-00:48:40.540 b388 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

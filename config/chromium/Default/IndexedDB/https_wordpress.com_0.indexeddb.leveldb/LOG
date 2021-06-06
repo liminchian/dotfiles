@@ -1,5 +1,0 @@
-2021/02/07-21:06:42.815 fc74 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_wordpress.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/07-21:06:57.325 fc75 Level-0 table #5: started
-2021/02/07-21:06:57.328 fc75 Level-0 table #5: 5338 bytes OK
-2021/02/07-21:06:57.331 fc75 Delete type=0 #3
-2021/02/07-21:06:57.331 fc75 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

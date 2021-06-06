@@ -1,5 +1,0 @@
-2021/02/01-21:27:15.289 2310 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.digitaltrends.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/01-21:28:10.865 21b6 Level-0 table #5: started
-2021/02/01-21:28:10.867 21b6 Level-0 table #5: 15020 bytes OK
-2021/02/01-21:28:10.869 21b6 Delete type=0 #3
-2021/02/01-21:28:10.869 21b6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

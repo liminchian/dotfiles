@@ -1,8 +1,0 @@
-2021/03/01-12:41:17.210 6e51 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/03/01-12:41:17.210 6e51 Recovering log #174
-2021/03/01-12:41:17.210 6e51 Reusing old log /home/larvasei/.config/chromium/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000174.log 
-2021/03/01-12:42:03.005 6ea8 Level-0 table #178: started
-2021/03/01-12:42:03.005 6ea8 Level-0 table #178: 0 bytes OK
-2021/03/01-12:42:03.008 6ea8 Delete type=0 #174
-2021/03/01-12:42:03.008 6ea8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
-2021/03/01-12:42:03.008 6ea8 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

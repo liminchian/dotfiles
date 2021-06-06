@@ -1,5 +1,0 @@
-2021/02/22-22:55:18.149 6211 Reusing MANIFEST /home/larvasei/.config/chromium/Default/IndexedDB/https_www.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/02/22-22:55:21.837 61c8 Level-0 table #5: started
-2021/02/22-22:55:21.840 61c8 Level-0 table #5: 1531 bytes OK
-2021/02/22-22:55:21.843 61c8 Delete type=0 #3
-2021/02/22-22:55:21.843 61c8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
