@@ -1,7 +1,6 @@
 # dotfiles
 
-<image src="screenshot_desktop.png" width=0.5 height=0.5>
-</image>
+![screenshot](https://i.imgur.com/c4m1Nd9.png)
 
 ## 環境設置
 
