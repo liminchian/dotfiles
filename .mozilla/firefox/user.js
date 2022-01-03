@@ -1,0 +1,1 @@
+chrome/firefox-gnome-theme/configuration/user.js

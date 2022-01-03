@@ -7,14 +7,13 @@
 ### Basic
 
 - Operating System: `archlinux`
-- Window Manager: `i3-gaps`
+- Window Manager: `bspwm`
 - Status Bar: `polybar`
-- Editor: `neovim`
-- File Manager: `pcmanfm`
+- Editor: `neovim` - [Nvchad](https://nvchad.github.io/)
 - Notification: `dunst`
-- Terminal Emulator: `kitty`
-- Shell: `zsh`
-- Web Browser: `chromium`
+- Terminal Emulator: `alacritty`
+- Shell: `zsh` & `oh-my-zsh`
+- Web Browser: `firefox`
 
 ### Appearance
 
@@ -22,12 +21,23 @@
 - Gtk Theme: [Dracula](https://www.gnome-look.org/p/1099856/)
 - Cursor Theme: [Google Dot](https://www.gnome-look.org/p/1215613/)
 - Icon Theme: [Flatery](https://www.gnome-look.org/p/1332404/)
-- Zsh Theme: [Pure](https://github.com/sindresorhus/pure)
+- Shell Prompt: [Starship](https://starship.rs/)
+- Terminal Color Theme: `dracula`
 - Font: _Roboto_
-- Nerd-Font: _Hack Nerd Font_
+- Nerd-Font: _FiraCode Nerd Font_
 - Chinese Font: _Noto Sans CJK_
 
-### Others
+### CLI
+
+- `ytop`: 工作管理員
+- `dust`: 資料夾使用量分佈
+- `exa`: `ls`的色彩高亮
+- `procs`: Rust 編寫的流程管理員
+- `bat`: Rust 編寫的`cat`
+- `skim`: Rust 編寫的`fzf`
+- `ripgrep`(`rg`): Rust 編寫的`grep`
+
+### Misc
 
 - `flashfocus`: 視窗焦點轉換動畫
 - `redshift`: 螢幕色溫調整
@@ -35,5 +45,3 @@
 - `unclutter`: 鼠標閒置時，會自動隱藏
 - `picom`: 視窗透明效果
 - `numlockx`: 鎖定 numlock 鍵
-- `ibus`: 中文輸入法 _(kitty 僅支援 ibus)_
-- `ranger`, `htop`, `gdu`: 終端應用工具
