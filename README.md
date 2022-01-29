@@ -1,6 +1,6 @@
 # dotfiles
 
-![screenshot](https://i.imgur.com/c4m1Nd9.png)
+![screenshot](https://i.imgur.com/sBHh876.jpg)
 
 ## 環境設置
 
