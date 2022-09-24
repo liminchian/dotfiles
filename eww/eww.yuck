@@ -1,0 +1,85 @@
+(include "sidebar.yuck")
+
+(deflisten workspace "scripts/hyprworkspace")
+
+(defwindow bar
+  :stacking "fg"
+  :monitor "0"
+  :exclusive "true"
+  :windowtype "dock"
+  :reserve (struts :distance "40px" :side "top")
+  :geometry (geometry :x "0px"
+                      :y "-26px"
+                      :width "99%"
+                      :height "76px"
+                      :anchor "top center")
+  (bar))
+
+    (defwidget bar[]
+      (box 
+      (bar-shadow)))
+
+  (defwidget bar-shadow []
+      (box :class "bar-shadow"
+      (launcher)
+      (workspaces)
+      (time)))
+
+    ; launcher widget
+    (defwidget launcher []
+      (box :halign "start" :valign "end" :class "launcher"
+      (button  :onclick "" "")))
+
+    ; workspace widget  
+    (defwidget workspaces []
+      (literal :valign "end" :halign "center" :content workspace))
+
+    ;; Clock Widgets ;;
+    (defwidget time []
+      (box	:orientation "h" :class "time" :valign "end"
+          :class "time" 
+          :halign "end"
+      (button	:tooltip DATE :onclick "eww open --toggle calendar"	time)))
+    (defpoll time	:interval "1s"	"date '+%I:%M %p'")
+    (defpoll DATE :interval "6h" "date '+%y/%m/%e'")
+
+
+      (defwindow calendar
+        :geometry (geometry :x "0px" 
+                  :y "40px" 
+                              :anchor "top right"
+                  :width "270px" 
+                  :height "0px")
+                  :monitor "0"
+      (calshadow))
+
+      (defwidget calshadow []
+        (box 
+        (cal)
+        ))
+
+      (defwidget cal []
+        (box :class "cal" :orientation "v"
+        (box :class "cal-in" 
+        (calendar :class "cal" 
+              :day calendar_day 
+              :year calendar_year
+              :show-details: true))))
+      (defpoll calendar_day :interval "20h" "date '+%d'")
+      (defpoll calendar_year :interval "20h" "date '+%Y'")
+
+           ; (defwindow notif
+           ;   :stacking "overlay"
+           ;   :monitor "0"
+           ;   :windowtype "dock"
+           ;   :geometry (geometry :x "0px"
+           ;                       :y "0px"
+           ;                       :width "5px"
+           ;                       :height "100%"
+           ;                       :anchor "top right")
+           ;   (notif))
+           ;
+           ;     (defwidget notif[]
+           ;       (eventbox :onhover "~/.config/rofi/notify/rofi_notif_center.sh &")
+           ; )
+          
