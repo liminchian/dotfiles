@@ -1,0 +1,20 @@
+{
+  "vimMode": true,
+  "smartIndentList": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "promptDelete": false,
+  "legacyEditor": false,
+  "livePreview": true,
+  "rightToLeft": false,
+  "lineWrap": true,
+  "showFrontmatter": false,
+  "foldIndent": false,
+  "defaultViewMode": "source",
+  "attachmentFolderPath": "./",
+  "showLineNumber": false,
+  "spellcheckLanguages": [],
+  "spellcheck": false,
+  "foldHeading": true,
+  "strictLineBreaks": false
+}
