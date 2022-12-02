@@ -1,0 +1,2 @@
+#!/bin/sh
+swaylock -e -f -i ~/.config/image/lock.jpg
