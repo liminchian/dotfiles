@@ -1,0 +1,23 @@
+/* Makes the pin overflow menu a grid  */
+
+#widget-overflow-list,
+#widget-overflow-fixed-list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+#widget-overflow-fixed-list > .toolbarbutton-1,
+#widget-overflow-list > .toolbarbutton-1{
+  width: 30px !important;
+  height: 30px;
+}
+#widget-overflow-list .toolbarbutton-text,
+#widget-overflow-fixed-list .toolbarbutton-text{
+  display: none;
+}
+
+widget-overflow-list .toolbarbutton-1 image,
+#widget-overflow-fixed-list .toolbarbutton-1 image{      
+height: 18px !important; /* Change this to your preferred height */       
+width: 18px !important;  /* Change this to your preferred width */
+}

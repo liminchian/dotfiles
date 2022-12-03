@@ -1,0 +1,15 @@
+/* HIDE THE TABBAR WHEN ONLY 1 TAB EXISTS */
+/* NOT REALLY USEFULL IN WINDOWS BECAUSE THE WINDOWS CLOSE, MINIMIZE, MAXIMIZE BUTTONS ARE TOO BIG  */
+/* SO I'M GOING TO DO IT ONLY FOR MACOS */
+
+
+@media (-moz-platform: macos) { 
+    #TabsToolbar{ min-height: 25px !important }
+    tab[first-visible-tab=true][last-visible-tab=true],
+    tab[first-visible-tab=true][last-visible-tab=true] + #tabbrowser-arrowscrollbox-periphery{
+      display:none!important;
+    }
+    #tabbrowser-tabs, #tabbrowser-arrowscrollbox {min-height: 0 !important;}
+
+} 
+    
