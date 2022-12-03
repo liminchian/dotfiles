@@ -22,7 +22,7 @@ cp -rf firefox/chrome firefox/user.js "$HOME/.mozilla/firefox/bqr923x7.default-r
 echo "Nvchad installing ..."
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 rm -rf "$HOME/.local/share/nvim"
-cp -rf nvim "$HOME/.config/nvim/custom"
+cp -rf nvim "$HOME/.config/nvim/lua/custom"
 
 echo "Requires installing ..."
 paru -S dust exa procs skim ripgrep tealdeer starship-git frawk sd

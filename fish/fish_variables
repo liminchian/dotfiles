@@ -6,6 +6,7 @@ SETUVAR _fish_abbr_ack:sk\x20\x2di\x20\x2dc\x20\x27rg\x20\x2d\x2dcolor\x20always
 SETUVAR _fish_abbr_awk:frawk
 SETUVAR _fish_abbr_cp:cp\x20\x2di
 SETUVAR _fish_abbr_du:dust
+SETUVAR _fish_abbr_icat:kitty\x20\x2bkitten\x20icat
 SETUVAR _fish_abbr_ls:exa\x20\x2dlag\x20\x2d\x2dheader
 SETUVAR _fish_abbr_mkdir:mkdir\x20\x2dp
 SETUVAR _fish_abbr_mv:mv\x20\x2di
