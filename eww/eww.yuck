@@ -1,6 +1,7 @@
 (include "sidebar.yuck")
 
 (deflisten workspace "scripts/hyprworkspace")
+(deflisten tray "scripts/gtk-tray")
 
 (defwindow bar
   :stacking "fg"
@@ -67,19 +68,3 @@
               :show-details: true))))
       (defpoll calendar_day :interval "20h" "date '+%d'")
       (defpoll calendar_year :interval "20h" "date '+%Y'")
-
-           ; (defwindow notif
-           ;   :stacking "overlay"
-           ;   :monitor "0"
-           ;   :windowtype "dock"
-           ;   :geometry (geometry :x "0px"
-           ;                       :y "0px"
-           ;                       :width "5px"
-           ;                       :height "100%"
-           ;                       :anchor "top right")
-           ;   (notif))
-           ;
-           ;     (defwidget notif[]
-           ;       (eventbox :onhover "~/.config/rofi/notify/rofi_notif_center.sh &")
-           ; )
-          

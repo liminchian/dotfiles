@@ -1,27 +1,35 @@
+@import 'color.scss';
+
+$acent: $blue;
+$highlight: $sapphire;
+$background: $base;
+$foreground: $text;
+$layer: $surface1;
+
 * {
   all: unset;
 }
 
 //Global Styles
 .bar {
-  color: #649094;
+  color: $acent;
   border-radius: 16px;
 }
 
 .bar-shadow {
-  background-color: #131d1f;
+  background-color: $background;
   box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.9);
   margin: 10px;
   border-radius: 16px;
 }
 
 .sidebar {
-  color: #649094;
+  color: $acent;
   border-radius: 16px;
 }
 
 .side {
-  background-color: #131d1f;
+  background-color: $background;
   box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.9);
   margin: 10px;
   border-radius: 16px;
@@ -30,10 +38,10 @@
 
 /** tooltip!! **/
 tooltip.background {
-  background-color: #131d1f;
+  background-color: $background;
   font-size: 18;
   border-radius: 16px;
-  color: #649094;
+  color: $acent;
 }
 
 tooltip label {
@@ -44,9 +52,9 @@ tooltip label {
 }
 
 .works {
-  font-size: 27px;
+  font-size: 24px;
   font-weight: normal;
-  margin: 0px 0px 1px 20px;
+  margin: 0px 0px 3px 20px;
   font-family: JetBrainsMono Nerd Font Mono;
 }
 
@@ -68,12 +76,12 @@ tooltip label {
 // Calendar
 
 .calshadow {
-  color: #649094;
+  color: $acent;
   border-radius: 16px;
 }
 
 .cal {
-  background-color: #131d1f;
+  background-color: $background;
   font-family: JetBrainsMono Nerd Font;
   font-size: 18px;
   font-weight: normal;
@@ -82,7 +90,7 @@ tooltip label {
   box-shadow: 0px 0px 7px rgb(0, 0, 0, 0.9);
   .cal-in {
     padding: 10px 10px 0px 10px;
-    color: #649094;
+    color: $acent;
 
     .cal {
       &.highlight {
@@ -97,34 +105,34 @@ tooltip label {
 }
 
 calender {
-  color: #183a43;
+  color: $layer;
 }
 calendar:selected {
-  color: #e9cc9d;
+  color: $highlight;
 }
 
 calendar.header {
-  color: #649094;
+  color: $acent;
   font-weight: bold;
 }
 
 calendar.button {
-  color: #649094;
+  color: $acent;
 }
 
 calendar.highlight {
-  color: #649094;
+  color: $acent;
   font-weight: bold;
 }
 
 calendar:indeterminate {
-  color: #183a43;
+  color: $layer;
 }
 
 // Music
 .music-player {
   all: unset;
-  background-color: #183a43;
+  background-color: $layer;
   padding: 0px 25px 0px 17px;
   border-radius: 12px;
   box-shadow: 0px 0px 6px 6px rgb(0, 0, 0, 0.4);
@@ -140,34 +148,34 @@ calendar:indeterminate {
 .artist {
   font-family: JetBrainsMono Nerd Font Mono;
   font-weight: bold;
-  color: #649094;
+  color: $acent;
   font-size: 1.2em;
 }
 .song {
   font-family: JetBrainsMono Nerd Font;
   font-style: italic;
   font-size: 1.1em;
-  color: #649094;
+  color: $acent;
   margin-top: -5px;
 }
 .btn_prev,
 .btn_play,
 .btn_next {
   font-family: JetBrainsMono Nerd Font Mono;
-  color: #649094;
+  color: $acent;
   font-size: 25px;
 }
 
 .metric-player scale trough highlight {
   all: unset;
   border-radius: 10px;
-  background-color: #649094;
+  background-color: $acent;
 }
 
 // weather
 .weather {
   all: unset;
-  background-color: #183a43;
+  background-color: $layer;
   border-radius: 12px;
   padding: 23px 37px 20px 37px;
   box-shadow: 0px 0px 6px 6px rgb(0, 0, 0, 0.4);
@@ -181,7 +189,7 @@ calendar:indeterminate {
 }
 
 .label_temp {
-  color: #649094;
+  color: $acent;
   font-size: 35px;
   font-weight: bold;
   margin: 0px 0px 0px 0px;
@@ -189,13 +197,13 @@ calendar:indeterminate {
 }
 
 .label_stat {
-  color: #649094;
+  color: $acent;
   font-size: 38px;
   font-weight: bold;
 }
 
 .label_quote {
-  color: #649094;
+  color: $acent;
   font-size: 18px;
   padding-bottom: 10px;
   font-weight: normal;
@@ -203,10 +211,10 @@ calendar:indeterminate {
 
 .date {
   all: unset;
-  background-color: #183a43;
+  background-color: $layer;
   padding: 33px 27px 27px 27px;
   border-radius: 12px;
-  color: #649094;
+  color: $acent;
   font-size: 18px;
   font-style: italic;
   font-family: Cartograph CF;
@@ -215,7 +223,7 @@ calendar:indeterminate {
 
 .stats-box {
   all: unset;
-  background-color: #183a43;
+  background-color: $layer;
   padding: 20px 25px 20px 25px;
   border-radius: 12px;
   box-shadow: 0px 0px 6px 6px rgb(0, 0, 0, 0.4);
@@ -223,20 +231,20 @@ calendar:indeterminate {
 
 .stats-icon {
   font-size: 23px;
-  color: #649094;
+  color: $acent;
   font-family: JetBrainsMono Nerd Font Mono;
 }
 
 .scale trough {
   all: unset;
-  background-color: #131319;
+  background-color: $background;
   min-height: 12px;
   border-radius: 15px;
   margin-left: 10px;
 }
 
 .scale highlight {
-  background-color: #649094;
+  background-color: $acent;
   border-radius: 15px;
 }
 
@@ -247,7 +255,7 @@ calendar:indeterminate {
 
 .buttons {
   opacity: 1;
-  background-color: #183a43;
+  background-color: $layer;
   border-radius: 12px;
   padding: 15px 0px 15px 0px;
   font-family: JetBrainsMono Nerd Font Mono;
@@ -264,7 +272,7 @@ calendar:indeterminate {
   padding: 2px 11px 2px 11px;
   border-radius: 25px;
   font-size: 24px;
-  color: #131d1f;
+  color: $background;
 }
 
 .poweroff {
@@ -287,7 +295,7 @@ calendar:indeterminate {
   margin-top: 35px;
   font-size: 15px;
   border-radius: 12px;
-  background-color: #183a43;
+  background-color: $layer;
   padding: 30px 85px 30px 85px;
   box-shadow: 0px 0px 6px 6px rgb(0, 0, 0, 0.4);
 }

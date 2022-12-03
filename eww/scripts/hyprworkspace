@@ -1,8 +1,8 @@
 #!/bin/sh
 
-colors="#E9CC9D"
-dimmed="#E9CC9D"
-empty="#183a43"
+colors="#8caaee"
+dimmed="#8caaee"
+empty="#51576d"
 
 focusedws=1
 
