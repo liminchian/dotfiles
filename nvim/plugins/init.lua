@@ -1,12 +1,5 @@
 return {
   ["elkowar/yuck.vim"] = { ft = "yuck" },
-
-  ["nathom/filetype.nvim"] = {},
-  ["NvChad/nvterm"] = {
-    config = function()
-      require "plugins.configs.nvterm"
-    end,
-  },
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
@@ -34,7 +27,6 @@ return {
         "shellcheck",
         "bash-language-server",
         "yamlfmt",
-        "prettied",
       },
     },
   },
@@ -73,4 +65,8 @@ return {
       require "custom.plugins.surround"
     end,
   },
+  ["hrsh7th/nvim-cmp"] = {
+    override_options = function()
+    end
+  }
 }

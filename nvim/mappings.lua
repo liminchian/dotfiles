@@ -9,15 +9,4 @@ M.general = {
   },
 }
 
-M.lspconfig = {
-  n = {
-    ["<leader>fm"] = {
-      function()
-        vim.lsp.buf.formatting { async = true }
-      end,
-      "lsp formatting",
-    },
-  },
-}
-
 return M

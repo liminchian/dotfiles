@@ -4,7 +4,7 @@
 local M = {}
 
 M.ui = {
-  theme = "everforest",
+  theme = "catppuccin",
 }
 M.plugins = require "custom.plugins"
 M.mappings = require "custom.mappings"
