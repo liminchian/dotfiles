@@ -9,4 +9,7 @@ abbr ps "procs --sortd cpu"
 abbr ls "exa -lag --header"
 abbr open "bat"
 abbr awk "frawk"
+
+# kitty things
 abbr icat "kitty +kitten icat"
+abbr tf "kitty +kitten transfer"

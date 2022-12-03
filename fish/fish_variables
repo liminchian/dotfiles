@@ -13,6 +13,8 @@ SETUVAR _fish_abbr_mv:mv\x20\x2di
 SETUVAR _fish_abbr_open:bat
 SETUVAR _fish_abbr_ps:procs\x20\x2d\x2dsortd\x20cpu
 SETUVAR _fish_abbr_rm:rm\x20\x2di
+SETUVAR _fish_abbr_tf:kitty\x20\x2bkitten\x20transfer
+SETUVAR _fish_abbr_transfer:kitty\x20\x2bkitten\x20transfer
 SETUVAR fish_color_autosuggestion:737994
 SETUVAR fish_color_cancel:e78284
 SETUVAR fish_color_command:8caaee
