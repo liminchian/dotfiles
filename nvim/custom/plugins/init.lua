@@ -66,7 +66,16 @@ return {
       require "custom.plugins.surround"
     end,
   },
-  ["hrsh7th/nvim-cmp"] = {
-    override_options = function() end,
+  ["kyazdani42/nvim-tree.lua"] = {
+    override_options = {
+      view = {
+        side = "right",
+      },
+    },
+  },
+  ["mfussenegger/nvim-dap"] = {
+    config = function()
+      require "custom.plugins.dap"
+    end,
   },
 }
