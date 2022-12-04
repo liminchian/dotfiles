@@ -8,7 +8,11 @@ end
 dap.adapters.python = {
   type = "executable",
   command = function()
-    return os.getenv "VIRTUAL_ENV" .. "bin/python"
+    if os.getenv "VIRTUAL_ENV" == 1 then
+      return os.getenv "VIRTUAL_ENV" .. "/bin/python"
+    else
+      return "/usr/bin/python"
+    end
   end,
   args = { "-m", "debugpy.adapter" },
 }
