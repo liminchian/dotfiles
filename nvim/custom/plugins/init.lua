@@ -27,6 +27,7 @@ return {
         "shellcheck",
         "bash-language-server",
         "yamlfmt",
+        "lua-language-server",
       },
     },
   },
@@ -66,7 +67,6 @@ return {
     end,
   },
   ["hrsh7th/nvim-cmp"] = {
-    override_options = function()
-    end
-  }
+    override_options = function() end,
+  },
 }
