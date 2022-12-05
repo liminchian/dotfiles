@@ -1,7 +1,18 @@
-local present, dap = pcall(require, "dap")
+local present, dap, ui = pcall(require, "dap", "dapui")
 
 if not present then
   return
+end
+
+-- UI configurations
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  ui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  ui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  ui.close()
 end
 
 -- Adapters
