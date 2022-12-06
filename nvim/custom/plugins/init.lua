@@ -79,4 +79,10 @@ return {
       require "custom.plugins.dap"
     end,
   },
+  ["simrat39/rust-tools.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.rust-tools"
+    end,
+  },
 }
