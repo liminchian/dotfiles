@@ -11,11 +11,11 @@ M.general = {
 
 M.dap = {
   n = {
-    ["<F9>"] = { ":lua require('dap').toggle_breakpoint()<CR>", "Toggle Breakpoint", opts = {} },
-    ["<F5>"] = { ":lua require('dap').continue()<CR>", "Continue execute", opts = {} },
-    ["<F11>"] = { ":lua require('dap').step_into()<CR>", "Step into", opts = {} },
-    ["<F10>"] = { ":lua require('dap').step_over()<CR>", "Step over", opts = {} },
-    ["<F12>"] = { ":lua require('dap').repl.open()<CR>", "Repl", opts = {} },
+    ["<F9>"] = { "<cmd>lua require('dap').toggle_breakpoint()<CR>", "Toggle Breakpoint", opts = {} },
+    ["<F5>"] = { "<cmd>lua require('dap').continue()<CR>", "Continue execute", opts = {} },
+    ["<F11>"] = { "<cmd>lua require('dap').step_into()<CR>", "Step into", opts = {} },
+    ["<F10>"] = { "<cmd>lua require('dap').step_over()<CR>", "Step over", opts = {} },
+    ["<F12>"] = { "<cmd>lua require('dap').repl.open()<CR>", "Repl", opts = {} },
   },
 }
 
