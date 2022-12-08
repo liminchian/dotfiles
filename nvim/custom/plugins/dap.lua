@@ -53,16 +53,31 @@ dap.configurations.python = {
 
 -- Cpp
 dap.configurations.cpp = {
-  name = "Launch",
-  type = "lldb",
-  request = "launch",
-  program = function()
-    return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
-  end,
-  cwd = "${workspaceFolder}",
-  stopOnEntry = false,
-  args = {},
+  {
+    name = "Launch",
+    type = "lldb",
+    request = "launch",
+    program = function()
+      return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+    end,
+    cwd = "${workspaceFolder}",
+    stopOnEntry = false,
+    args = {},
+  },
 }
 
 -- Rust
-dap.configurations.rust = dap.configurations.cpp
+dap.configurations.rust = {
+  {
+    name = "Launch",
+    type = "lldb",
+    request = "launch",
+    program = function()
+      local cwd = vim.fn.getcwd()
+      return vim.fn.input(cwd, "target/debug" .. "/", "file")
+    end,
+    cwd = "${workspaceFolder}",
+    stopOnEntry = false,
+    args = {},
+  },
+}
