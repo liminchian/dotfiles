@@ -1,10 +1,17 @@
 return {
-  ["elkowar/yuck.vim"] = { ft = "yuck" },
+  -- Core plugins
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.lspconfig"
     end,
+  },
+  ["hrsh7th/nvim-cmp"] = {
+    override_options = {
+      experimental = {
+        ghost_text = true,
+      },
+    },
   },
   ["williamboman/mason.nvim"] = {
     override_options = {
@@ -31,11 +38,12 @@ return {
       },
     },
   },
-  ["jose-elias-alvarez/null-ls.nvim"] = {
-    after = "nvim-lspconfig",
-    config = function()
-      require "custom.plugins.null-ls"
-    end,
+  ["kyazdani42/nvim-tree.lua"] = {
+    override_options = {
+      view = {
+        side = "right",
+      },
+    },
   },
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
@@ -60,18 +68,20 @@ return {
       indent = false,
     },
   },
+
+  -- Extra plugins
+  ["elkowar/yuck.vim"] = { ft = "yuck" },
+  ["jose-elias-alvarez/null-ls.nvim"] = {
+    after = "nvim-lspconfig",
+    config = function()
+      require "custom.plugins.null-ls"
+    end,
+  },
   ["kylechui/nvim-surround"] = {
     tag = "*",
     config = function()
       require "custom.plugins.surround"
     end,
-  },
-  ["kyazdani42/nvim-tree.lua"] = {
-    override_options = {
-      view = {
-        side = "right",
-      },
-    },
   },
   ["rcarriga/nvim-dap-ui"] = {
     requires = { "mfussenegger/nvim-dap" },
