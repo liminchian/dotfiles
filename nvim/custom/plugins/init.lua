@@ -1,5 +1,12 @@
 return {
   -- Core plugins
+  ["NvChad/ui"] = {
+    override_options = {
+      statusline = {
+        separator_style = "block",
+      },
+    },
+  },
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
