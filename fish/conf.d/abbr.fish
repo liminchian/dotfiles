@@ -9,6 +9,7 @@ abbr ps "procs --sortd cpu"
 abbr ls "exa -lag --header"
 abbr open "bat"
 abbr awk "frawk"
+abbr postgres "sudo -iu postgres"
 
 # kitty things
 abbr icat "kitty +kitten icat"
