@@ -22,6 +22,7 @@ if status --is-login
     set -gx JUPYTERLAB_DIR $HOME/.local/share/jupyter/lab
     set -gx SKIM_DEFAULT_OPTIONS "--ansi --regex"
     set -gx AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
+    set -gx RUST_BACKTRACE full
 
     set -gx GTK_IM_MODULE fcitx
     set -gx QT_IM_MODULE fcitx
