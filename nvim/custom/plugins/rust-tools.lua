@@ -20,6 +20,7 @@ local opts = {
         checkOnSave = {
           command = "check",
         },
+        inlayHints = { locationLinks = false },
       },
     },
   },

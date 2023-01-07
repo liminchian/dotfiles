@@ -42,6 +42,7 @@ return {
         "bash-language-server",
         "yamlfmt",
         "lua-language-server",
+        "rustfmt",
       },
     },
   },
