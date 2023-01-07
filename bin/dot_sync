@@ -11,6 +11,7 @@ cp -rf "$HOME/.config/eww" \
 	"$HOME/.config/dunst" \
 	"$HOME/.config/fish" \
 	"$HOME/.config/image" \
+	"$HOME/.config/rofi" \
 	"$HOME/.local/bin/" \
 	"$DOTFILES"
 
