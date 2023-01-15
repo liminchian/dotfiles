@@ -16,7 +16,6 @@ if status --is-login
     set -gx CLUTER_BACKEND wayland
     set -gx QT_QPA_PLATFORM wayland
 
-    set -gx GDK_SCALE 2
     set -gx XCURSOR_SIZE 24
     set -gx DESKTOP_SESSION Hyprland
     set -gx JUPYTERLAB_DIR $HOME/.local/share/jupyter/lab
