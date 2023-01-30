@@ -46,13 +46,6 @@ return {
       },
     },
   },
-  ["kyazdani42/nvim-tree.lua"] = {
-    override_options = {
-      view = {
-        side = "right",
-      },
-    },
-  },
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
       ensure_installed = {
@@ -76,6 +69,13 @@ return {
       indent = false,
     },
   },
+  ["nvim-tree/nvim-tree.lua"] = {
+    override_options = {
+      view = {
+        side = "right",
+      },
+    },
+  },
 
   -- Extra plugins
   ["elkowar/yuck.vim"] = { ft = "yuck" },
@@ -89,12 +89,6 @@ return {
     tag = "*",
     config = function()
       require "custom.plugins.surround"
-    end,
-  },
-  ["rcarriga/nvim-dap-ui"] = {
-    requires = { "mfussenegger/nvim-dap" },
-    config = function()
-      require "custom.plugins.dap"
     end,
   },
   ["simrat39/rust-tools.nvim"] = {
