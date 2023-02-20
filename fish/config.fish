@@ -28,6 +28,7 @@ if status --is-login
     set -gx SDL_IM_MODULE fcitx
     set -gx GLFW_IM_MODULE ibus
     set -gx OBSIDIAN $HOME/Desktop/obsidian-notes
+    set -gx HYPRLAND_LOG_WLR 1
 
     exec Hyprland
   end
