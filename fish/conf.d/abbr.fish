@@ -10,8 +10,8 @@ abbr ls "exa -lag --header"
 abbr open "bat"
 abbr awk "frawk"
 abbr postgres "sudo -iu postgres"
-abbr skcd "cd $(sk)"
-abbr skopen "bat $(sk)"
+abbr skcd "cd \$(sk)"
+abbr skopen "bat \$(sk)"
 
 # kitty things
 abbr icat "kitty +kitten icat"
