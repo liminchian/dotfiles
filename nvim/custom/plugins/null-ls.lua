@@ -10,8 +10,11 @@ local sources = {
   -- Yaml
   b.formatting.yamlfmt,
 
-  -- Css
+  -- Css / Html
   b.formatting.prettierd,
+
+  -- JavaScript / TypeScript
+  b.formatting.deno_fmt,
 
   -- Lua
   b.formatting.stylua,
