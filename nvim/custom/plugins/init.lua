@@ -43,6 +43,7 @@ return {
         "yamlfmt",
         "lua-language-server",
         "rustfmt",
+        "deno",
       },
     },
   },
@@ -53,6 +54,7 @@ return {
         "html",
         "css",
         "javascript",
+        "typescript",
         "json",
         "toml",
         "markdown",
@@ -79,18 +81,21 @@ return {
 
   -- Extra plugins
   ["elkowar/yuck.vim"] = { ft = "yuck" },
+
   ["jose-elias-alvarez/null-ls.nvim"] = {
     after = "nvim-lspconfig",
     config = function()
       require "custom.plugins.null-ls"
     end,
   },
+
   ["kylechui/nvim-surround"] = {
     tag = "*",
     config = function()
       require "custom.plugins.surround"
     end,
   },
+
   ["simrat39/rust-tools.nvim"] = {
     after = "nvim-lspconfig",
     config = function()

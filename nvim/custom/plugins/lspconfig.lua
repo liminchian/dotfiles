@@ -10,6 +10,7 @@ local servers = {
   "rust_analyzer",
   "cmake",
   "bashls",
+  "denols",
 }
 
 for _, lsp in ipairs(servers) do
