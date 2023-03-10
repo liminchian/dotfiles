@@ -11,7 +11,6 @@ if status --is-login
     set -gx MOZ_ENABLE_WAYLAND 1
     set -gx GDK_BACKEND wayland
     set -gx GBM_BACKEND nvidia-drm
-    set -gx __GLX_VENDOR_LIVRARY_NAME nvidia
     set -gx WLR_NO_HARDWARE_CURSORS 1
     set -gx CLUTER_BACKEND wayland
     set -gx QT_QPA_PLATFORM wayland
