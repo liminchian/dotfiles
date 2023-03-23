@@ -161,7 +161,7 @@ local opts = {
     -- standalone file support
     -- setting it to false may improve startup time
     on_attach = require("plugins.configs.lspconfig").on_attach,
-    standalone = false,
+    standalone = true,
   }, -- rust-analyzer options
 
   -- debugging stuff

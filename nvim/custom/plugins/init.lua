@@ -7,12 +7,14 @@ return {
       },
     },
   },
+
   ["neovim/nvim-lspconfig"] = {
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.plugins.lspconfig"
     end,
   },
+
   ["hrsh7th/nvim-cmp"] = {
     override_options = {
       experimental = {
@@ -20,6 +22,7 @@ return {
       },
     },
   },
+
   ["williamboman/mason.nvim"] = {
     override_options = {
       ensure_installed = {
@@ -47,6 +50,7 @@ return {
       },
     },
   },
+
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = {
       ensure_installed = {
@@ -71,6 +75,7 @@ return {
       indent = false,
     },
   },
+
   ["nvim-tree/nvim-tree.lua"] = {
     override_options = {
       view = {
