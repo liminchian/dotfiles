@@ -52,12 +52,6 @@ local plugins = {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false
   -- },
-  {
-    "simrat39/rust-tools.nvim",
-    config = function()
-      require "custom.configs.rust-tools"
-    end,
-  },
 }
 
 return plugins
