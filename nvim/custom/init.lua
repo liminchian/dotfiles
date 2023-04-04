@@ -1,2 +1,7 @@
--- example file i.e lua/custom/init.lua
--- require("my autocmds file") or just declare them here
+-- local autocmd = vim.api.nvim_create_autocmd
+
+-- Auto resize panes when resizing nvim window
+-- autocmd("VimResized", {
+--   pattern = "*",
+--   command = "tabdo wincmd =",
+-- })
