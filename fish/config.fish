@@ -37,7 +37,7 @@ if test -e "$AUTOJUMP_PATH"
   source "$AUTOJUMP_PATH"
 end
 
-fish_add_path ~/.local/bin ~/.local/share ~/.local/bin/scripts
+fish_add_path ~/.local/bin ~/.local/share ~/.local/bin/scripts ~/.surrealdb
 set find_key_bindings fish_user_key_bindings
 set fish_cursor_default     block
 set fish_cursor_insert      line      

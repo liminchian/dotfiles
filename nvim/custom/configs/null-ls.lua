@@ -24,6 +24,8 @@ local sources = {
   -- python
   b.formatting.black,
   b.diagnostics.mypy,
+  b.diagnostics.pycodestyle,
+  b.formatting.isort,
 }
 
 null_ls.setup {
