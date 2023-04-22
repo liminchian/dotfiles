@@ -1,0 +1,42 @@
+
+/* #back-button, 
+#forward-button, 
+#tracking-protection-icon-container,
+#star-button-box {
+    display: none !important;
+ }
+
+#BMB_viewBookmarksSidebar, 
+#bookmarks-manage-bookmarks,
+#BMB_bookmarksShowAll,
+#BMB_bookmarksToolbar,
+#BMB_unsortedBookmarks,
+#BMB_bookmarksShowAllTop,
+.openintabs-menuitem {
+    display: none !important;
+}
+
+/* .tab-content[pinned] {
+    padding: 0 26px !important;
+    /* border: 1px solid !important; }*/
+
+
+
+  /* #context-sep-viewsource,
+  #inspect-separator,
+  #context-inspect,
+  #context-pocket,
+  #screenshots-mozilla_org_create-screenshot,
+  #context-print-selection,
+  #context-viewpartialsource-selection,
+  #context-sendimage,
+  #context-setDesktopBackground,
+  #context-savepage,
+  #context-sendpagetodevice,
+  #context-selectall,
+  #context-take-screenshot, */
+  #context-viewsource,
+  #context-inspect-a11y
+  {
+      display: none !important;
+  } 

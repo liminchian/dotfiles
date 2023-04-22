@@ -1,0 +1,35 @@
+#!/bin/bash
+
+DOTFILES=$HOME/Desktop/dotfiles
+FIREFOX=("$HOME/.mozilla/firefox/bqr923x7.default-release")
+GIT_BRANCH="wayland"
+
+cp -rf "$HOME/.config/eww" \
+	"$HOME/.config/hypr" \
+	"$HOME/.config/zathura" \
+	"$HOME/.config/kitty" \
+	"$HOME/.config/dunst" \
+	"$HOME/.config/fish" \
+	"$HOME/.config/image" \
+	"$HOME/.config/rofi" \
+	"$HOME/.local/bin/" \
+	"$DOTFILES"
+
+cp -rf "$HOME/.config/nvim/lua/custom" "$DOTFILES/nvim"
+
+cp -rf "$FIREFOX/chrome" \
+	"$FIREFOX/user.js" \
+	"$DOTFILES/firefox"
+
+cd "$DOTFILES" || exit
+CHANGES_EXIST="$(git status --porcelain | wc -l)"
+
+if [[ "$CHANGES_EXIST" -eq 0 ]]; then
+	exit 0
+fi
+
+git checkout "$GIT_BRANCH"
+git pull
+git add .
+git commit -q -m "Last Sync: $(date +"%Y-%m-%d %H:%M:%S")"
+git push -q

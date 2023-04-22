@@ -1,0 +1,18 @@
+/* Toolbar Bookmark Context Menu 
+Removes Bookmanager, BookToolbar stuff from the toolbar icon 
+
+ */
+
+/* Bookmark menu context menu items remove */
+#BMB_viewBookmarksSidebar, 
+#bookmarks-manage-bookmarks,
+#BMB_bookmarksShowAll,
+#BMB_bookmarksToolbar,
+#BMB_unsortedBookmarks,
+#BMB_bookmarksShowAllTop {
+    display: none !important;
+}
+
+#BMB_bookmarksPopup menuseparator {
+    display: none !important;
+  }

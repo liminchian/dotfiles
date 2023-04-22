@@ -1,0 +1,9 @@
+{
+  "baseFontSize": 16,
+  "translucency": false,
+  "cssTheme": "Minimal",
+  "theme": "obsidian",
+  "textFontFamily": "Noto Sans CJK TC,FiraCode Nerd Font,Twitter Color Emoji,Noto Color Emoji,OpenMoji,JoyPixels",
+  "monospaceFontFamily": "FiraCode Nerd Font Mono",
+  "interfaceFontFamily": "Roboto"
+}

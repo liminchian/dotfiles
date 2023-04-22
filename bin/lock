@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+swaylock \
+  --ignore-empty-password \
+  --daemonize \
+  --image "$HOME/.config/image/lock.jpg" \
+  --scaling "fit" \
+  --font "Noto Sans CJK" \
+  --font-size 20 \

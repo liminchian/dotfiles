@@ -1,0 +1,5 @@
+#!/bin/sh
+used=$(nvidia-smi | grep P0 | awk '{print $9}' | sd "MiB" "")
+capacity=$(nvidia-smi | grep P0 | awk '{print $11}' | sd "MiB" "")
+
+awk -v v1=$((used)) -v v2=$((capacity)) 'BEGIN {print int((v1 / v2) * 100)}'
