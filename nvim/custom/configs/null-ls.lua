@@ -19,7 +19,7 @@ local sources = {
   b.formatting.clang_format,
 
   -- rust
-  b.formatting.rustfmt,
+  b.formatting.rustfmt.with { extra_args = { "--edition=2021" } },
 
   -- python
   b.formatting.black,
