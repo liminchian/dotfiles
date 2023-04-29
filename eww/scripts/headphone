@@ -1,4 +1,3 @@
-#!/bin/sh
-battery_percentage=$(headsetcontrol -b | grep Battery | awk '{print $2}' | sd "%" "")
-
-awk -v v1=$((battery_percentage)) 'BEGIN {print int(v1)}'
+#!/usr/bin/sh
+battery_percentage=$(solaar probe | grep Battery | awk '{print $2}' | head -n 1 | sd "%" "")
+echo "$battery_percentage"
