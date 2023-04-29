@@ -28,6 +28,7 @@ if status --is-login
     set -gx GLFW_IM_MODULE ibus
     set -gx OBSIDIAN $HOME/Desktop/obsidian-notes
     set -gx HYPRLAND_LOG_WLR 1
+    set -gx SAL_USE_VCLPLUGIN gtk3 
 
     exec Hyprland
   end

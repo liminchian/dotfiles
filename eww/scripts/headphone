@@ -1,0 +1,4 @@
+#!/bin/sh
+battery_percentage=$(headsetcontrol -b | grep Battery | awk '{print $2}' | sd "%" "")
+
+awk -v v1=$((battery_percentage)) 'BEGIN {print int(v1)}'

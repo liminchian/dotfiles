@@ -104,15 +104,15 @@
 				(label :tooltip "${round(EWW_DISK["/"].used_perc, 0)}%" :class "stats-icon" :text "")
 				(scale :min 0 :max 101 :active false :value {(EWW_DISK["/"].used / EWW_DISK["/"].total) * 100} :class "scale" :width 280))
 			(box :class "stats" :hexpand "false" :vexpand "false" :space-evenly "false"
-				(label :tooltip "${gpu}%" :class "stats-icon" :text "調")
-				(scale :min 0 :max 101 :active false :value gpu :class "scale" :width 280))
+				(label :tooltip "${headphone}%" :class "stats-icon" :text "󰋋")
+				(scale :min 0 :max 101 :active false :value headphone :class "scale" :width 280))
 			(box :class "stats" :hexpand "false" :vexpand "false" :space-evenly "false"
 				(button :tooltip "${volume}%" :onclick "amixer set Master toggle" :onrightclick "alsamixer &" :class "stats-icon" "墳")
 				(scale :min 0 :max 101 :active true :value volume :class "scale" :width 280 :onchange "pactl set-sink-volume 0 {}%"))))
 
     (defpoll volume 	:interval "1s"  "~/.config/eww/scripts/sbvol --get")
     (defpoll icon	:interval "1s"  "~/.config/eww/scripts/sbvol --icon")    
-    (defpoll gpu 	:interval "1s"  "~/.config/eww/scripts/gpu")
+    (defpoll headphone 	:interval "1s"  "~/.config/eww/scripts/headphone")
 
 (defwidget tray []
 	(box :class "buttons" :orientation "h" :space-evenly "false" :halign "center"  :valign "start" :spacing "2"
