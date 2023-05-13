@@ -1,7 +1,6 @@
 (include "sidebar.yuck")
 
 (deflisten workspace "scripts/hyprworkspace")
-(deflisten tray "scripts/gtk-tray")
 
 (defwindow bar
   :stacking "fg"

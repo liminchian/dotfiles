@@ -70,7 +70,7 @@
 (defwidget weather [] 
 		(box :class "weather"  :orientation "v" :spacing -2 :space-evenly "false" :vexpand "true" :hexpand "false" :valign "start" :halign "center"
 				(label :class "iconweather" :halign "center" :valign "center" :style "color: ${HEX};" :text ICON)
-				(button :onclick "~/.config/eww/scripts/weather --getdata && eww reload &" :class "label_temp" :valign "center" :halign "center" "${TEMP}")))
+				(button :onclick "~/.config/eww/scripts/weather.py --getdata && eww reload &" :class "label_temp" :valign "center" :halign "center" "${TEMP}")))
 
 (defwidget date [] 
 	(box :class "date" :orientation "v" :valign "start" :space-evenly "false" :halign "center"

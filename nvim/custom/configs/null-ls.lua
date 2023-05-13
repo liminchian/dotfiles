@@ -22,9 +22,9 @@ local sources = {
   b.formatting.rustfmt.with { extra_args = { "--edition=2021" } },
 
   -- python
-  b.formatting.black,
+  b.formatting.black.with { extra_args = { "--line-length", "79", "--target-version", "py310" } },
+  b.formatting.ruff,
   b.diagnostics.mypy,
-  b.diagnostics.pycodestyle,
   b.formatting.isort,
 }
 

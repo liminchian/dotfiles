@@ -42,7 +42,7 @@ M.mason = {
     "pyright",
     "black",
     "mypy",
-    "pycodestyle",
+    "ruff",
     "isort",
   },
 }

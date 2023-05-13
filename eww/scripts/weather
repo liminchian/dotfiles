@@ -9,11 +9,11 @@ cache_weather_hex=${cache_dir}/weather-hex
 cache_weather_icon=${cache_dir}/weather-icon
 
 ## Weather data
-KEY=8289fc0cb3cc706f3078a8c86bea911f
+KEY=a074932e3b8507ff7b3024bdb2bcc9a6
 ID=5128581
 UNIT=metric # Available options : 'metric' or 'imperial'
-LAT=25.01
-LON=121.46
+LAT=25.0478
+LON=121.5319
 
 ## Make cache dir
 if [[ ! -d "$cache_dir" ]]; then
@@ -77,7 +77,7 @@ get_weather_data() {
 			weather_hex="#6b95ff"
 		elif [ "$weather_icon_code" == "09n" ]; then
 			weather_icon=" "
-			weather_quote=" It's gonna rain tonight it seems \nMake sure your clothes aren't still outside..."
+			weather_quote="It's gonna rain tonight it seems \nMake sure your clothes aren't still outside..."
 			weather_hex="#6b95ff"
 		elif [ "$weather_icon_code" == "10d" ]; then
 			weather_icon=" "
@@ -85,7 +85,7 @@ get_weather_data() {
 			weather_hex="#6b95ff"
 		elif [ "$weather_icon_code" == "10n" ]; then
 			weather_icon=" "
-			weather_quote=" It's gonna rain tonight it seems \nMake sure your clothes aren't still outside..."
+			weather_quote="It's gonna rain tonight it seems \nMake sure your clothes aren't still outside..."
 			weather_hex="#6b95ff"
 		elif [ "$weather_icon_code" == "11d" ]; then
 			weather_icon=""
