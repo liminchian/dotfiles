@@ -1,0 +1,2 @@
+set -gx OPENAI_API_KEY "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"
+
