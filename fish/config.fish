@@ -17,16 +17,12 @@ if status --is-login
 
     set -gx XCURSOR_SIZE 24
     set -gx DESKTOP_SESSION Hyprland
-    set -gx JUPYTERLAB_DIR $HOME/.local/share/jupyter/lab
-    set -gx SKIM_DEFAULT_OPTIONS "--ansi --regex"
     set -gx AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
-    set -gx RUST_BACKTRACE full
 
     set -gx GTK_IM_MODULE fcitx
     set -gx QT_IM_MODULE fcitx
     set -gx SDL_IM_MODULE fcitx
     set -gx GLFW_IM_MODULE ibus
-    set -gx OBSIDIAN $HOME/Desktop/obsidian-notes
     set -gx HYPRLAND_LOG_WLR 1
     set -gx SAL_USE_VCLPLUGIN gtk3 
     
