@@ -15,6 +15,12 @@ local plugins = {
           require "custom.configs.null-ls"
         end,
       },
+      {
+        "lvimuser/lsp-inlayhints.nvim",
+        config = function ()
+          require("lsp-inlayhints").setup()
+        end
+      },
     },
     config = function()
       require "plugins.configs.lspconfig"
