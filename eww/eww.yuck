@@ -167,7 +167,7 @@
 									:text music-title 
 									:justify "start"
                                     :wrap "true"
-									:limit-width 40)
+									:limit-width 15)
 							(label :class "player-artist" :halign "start" 
 									:text music-artist 
 									:justify "start"
