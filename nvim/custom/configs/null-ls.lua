@@ -9,7 +9,7 @@ local b = null_ls.builtins
 local sources = {
 
   -- webdev stuff
-  b.formatting.deno_fmt,                                                    -- choosed deno for ts/js files cuz its very fast!
+  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
   b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
 
   -- Lua
@@ -22,9 +22,11 @@ local sources = {
   b.formatting.rustfmt.with { extra_args = { "--edition=2021" } },
 
   -- python
-  b.formatting.black.with { extra_args = { "--line-length", "79", "--target-version", "py310" } },
+  b.formatting.black.with { extra_args = { "--line-length", "79", "--target-version", "py311" } },
   b.formatting.ruff,
-  b.diagnostics.mypy,
+  b.diagnostics.mypy.with {
+    extra_args = { "--ignore-missing-imports", "--strict-optional", "--follow-imports", "skip" },
+  },
   b.formatting.isort,
 }
 
