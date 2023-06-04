@@ -1,5 +1,10 @@
-#!/bin/sh
-used=$(nvidia-smi | grep P0 | awk '{print $9}' | sd "MiB" "")
-capacity=$(nvidia-smi | grep P0 | awk '{print $11}' | sd "MiB" "")
+#!/usr/bin/python3
+import subprocess
 
-awk -v v1=$((used)) -v v2=$((capacity)) 'BEGIN {print int((v1 / v2) * 100)}'
+
+def get_nvidia_usage():
+    result = subprocess.run(["nvidia-smi"], stdout=subprocess.PIPE)
+    print(result.stdout.decode())
+
+if __name__ == "__main__":
+    get_nvidia_usage()

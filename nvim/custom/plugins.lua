@@ -17,15 +17,24 @@ local plugins = {
       },
       {
         "lvimuser/lsp-inlayhints.nvim",
-        config = function ()
+        config = function()
           require("lsp-inlayhints").setup()
-        end
+        end,
       },
     },
     config = function()
       require "plugins.configs.lspconfig"
       require "custom.configs.lspconfig"
     end, -- Override to setup mason-lspconfig
+  },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    lazy = false,
+    config = function()
+      require("todo-comments").setup()
+    end,
   },
 
   -- override plugin configs

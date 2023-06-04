@@ -400,19 +400,16 @@
 (defwidget right []
     (box :class "right" :orientation "v" :space-evenly "false"
         (workspaces0)
-        (dash)
         (cal)
-        (dash)
         (quote)
-        (dash)
         (player)
         (dash)
         (weather)
         (dash)
         (volume)
-        (dash)
         (system)
         (system1)
+        (network)
     )
 )
 
