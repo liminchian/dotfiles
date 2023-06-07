@@ -167,7 +167,7 @@
 									:text music-title 
 									:justify "start"
                                     :wrap "true"
-									:limit-width 15)
+									:limit-width 9)
 							(label :class "player-artist" :halign "start" 
 									:text music-artist 
 									:justify "start"
@@ -416,9 +416,9 @@
 (defwindow sidebar
     :monitor 0
     :geometry (geometry :x "5px"
-                        :y "10px"
+                        :y "12px"
                         :width "140px"
-                        :height "98%"
+                        :height "93%"
                         :anchor "right center")
     :stacking "bg"
     :windowtype "dock"

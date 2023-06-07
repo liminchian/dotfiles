@@ -30,7 +30,7 @@
     height = 300
 
     # Position the notification in the top right corner
-    origin = bottom-left
+    origin = top-right
 
     # Offset from the origin
     offset = 0
@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Sort messages by urgency.
     sort = yes
@@ -100,7 +100,7 @@
 
     ### Text ###
 
-    font = NotoSansCJK-Regular 11
+    font = JetbrainsMono Nerd Font 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
