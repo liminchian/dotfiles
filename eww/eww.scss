@@ -113,8 +113,13 @@ tooltip {
   background-color: $color22;
   border-radius: 10px;
 }
-.sys_headphone {
+.sys_headphone_active {
   color: $color2;
+  background-color: $color22;
+  border-radius: 10px;
+}
+.sys_headphone_unactive {
+  color: $darkgray;
   background-color: $color22;
   border-radius: 10px;
 }
@@ -137,10 +142,15 @@ tooltip {
 	margin: 22px;
   color: $color3;
 }
-.sys_icon_headphone {
+.sys_icon_headphone_active {
 	font-size: 20;
 	margin: 22px;
   color: $color11;
+}
+.sys_icon_headphone_unactive {
+	font-size: 20;
+	margin: 22px;
+  color: $darkgray;
 }
 .sys_cpu_box {
     border-radius: 16px;
@@ -174,8 +184,12 @@ tooltip {
 	color: $color3;
 	padding-top: 6px;
 }
-.headphone_perc {
+.headphone_perc_active {
 	color: $color12;
+	padding-top: 6px;
+}
+.headphone_perc_unactive {
+	color: $darkgray;
 	padding-top: 6px;
 }
 .network {

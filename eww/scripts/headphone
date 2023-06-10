@@ -1,3 +1,40 @@
-#!/usr/bin/sh
-battery_percentage=$(solaar probe | grep Battery | awk '{print $2}' | head -n 1 | sd "%" "")
-echo "$battery_percentage"
+#!/usr/bin/python3
+
+import json
+import re
+import subprocess
+
+# 沒有開啟的狀態: Battery status unavailable.
+# 開啟時，沒充電狀態: Battery: 30% 3754mV , discharging.
+# 開啟時，正在充電狀態: Battery: 30% 3754mV , recharging.
+find_voltage = re.compile(r"Battery: (\d+)% (\d+)mV")
+find_status = re.compile(r"Battery:.*((dis|re)charging)\.")
+battery_max = 4195
+
+
+def get_battery_percentage():
+    result = subprocess.run(["solaar", "probe"], stdout=subprocess.PIPE)
+    output = result.stdout.decode()
+    json_out = {
+        "icon": "󰋋",
+        "perc": 0,
+        "status": "unactive",
+    }
+    match find_voltage.search(output), find_status.search(output):
+        case None, None:
+            pass
+        case v, s:
+            status = s.group(1)  # type: ignore
+            voltage = int(v.group(2))  # type: ignore
+            if status == "recharging":
+                json_out["icon"] = "󱐋"
+                json_out["perc"] = f"{int(voltage / battery_max * 100)}"
+                json_out["status"] = "active"
+            else:
+                json_out["perc"] = f"{int(voltage / battery_max * 100)}"
+                json_out["status"] = "active"
+    return json.dumps(json_out, ensure_ascii=False)
+
+
+if __name__ == "__main__":
+    print(get_battery_percentage())
