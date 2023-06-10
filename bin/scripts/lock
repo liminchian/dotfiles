@@ -1,9 +1,3 @@
 #!/usr/bin/bash
 
-swaylock \
-  --ignore-empty-password \
-  --daemonize \
-  --image "$HOME/.config/image/lock.jpg" \
-  --scaling "fit" \
-  --font "Noto Sans CJK" \
-  --font-size 20 \
+swaylock -S --effect-scale 0.5 --effect-blur 7x5 --effect-scale 2 --effect-compose "20%x20%;center;$HOME/.config/image/lock.svg"

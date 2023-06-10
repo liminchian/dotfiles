@@ -109,7 +109,7 @@ $lock)
 	elif [[ -x '/usr/bin/i3lock' ]]; then
 		i3lock
 	elif [[ -x '/usr/bin/swaylock' ]]; then
-    swaylock -e -f -i ~/.config/image/lock.jpg
+    ~/.local/bin/scripts/lock
 	fi
 	;;
 $suspend)
