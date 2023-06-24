@@ -67,7 +67,6 @@ tooltip {
 	padding: 6px;
 }
 .workspaces {
-	background-color: $color24;
 	border-radius: 10px;
 	color: $color16;
 	padding: 1px 5px 1px 5px;
@@ -77,6 +76,7 @@ tooltip {
 }
 .workspace-active {
 	color:$color18;
+  font-weight: bolder;
 }
 .window-title {
 	color: $gray;

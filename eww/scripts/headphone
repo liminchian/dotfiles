@@ -25,13 +25,13 @@ def get_battery_percentage():
             pass
         case v, s:
             status = s.group(1)  # type: ignore
-            voltage = int(v.group(2))  # type: ignore
+            voltage = int(v.group(1))  # type: ignore
             if status == "recharging":
                 json_out["icon"] = "󱐋"
-                json_out["perc"] = f"{int(voltage / battery_max * 100)}"
+                json_out["perc"] = f"{voltage}"
                 json_out["status"] = "active"
             else:
-                json_out["perc"] = f"{int(voltage / battery_max * 100)}"
+                json_out["perc"] = f"{voltage}"
                 json_out["status"] = "active"
     return json.dumps(json_out, ensure_ascii=False)
 

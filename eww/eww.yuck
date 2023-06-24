@@ -31,25 +31,16 @@
 (defpoll volume :interval "1s" "$HOME/.local/bin/scripts/volume --show-volume")
 
 ;; WEATHER VARS
-(defpoll weather_temp :interval "3h" :initial "0"
-	"$HOME/.config/eww/scripts/Weather.sh current_temp")
-(defpoll weather_desc :interval "3h"
-	"$HOME/.config/eww/scripts/Weather.sh weather_desc")
-(defpoll weather_feels_like :interval "3h"
-	"$HOME/.config/eww/scripts/Weather.sh feels_like")
-(defpoll weather_humidity :interval "3h"
-	"$HOME/.config/eww/scripts/Weather.sh humidity")
-(defpoll weather_icon :interval "3h"
-	"$HOME/.config/eww/scripts/Weather.sh icon")
-(defpoll weather_wind :interval "3h"
-	"$HOME/.config/eww/scripts/Weather.sh wind")
+(defpoll weather_temp :interval "3h" :initial "0"	"$HOME/.config/eww/scripts/Weather.sh current_temp")
+(defpoll weather_desc :interval "3h" "$HOME/.config/eww/scripts/Weather.sh weather_desc")
+(defpoll weather_feels_like :interval "3h" "$HOME/.config/eww/scripts/Weather.sh feels_like")
+(defpoll weather_humidity :interval "3h" "$HOME/.config/eww/scripts/Weather.sh humidity")
+(defpoll weather_icon :interval "3h" "$HOME/.config/eww/scripts/Weather.sh icon")
+(defpoll weather_wind :interval "3h" "$HOME/.config/eww/scripts/Weather.sh wind")
 
-(defpoll memory :interval "15s"
-    "$HOME/.config/eww/scripts/memory")
-(defpoll cpu :interval "17s"
-    "$HOME/.config/eww/scripts/cpu")
-(defpoll headphone :interval "1s"
-    "$HOME/.config/eww/scripts/headphone")
+(defpoll memory :interval "15s" "$HOME/.config/eww/scripts/memory")
+(defpoll cpu :interval "17s" "$HOME/.config/eww/scripts/cpu")
+(defpoll headphone :interval "2s" "$HOME/.config/eww/scripts/headphone")
 (defpoll temp :initial 30 :interval "10s" `sensors | rg temp1 | rg -o "\\d+.\\d+" | head -1`)
 
 (deflisten workspaces0 "hyprland-workspaces `hyprctl monitors -j | jq -r \".[0].name\"`")
@@ -84,7 +75,7 @@
                     (button
                     :onclick "hyprctl dispatch workspace ${i.id}"
                     :class "${i.class}"
-                    "${replace(i.name, '[0-9]', '󰄯')}")
+                    "${replace(i.name, '[0-9]', '󰪥')}")
                     )
                 )
             )
@@ -418,7 +409,7 @@
     :geometry (geometry :x "5px"
                         :y "12px"
                         :width "140px"
-                        :height "93%"
+                        :height "94%"
                         :anchor "right center")
     :stacking "bg"
     :windowtype "dock"
