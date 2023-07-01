@@ -7,18 +7,17 @@ local lspconfig = require "lspconfig"
 local servers = { "html", "cssls", "tsserver", "clangd", "pyright", "rust_analyzer" }
 
 for _, lsp in ipairs(servers) do
-  if lsp == "rust_analyzer" then
-    lspconfig[lsp].setup {
-      on_attach = on_attach,
-      capabilities = capabilities,
-      ops = { inlay_hints = { enabled = true } },
-    }
-  else
-    lspconfig[lsp].setup {
-      on_attach = on_attach,
-      capabilities = capabilities,
-    }
-  end
+  lspconfig[lsp].setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+  }
 end
+
+lspconfig.rust_analyzer.setup {
+  on_attach = function(client, bufnr)
+    require("plugins.configs.lspconfig").on_attach(client, bufnr)
+    require("inlay-hints").on_attach(client, bufnr)
+  end,
+}
 
 -- lspconfig.pyright.setup { blabla}

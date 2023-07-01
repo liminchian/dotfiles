@@ -4,7 +4,6 @@ local overrides = require "custom.configs.overrides"
 local plugins = {
 
   -- Override plugin definition options
-
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -13,6 +12,17 @@ local plugins = {
         "jose-elias-alvarez/null-ls.nvim",
         config = function()
           require "custom.configs.null-ls"
+        end,
+      },
+      {
+        "simrat39/inlay-hints.nvim",
+        config = function()
+          require("inlay-hints").setup {
+            only_current_line = true,
+            eol = {
+              right_align = true,
+            },
+          }
         end,
       },
     },
