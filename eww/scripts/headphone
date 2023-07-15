@@ -22,8 +22,6 @@ def get_json_result(cmd_output: str) -> JsonResult:
     percentage_match = find_percentage.search(cmd_output)
     status_match = find_status.search(cmd_output)
     match (percentage_match, status_match):
-        case (None, None):
-            return JsonResult(icon="󰟎", percentage=0, status="unactive")
         case (re.Match() as g1, re.Match() as g2):
             percentage_value = int(g1.group(1))
             status_value = str(g2.group(1))
@@ -32,6 +30,8 @@ def get_json_result(cmd_output: str) -> JsonResult:
                 percentage=percentage_value,
                 status="active",
             )
+        case (None, None):
+            return JsonResult(icon="󰟎", percentage=0, status="unactive")
         case _:
             raise re.error(f"無法正確取得電量百分比與狀態：{cmd_output}")
 
