@@ -12,11 +12,6 @@ if status --is-login
     set -gx CLUTER_BACKEND wayland
     set -gx QT_QPA_PLATFORM wayland
     
-    # set -gx GBM_BACKEND nvidia-drm
-    # set -gx LIBVA_DRIVER_NAME nvidia
-    # set -gx WLR_NO_HARDWARE_CURSORS 1
-    # set -gx XDG_SESSION_TYPE wayland
-
     set -gx XCURSOR_SIZE 24
     set -gx DESKTOP_SESSION Hyprland
     set -gx AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
@@ -45,3 +40,4 @@ set fish_cursor_visual      block
 set -g fish_escape_delay_ms    100
 
 starship init fish | source
+pokemon-colorscripts --no-title -r 1,3,6
