@@ -3,38 +3,54 @@
 import json
 import re
 import subprocess
+from typing import TypedDict
 
 # 沒有開啟的狀態: Battery status unavailable.
 # 開啟時，沒充電狀態: Battery: 30% 3754mV , discharging.
 # 開啟時，正在充電狀態: Battery: 30% 3754mV , recharging.
-find_voltage = re.compile(r"Battery: (\d+)% (\d+)mV")
-find_status = re.compile(r"Battery:.*((dis|re)charging)\.")
-battery_max = 4195
 
 
-def get_battery_percentage():
-    result = subprocess.run(["solaar", "probe"], stdout=subprocess.PIPE)
-    output = result.stdout.decode()
-    json_out = {
-        "icon": "󰋋",
-        "perc": 0,
-        "status": "unactive",
-    }
-    match find_voltage.search(output), find_status.search(output):
-        case None, None:
-            pass
-        case v, s:
-            status = s.group(1)  # type: ignore
-            voltage = int(v.group(1))  # type: ignore
-            if status == "recharging":
-                json_out["icon"] = "󱐋"
-                json_out["perc"] = f"{voltage}"
-                json_out["status"] = "active"
-            else:
-                json_out["perc"] = f"{voltage}"
-                json_out["status"] = "active"
-    return json.dumps(json_out, ensure_ascii=False)
+class JsonResult(TypedDict):
+    icon: str
+    percentage: int
+    status: str
+
+
+def get_json_result(cmd_output: str) -> JsonResult:
+    find_percentage = re.compile(r"Battery: (\d+)% (\d+)mV")
+    find_status = re.compile(r"Battery:.*((dis|re)charging)\.")
+    percentage_match = find_percentage.search(cmd_output)
+    status_match = find_status.search(cmd_output)
+    match (percentage_match, status_match):
+        case (None, None):
+            return JsonResult(icon="󰟎", percentage=0, status="unactive")
+        case (re.Match() as g1, re.Match() as g2):
+            percentage_value = int(g1.group(1))
+            status_value = str(g2.group(1))
+            return JsonResult(
+                icon="󱐋" if status_value == "recharging" else "󰋋",
+                percentage=percentage_value,
+                status="active",
+            )
+        case _:
+            raise re.error(f"無法正確取得電量百分比與狀態：{cmd_output}")
+
+
+def get_headphone_info() -> str:
+    return subprocess.run(
+        ["solaar", "probe"], stdout=subprocess.PIPE
+    ).stdout.decode()
+
+
+def convert_to_eww_format(json_result: JsonResult) -> str:
+    return json.dumps(json_result, ensure_ascii=False)
 
 
 if __name__ == "__main__":
-    print(get_battery_percentage())
+    cmd_output = get_headphone_info()
+    try:
+        json_result = get_json_result(cmd_output)
+        eww_output = convert_to_eww_format(json_result)
+        print(eww_output)
+    except re.error as e:
+        print(e)

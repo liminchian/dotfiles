@@ -40,7 +40,7 @@
 
 (defpoll memory :interval "15s" "$HOME/.config/eww/scripts/memory")
 (defpoll cpu :interval "17s" "$HOME/.config/eww/scripts/cpu")
-(defpoll headphone :interval "2s" "$HOME/.config/eww/scripts/headphone")
+(defpoll headphone :interval "1s" "$HOME/.config/eww/scripts/headphone")
 (defpoll temp :initial 30 :interval "10s" `sensors | rg temp1 | rg -o "\\d+.\\d+" | head -1`)
 
 (deflisten workspaces0 "hyprland-workspaces `hyprctl monitors -j | jq -r \".[0].name\"`")
@@ -302,16 +302,16 @@
         )
         (box :class "sys_headphone_box" :orientation "v" :space-evenly "false" :hexpand "false" :vexpand "false"
             (circular-progress 
-                    :value {round(headphone.perc, 0)}
-                    :class "sys_headphone_${headphone.status}"
+                    :value {round(headphone.percentage, 0)}
+                    :class "sys_headphone"
                     :thickness 8 
             (label :text "${headphone.icon}"
-                  :class "sys_icon_headphone_${headphone.status}"
+                  :class "sys_icon_headphone"
                   :limit-width 4
                   :show_truncated false
                   :wrap false
                   :angle 0.0))
-            (label :class "headphone_perc_${headphone.status}" :halign "center" :text "${headphone.perc}%")
+            (label :class "headphone_perc" :halign "center" :text "${headphone.percentage}%")
         )
     )
 )

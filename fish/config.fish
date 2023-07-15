@@ -5,15 +5,17 @@ end
 if status --is-login
   if test -z "$DISPLAY" && test "$(tty)" = "/dev/tty1"
     set -gx LANG zh_TW.UTF-8
-    set -gx LIBVA_DRIVER_NAME nvidia
-    set -gx XDG_SESSION_TYPE wayland
+    
     set -gx QT_WAYLAND_DISABLE_WINDOWDECORATION 1
     set -gx MOZ_ENABLE_WAYLAND 1
     set -gx GDK_BACKEND wayland
-    set -gx GBM_BACKEND nvidia-drm
-    set -gx WLR_NO_HARDWARE_CURSORS 1
     set -gx CLUTER_BACKEND wayland
     set -gx QT_QPA_PLATFORM wayland
+    
+    # set -gx GBM_BACKEND nvidia-drm
+    # set -gx LIBVA_DRIVER_NAME nvidia
+    # set -gx WLR_NO_HARDWARE_CURSORS 1
+    # set -gx XDG_SESSION_TYPE wayland
 
     set -gx XCURSOR_SIZE 24
     set -gx DESKTOP_SESSION Hyprland
@@ -23,6 +25,7 @@ if status --is-login
     set -gx QT_IM_MODULE fcitx
     set -gx SDL_IM_MODULE fcitx
     set -gx GLFW_IM_MODULE ibus
+    
     set -gx HYPRLAND_LOG_WLR 1
     set -gx SAL_USE_VCLPLUGIN gtk3 
     

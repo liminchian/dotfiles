@@ -136,10 +136,10 @@ shufflecolor() {
 
 ########################## Loop ##########################
 loopicon() {
-	icon=""
-	[ $(playerctl --player=$Control loop) = "None" ] && icon=""
-	[ $(playerctl --player=$Control loop) = "Track" ] && icon""
-	[ $(playerctl --player=$Control loop) = "Playlist" ] && icon=""
+	icon="󰑖"
+	[ $(playerctl --player=$Control loop) = "None" ] && icon="󰑗"
+	[ $(playerctl --player=$Control loop) = "Track" ] && icon="󰑘"
+	[ $(playerctl --player=$Control loop) = "Playlist" ] && icon="󰑖"
 	echo "$icon"
 }
 
