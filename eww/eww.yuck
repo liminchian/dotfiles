@@ -409,7 +409,7 @@
     :geometry (geometry :x "5px"
                         :y "12px"
                         :width "140px"
-                        :height "94%"
+                        :height "1000px"
                         :anchor "right center")
     :stacking "bg"
     :windowtype "dock"

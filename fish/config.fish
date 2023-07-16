@@ -39,5 +39,6 @@ set fish_cursor_replace_one underscore
 set fish_cursor_visual      block
 set -g fish_escape_delay_ms    100
 
+pokemon-colorscripts -r 1,3,6 > ~/.cache/pokemon.txt
+cat ~/.cache/pokemon.txt | tail -n +2
 starship init fish | source
-pokemon-colorscripts --no-title -r 1,3,6
