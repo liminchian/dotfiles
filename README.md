@@ -17,7 +17,6 @@
 - Terminal Emulator: `alacritty`
 - Shell: `fish`
 - Web Browser: `firefox`
-- Css theme: [FlyingFox](https://github.com/FirefoxCSS-Store/FirefoxCSS-Store.github.io)
 - Menu: `[rofi](https://github.com/adi1090x/rofi)`
 
 ```shell
@@ -29,11 +28,11 @@ $ paru -S hyprland-git hyprpaper-git eww-wayland-git neovim dunst alacritty fish
 - `Rust` rewritten alternative linux command
 
 ```shell
-$ paru -S dust exa procs bat skim ripgrep tealdeer starship-git frawk sd
+$ paru -S dust exa procs bat skim ripgrep tealdeer starship-git sd
 ```
 
 - Misc
 
 ```shell
-$ paru -S playercyl nvidia-smi slurp grim-git pactl pipewire-pulse seatd-git jq
+$ paru -S playercyl slurp grim-git pactl pipewire-pulse seatd-git jq
 ```
