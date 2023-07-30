@@ -43,15 +43,13 @@
 (defpoll headphone :interval "1s" "$HOME/.config/eww/scripts/headphone")
 (defpoll temp :initial 30 :interval "10s" `sensors | rg temp1 | rg -o "\\d+.\\d+" | head -1`)
 
-(deflisten workspaces0 "hyprland-workspaces `hyprctl monitors -j | jq -r \".[0].name\"`")
+(deflisten workspaces "hyprland-workspaces `hyprctl monitors -j | jq -r \".[0].name\"`")
 
 (defpoll quote :interval "30m" "$HOME/.config/eww/scripts/quotes --quote-and-quotee")
 
 (defpoll IP_ADDR :interval "24h" "ip -br address | grep UP | awk '{ print $3 }'")
 
 (defvar idle_state "")
-
-(deflisten window :initial "..." "$HOME/.config/eww/scripts/window-title.sh")
 
 ;; Widgets
 
@@ -66,17 +64,16 @@
       "${idle_state}")
 )
 
-(defwidget workspaces0 []
+(defwidget workspaces []
     (box :class "workspaces-box" 
         (box :class "workspaces" :halign "center" 
             (eventbox :onscroll "hyprctl dispatch workspace `echo {} | sed 's/up/+/\' | sed 's/down/-/'`1"
-                (box :class "workspaces" :spacing 6 
-                    (for i in workspaces0
+                (box :class "workspaces" :spacing 3 
+                    (for i in workspaces
                     (button
                     :onclick "hyprctl dispatch workspace ${i.id}"
                     :class "${i.class}"
-                    "${replace(i.name, '[0-9]', '󰪥')}")
-                    )
+                    {i.active ? "${i.id}" : "${i.name}"}))
                 )
             )
         )
@@ -121,15 +118,6 @@
     )
 )
 
-(defwidget window-title []
-    (box
-        (label :class "window-title"
-        :halign "center" 
-        :limit-width 16
-        :justify "center"
-        :text "${window}")
-    )
-)
 
 (defwidget player []
 	(box :class "player-art" :orientation "h" :space-evenly true 
@@ -389,7 +377,7 @@
 
 (defwidget right []
     (box :class "right" :orientation "v" :space-evenly "false"
-        (workspaces0)
+        (workspaces)
         (cal)
         (quote)
         (player)

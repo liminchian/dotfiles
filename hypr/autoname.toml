@@ -28,8 +28,7 @@ version = "1.1.5"
 # Add your icons mapping
 # use double quote the key and the value
 # take class name from 'hyprctl clients'
-# "(?i)waydroid.*" = ""
-"DEFAULT" = " {class}: {title}"
+"DEFAULT" = " {class} - {title}"
 "(?i)Kitty" = ""
 "[Ff]irefox" = ""
 "[Ss]potify" = ""
@@ -42,16 +41,19 @@ version = "1.1.5"
 # [initial_class_active]
 # "(?i)Kitty" = "*TERM*"
 
+[class_active]
+"DEFAULT" = "<span style=\"font-size=30px;\">{icon}</span>"
+
 [title_in_class."(?i)kitty"]
 "(?i)neomutt" = "neomutt"
 # regex captures support is supported
 # "emerge: (.+?/.+?)-.*" = "{match1}"
 
-[title_in_class_active."(?i)firefox"]
-"(?i)twitch" = ""
-"(?i)google" = ""
-"(?i)github" = ""
-"(?i)youtube" = "󰗃"
+[title_in_class."(?i)firefox"]
+"(?i)[Tt]witch" = ""
+"(?i)[Gg]oogle" = ""
+"(?i)[Gg]ithub" = ""
+"(?i)[Yy]outube" = "󰗃"
 
 
 # [title_in_initial_class."(?i)kitty"]
@@ -93,3 +95,8 @@ aProgram = "^$" # will match null title for aProgram
 8 = "󰲮"
 9 = "󰲰"
 10 = "󰿬"
+
+[format]
+client = "{icon}"
+client_active = "{icon}"
+workspace = "{name}"
