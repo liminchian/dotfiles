@@ -1,2 +1,0 @@
-#!/bin/sh
-slurp | grim -g - $HOME/Pictures/Screenshots/$(date +'%Y%m%d%H%M%S_1.png') && notify-send 'Screenshot Saved'
