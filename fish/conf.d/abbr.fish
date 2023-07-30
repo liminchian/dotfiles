@@ -12,6 +12,7 @@ abbr postgres "sudo -iu postgres"
 abbr fcd "cd \$(sk)"
 abbr fopen "bat \$(sk)"
 abbr fcmd "which {}"
+abbr gitui "gitui -t mocha.ron"
 
 # kitty things
 abbr icat "kitty +kitten icat"

@@ -45,7 +45,7 @@
 
 (deflisten workspaces0 "hyprland-workspaces `hyprctl monitors -j | jq -r \".[0].name\"`")
 
-(defpoll quote :interval "24h" "$HOME/.config/eww/scripts/quotes --quote-and-quotee")
+(defpoll quote :interval "30m" "$HOME/.config/eww/scripts/quotes --quote-and-quotee")
 
 (defpoll IP_ADDR :interval "24h" "ip -br address | grep UP | awk '{ print $3 }'")
 
@@ -187,7 +187,6 @@
             :value volume
             :orientation "h"
             :tooltip "Volume: ${volume}%"
-            :onclick "$HOME/.local/bin/scripts/volume --toggle-mute"
             :onchange "$HOME/.local/bin/scripts/volume --set-volume {}")
         (label :class "vol-text" :text "${volume}%")
     )
@@ -261,7 +260,7 @@
             (circular-progress 
                     :value cpu
                     :class "sys_cpu"
-                    :thickness 8
+                    :thickness 4
                 (label :text "󰻠"
                     :class "sys_icon_cpu"
                     :limit-width 4
@@ -273,7 +272,7 @@
             (circular-progress 
                     :value memory
                     :class "sys_mem"
-                    :thickness 8
+                    :thickness 4
               (label :text ""
                     :class "sys_icon_mem"
                     :limit-width 4
@@ -291,7 +290,7 @@
             (circular-progress 
                     :value {round(EWW_DISK["/"].used_perc, 0)}
                     :class "sys_disk"
-                    :thickness 8
+                    :thickness 4 
             (label :text ""
                   :class "sys_icon_disk" 
                   :limit-width 4
@@ -304,7 +303,7 @@
             (circular-progress 
                     :value {round(headphone.percentage, 0)}
                     :class "sys_headphone"
-                    :thickness 8 
+                    :thickness 4 
             (label :text "${headphone.icon}"
                   :class "sys_icon_headphone"
                   :limit-width 4
@@ -409,7 +408,7 @@
     :geometry (geometry :x "5px"
                         :y "12px"
                         :width "140px"
-                        :height "1000px"
+                        :height "90%"
                         :anchor "right center")
     :stacking "bg"
     :windowtype "dock"

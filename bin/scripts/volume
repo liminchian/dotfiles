@@ -44,7 +44,7 @@ def main():
 
             f = _call
         case Namespace(set_volume=value):
-            commands.extend(["set-sink-volume", "0", str(value)])
+            commands.extend(["set-sink-volume", "0", f"{str(value)}%"])
         case _:
             parser.print_help()
             exit(0)
