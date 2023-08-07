@@ -42,7 +42,7 @@ version = "1.1.5"
 # "(?i)Kitty" = "*TERM*"
 
 [class_active]
-"DEFAULT" = "<span style=\"font-size=30px;\">{icon}</span>"
+"DEFAULT" = "{icon}"
 
 [title_in_class."(?i)kitty"]
 "(?i)neomutt" = "neomutt"

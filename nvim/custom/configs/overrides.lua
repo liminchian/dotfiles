@@ -35,6 +35,7 @@ M.mason = {
 
     -- web dev stuff
     "css-lsp",
+    "tailwindcss-language-server",
     "html-lsp",
     "typescript-language-server",
     "deno",
@@ -42,7 +43,6 @@ M.mason = {
 
     -- rust
     "rust-analyzer",
-    "rustfmt",
 
     -- python
     "pyright",

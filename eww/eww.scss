@@ -76,7 +76,7 @@ tooltip {
   padding: 2px;
 }
 .workspaces-box {
-  padding: 6px;
+  padding-top: 10px;
 }
 .workspaces {
   border-radius: 10px;
@@ -85,10 +85,12 @@ tooltip {
 }
 .workspace-button {
   color: $color11;
+  font-size: 16px;
   font-weight: lighter;
 }
 .workspace-active {
   color: $color18;
+  font-size: 18px;
   font-weight: bold;
 }
 .window-title {
@@ -288,6 +290,8 @@ calendar.highlight {
 }
 .quote-container {
   padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .quote-label {
   font-size: 16px;
@@ -401,12 +405,15 @@ calendar.highlight {
   margin: 10px 10px 2px 10px;
 }
 .player-toggle {
-  font-size: 32px;
+  font-size: 14px;
+  font-weight: lighter;
   color: $color9;
 }
-.player-previous,
+.player-previous {
+  font-size: 14px;
+}
 .player-next {
-  font-size: 25px;
+  font-size: 14px;
   color: $lightgray;
 }
 .player-toggle:hover,
@@ -415,12 +422,12 @@ calendar.highlight {
   color: $color16;
 }
 .player-shuffle {
-  font-size: 16px;
+  font-size: 14px;
   padding-right: 10px;
   color: $lightgray;
 }
 .player-loop {
-  font-size: 16px;
+  font-size: 14px;
   color: $lightgray;
 }
 .player-shuffle:hover,

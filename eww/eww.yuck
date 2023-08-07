@@ -68,12 +68,12 @@
     (box :class "workspaces-box" 
         (box :class "workspaces" :halign "center" 
             (eventbox :onscroll "hyprctl dispatch workspace `echo {} | sed 's/up/+/\' | sed 's/down/-/'`1"
-                (box :class "workspaces" :spacing 3 
+                (box :class "workspaces" :spacing 8
                     (for i in workspaces
                     (button
                     :onclick "hyprctl dispatch workspace ${i.id}"
                     :class "${i.class}"
-                    {i.active ? "${i.id}" : "${i.name}"}))
+                    {i.active ? "󰣕" : "${i.name}"}))
                 )
             )
         )
@@ -112,7 +112,7 @@
 )
 
 (defwidget quote []
-	(box :class "quote-container" :orientation "v" :hexpand "false" :vexpand "true" :space-evenly "false" :width 100
+	(box :class "quote-container" :orientation "v" :hexpand "false" :vexpand "true" :space-evenly "false" :width 80
         (label :class "quote-label" :text "󱀢")
 	    (label :class "quote" :halign "center" :wrap "true" :limit-width 140 :justify "center" :text quote :xalign "0.5")
     )
@@ -174,7 +174,7 @@
             :max 101
             :value volume
             :orientation "h"
-            :tooltip "Volume: ${volume}%"
+            :tooltip ": ${volume}%"
             :onchange "$HOME/.local/bin/scripts/volume --set-volume {}")
         (label :class "vol-text" :text "${volume}%")
     )
@@ -189,11 +189,14 @@
         (box :class "weather-window" :orientation "v" :space-evenly "false" :spacing 2
             (label :class "weather-feel" :text "${weather_desc}"
                                         :limit-width 32
-                                        :justify "center"
+                                        :justify "left"
                                         :wrap "true")
-            (label :class "weather-desc" :text "Feels Like: ${weather_feels_like}°C")
-            (label :class "weather-desc" :halign "center" :text "󰖝 ${weather_wind} km/h")
-            (label :class "weather-desc" :halign "center" :text "  ${weather_humidity} %")
+            (label :class "weather-desc" :halign "center"
+            :text "󰖝 ${weather_wind} km/h" :tooltip "風速: ${weather_wind} km/h")
+            (label :class "weather-desc" :halign "center"
+            :text "  ${weather_feels_like} °C" :tooltip "體感溫度: ${weather_feels_like}°C")
+            (label :class "weather-desc" :halign "center"
+            :text "  ${weather_humidity} %" :tooltip "濕度: ${weather_humidity} %")
         )
     )
 )
