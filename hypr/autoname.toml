@@ -1,21 +1,21 @@
 version = "1.1.7"
 
 [class]
-DEFAULT = " {class} - {title}"
-"(?i)Kitty" = ""
-"[Ff]irefox" = ""
-"[Ss]potify" = ""
-"[Dd]unst" = "󰎟"
+DEFAULT = " {class}: {title}"
+"(?i)Kitty" = "term"
+"(?i)waydroid.*" = "droid"
+"[Ff]irefox" = "browser"
 
 [class_active]
-DEFAULT = "{icon}"
+DEFAULT = "*{icon}*"
+"(?i)ExampleOneTerm" = "<span foreground='red'>{icon}</span>"
 
 [initial_class]
 
 [initial_class_active]
 
 [workspaces_name]
-0 = ""
+0 = ""
 1 = "󰲠"
 2 = "󰲢"
 3 = "󰲤"
@@ -30,13 +30,8 @@ DEFAULT = "{icon}"
 [title_in_class."(?i)kitty"]
 "(?i)neomutt" = "neomutt"
 
-[title_in_class."(?i)firefox"]
-"(?i)[Yy]outube" = "󰗃"
-"(?i)[Gg]oogle" = ""
-"(?i)[Tt]witch" = ""
-"(?i)[Gg]ithub" = ""
-
-[title_in_class_active]
+[title_in_class_active."(?i)firefox"]
+"(?i)twitch" = "<span color='purple'>{icon}</span>"
 
 [title_in_initial_class]
 
@@ -51,10 +46,11 @@ DEFAULT = "{icon}"
 [initial_title_in_initial_class_active]
 
 [exclude]
-"" = "^$"
-"(?i)TestApp" = ""
 "(?i)fcitx" = ".*"
+"" = "^$"
+"[Ss]team" = "^(Friends List.*)?$"
 aProgram = "^$"
+"(?i)TestApp" = ""
 
 [format]
 dedup = false
@@ -64,7 +60,7 @@ workspace = "{name}"
 workspace_empty = "{id}"
 client = "{icon}"
 client_fullscreen = "[{icon}]"
-client_active = "{icon}"
+client_active = "*{icon}*"
 client_dup = "{icon}{counter_sup}"
 client_dup_active = "*{icon}*{delim}{icon}{counter_unfocused_sup}"
 client_dup_fullscreen = "[{icon}]{delim}{icon}{counter_unfocused_sup}"
