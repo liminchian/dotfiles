@@ -6,7 +6,7 @@ GIT_BRANCH="wayland"
 
 cp -rf "$HOME/.config/eww" \
 	"$HOME/.config/starship.toml" \
-	"$HOME/.config/.gittoken" \
+	"$HOME/.gittoken" \
 	"$HOME/.config/hypr" \
 	"$HOME/.config/zathura" \
 	"$HOME/.config/kitty" \
