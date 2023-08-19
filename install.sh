@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "paru installing ..."
+echo "Package Manager installing ..."
 sudo pacman -S --needed base-devel git
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -25,5 +25,5 @@ rm -rf "$HOME/.local/share/nvim"
 cp -rf nvim "$HOME/.config/nvim/lua/custom"
 
 echo "Requires installing ..."
-paru -S dust exa procs skim ripgrep tealdeer starship-git frawk sd
+paru -S dust exa procs skim ripgrep tealdeer starship-git sd jq
 paru -S hyprland-nvidia-git alacritty eww-wayland-git dunst zathura fish
