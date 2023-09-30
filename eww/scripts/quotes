@@ -4,27 +4,29 @@ import random
 import sys
 
 quotes = [
-    "做一份工作，做一份喜歡的工作就是很好的創業。~馬雲",
-    "生存下來的第一個想法是做好，而不是做大。~馬雲",
-    "改變是痛苦，但不改變會更加痛苦。~馬雲",
-    "不吃苦，不奮鬥，你要青春幹什麼？。~馬雲",
+    "If at first the idea is not absurd, then there will be no hope for it.~Albert Einstein",
+    "Education is what remains after one has forgotten everything one has learned in school.~Albert Einstein",
+    "I never think of the future. It comes soon enough.~Albert Einstein",
+    "Everybody is a genius. But if you judge a fish by its ability to climb a tree, it will live its whole life believing that it is stupid.~Albert Einstein",
+    "If you can’t explain it simply, you don’t understand it well enough.~Albert Einstein",
+    "The only source of knowledge is experience.~Albert Einstein",
+    "Your idea has to be original only in its adaptation to the problem you are working on.~Albert Einstein",
+    "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world.~Albert Einstein",
+    "The significant problems we face cannot be solved at the same level at which we created them.~Albert Einstein",
+    "I believe that not everything that can be counted counts, and not everything that counts can be counted.~Albert Einstein",
+    "The mere formulation of a problem is far more essential than its solution.~Albert Einstein",
     "人常常是睡前千條路，睡醒走原路。~馬雲",
     "難道我學過如來神掌也要說給你聽嗎？~周星馳《功夫》",
     "打人都沒力氣，還說是黑社會？~周星馳《功夫》",
     "就算是一條內褲一卷衛生紙也有它的用處。~周星馳《國產凌凌漆》",
-    "生我是副作用呀！你還不是享受那些製造過程嘛？~周星馳《百變星君》",
     "你回火星吧，地球是很危險的。~周星馳《少林足球》",
-    "你先走吧，我等我的腿沒那麼顫抖，心跳沒那麼亂的時候，我再走好了。~周星馳《破壞之王》",
     "根據俄國戲劇理論大師斯坦尼斯拉夫斯基的說法，痛應該是從外到內，再由內到外的。~周星馳《喜劇之王》",
     "命運真是不公平，為什麼我這麼帥卻要掉頭髮，你們長的那麼丑卻不掉頭髮。~周星馳《少林足球》",
-    "能不能有點專業精神！~周星馳《喜劇之王》",
     "不開心，就算長生不老也沒用，開心，就算只能活幾天也足夠！~周星馳《西遊·降魔篇》",
     "做人如果沒夢想，那跟鹹魚有什麼分別啊？~周星馳《少林足球》",
     "想學啊？ 我教你啊。~周星馳《功夫》",
     "雖然你們是扮演路人甲乙丙丁，但是一樣是有生命、有靈魂的。~周星馳《喜劇之王》",
     "鞋子破了就把它扔掉，人總是要向前看！~周星馳《少林足球》",
-    "別人笑我太瘋癲，我笑他人看不穿。~周星馳《唐伯虎點秋香》",
-    "我們是受過嚴格訓練的，無論多好笑都不會笑，除非忍不住。~周星馳《美人魚》",
 ]
 
 
