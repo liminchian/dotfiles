@@ -16,7 +16,6 @@ if status --is-login
     set -gx DESKTOP_SESSION Hyprland
     set -gx AUTOJUMP_PATH $HOME/.autojump/share/autojump/autojump.fish
 
-    set -gx GTK_IM_MODULE fcitx
     set -gx QT_IM_MODULE fcitx
     set -gx SDL_IM_MODULE fcitx
     set -gx GLFW_IM_MODULE ibus
