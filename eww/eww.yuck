@@ -73,7 +73,7 @@
                     (button
                     :onclick "hyprctl dispatch workspace ${i.id}"
                     :class "${i.class}"
-                    {i.active ? "󰣕" : "${i.name}"}))
+                    {i.active ? "󰐝" : "${i.name}"}))
                 )
             )
         )
