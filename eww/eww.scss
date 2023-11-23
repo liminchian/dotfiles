@@ -47,7 +47,7 @@ $color21: #0d0e19;
 $color22: rgba(13, 14, 25, 0.5);
 $color23: rgba(26, 27, 38, 0.7);
 $color24: rgba(36, 40, 59, 0.5);
-$color25: rgba(13, 14, 25, 0.8);
+$color25: rgba(13, 14, 25, 0.55);
 $color26: rgba(26, 27, 38, 0.2);
 
 .main-container {
@@ -362,7 +362,7 @@ calendar.highlight {
 .player-tint {
   background: linear-gradient(
     to right,
-    rgb(25, 25, 25, 0.9),
+    rgb(25, 25, 25, 0.8),
     rgba(38, 38, 38, 0.4)
   );
   border-radius: 12px;
