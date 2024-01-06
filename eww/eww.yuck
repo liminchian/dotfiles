@@ -40,6 +40,7 @@
 
 (defpoll memory :interval "15s" "$HOME/.config/eww/scripts/memory")
 (defpoll cpu :interval "17s" "$HOME/.config/eww/scripts/cpu")
+(defpoll gpu :interval "20s" "$HOME/.config/eww/scripts/gpu")
 (defpoll headphone :interval "1s" "$HOME/.config/eww/scripts/headphone")
 (defpoll temp :initial 30 :interval "10s" `sensors | rg temp1 | rg -o "\\d+.\\d+" | head -1`)
 
@@ -261,16 +262,16 @@
         )
         (box :class "sys_mem_box" :orientation "v" :space-evenly "false" :hexpand "false" :vexpand "false"
             (circular-progress 
-                    :value memory
+                    :value gpu
                     :class "sys_mem"
                     :thickness 4
-              (label :text ""
+              (label :text ""
                     :class "sys_icon_mem"
                     :limit-width 4
                     :show_truncated false
                     :wrap false
                     :angle 0.0))
-            (label :class "mem_perc" :halign "center" :text "${memory}%")
+            (label :class "mem_perc" :halign "center" :text "${gpu}%")
         )
     )
 )
@@ -279,7 +280,7 @@
     (box :class "sys_win" :orientation "h" :space-evenly "true" :hexpand "false" :vexpand "false" 
         (box :class "sys_disk_box" :orientation "v" :space-evenly "false" :hexpand "false" :vexpand "false"
             (circular-progress 
-                    :value {round(EWW_DISK["/"].used_perc, 0)}
+                    :value {round((EWW_DISK["/public"].used_perc + EWW_DISK["/"].used_perc) / 2, 0)}
                     :class "sys_disk"
                     :thickness 4 
             (label :text ""
@@ -288,7 +289,7 @@
                   :show_truncated false
                   :wrap false
                   :angle 0.0))
-            (label :class "disk_perc" :halign "center" :text "${round(EWW_DISK["/"].used_perc, 0)}%")
+            (label :class "disk_perc" :halign "center" :text "${round((EWW_DISK["/public"].used_perc + EWW_DISK["/"].used_perc) / 2, 0)}%")
         )
         (box :class "sys_headphone_box" :orientation "v" :space-evenly "false" :hexpand "false" :vexpand "false"
             (circular-progress 

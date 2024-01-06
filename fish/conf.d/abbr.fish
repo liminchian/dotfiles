@@ -2,6 +2,7 @@ abbr mv "mv -i"
 abbr cp "cp -i"
 abbr rm "rm -i"
 abbr mkdir "mkdir -p"
+abbr svim "sudo -E nvim"
 
 abbr ack "sk -i -c 'rg --color always --line-number "{}"'"
 abbr du "dust"

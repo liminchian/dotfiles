@@ -143,18 +143,20 @@ tooltip {
   color: $color9;
 }
 .sys_icon_mem {
-  font-size: 20;
-  margin: 22px;
+  font-size: 18;
+  margin: 20px;
+  padding-right: 5px;
   color: $color17;
 }
 .sys_icon_disk {
-  font-size: 20;
+  font-size: 18;
   margin: 22px;
   color: $color3;
 }
 .sys_icon_headphone {
-  font-size: 20;
-  margin: 22px;
+  font-size: 18;
+  margin: 20px;
+  padding-right: 5px;
   color: $color11;
 }
 .sys_cpu_box {
@@ -165,7 +167,7 @@ tooltip {
 .sys_mem_box {
   border-radius: 16px;
   margin: 10px 10px 10px 10px;
-  padding-right: 20px;
+  padding-right: 22px;
 }
 .sys_disk_box {
   border-radius: 16px;

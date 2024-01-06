@@ -3,8 +3,24 @@ import subprocess
 
 
 def get_nvidia_usage():
-    result = subprocess.run(["nvidia-smi"], stdout=subprocess.PIPE)
-    print(result.stdout.decode())
+    result = subprocess.run(
+        ["nvidia-smi", "-q", "-g", "0", "-d", "UTILIZATION"],
+        stdout=subprocess.PIPE,
+    )
+    return int(
+        list(
+            filter(
+                lambda line: str(line).startswith("Gpu:"),
+                map(
+                    lambda line: str(line).strip().replace(" ", ""),
+                    result.stdout.decode().splitlines(),
+                ),
+            )
+        )[0]
+        .split(":")[-1]
+        .replace("%", "")
+    )
+
 
 if __name__ == "__main__":
-    get_nvidia_usage()
+    print(get_nvidia_usage())
