@@ -1,0 +1,40 @@
+#!/usr/bin/env python3
+
+import random
+import sys
+
+quotes = [
+    "If at first the idea is not absurd, then there will be no hope for it.~Albert Einstein",
+    "Education is what remains after one has forgotten everything one has learned in school.~Albert Einstein",
+    "I never think of the future. It comes soon enough.~Albert Einstein",
+    "If you can’t explain it simply, you don’t understand it well enough.~Albert Einstein",
+    "The only source of knowledge is experience.~Albert Einstein",
+    "Your idea has to be original only in its adaptation to the problem you are working on.~Albert Einstein",
+    "The significant problems we face cannot be solved at the same level at which we created them.~Albert Einstein",
+    "I believe that not everything that can be counted counts, and not everything that counts can be counted.~Albert Einstein",
+    "The mere formulation of a problem is far more essential than its solution.~Albert Einstein",
+    "人常常是睡前千條路，睡醒走原路。~馬雲",
+    "難道我學過如來神掌也要說給你聽嗎？~周星馳《功夫》",
+    "打人都沒力氣，還說是黑社會？~周星馳《功夫》",
+    "就算是一條內褲一卷衛生紙也有它的用處。~周星馳《國產凌凌漆》",
+    "你回火星吧，地球是很危險的。~周星馳《少林足球》",
+    "根據俄國戲劇理論大師斯坦尼斯拉夫斯基的說法，痛應該是從外到內，再由內到外的。~周星馳《喜劇之王》",
+    "命運真是不公平，為什麼我這麼帥卻要掉頭髮，你們長的那麼丑卻不掉頭髮。~周星馳《少林足球》",
+    "不開心，就算長生不老也沒用，開心，就算只能活幾天也足夠！~周星馳《西遊·降魔篇》",
+    "做人如果沒夢想，那跟鹹魚有什麼分別啊？~周星馳《少林足球》",
+    "想學啊？ 我教你啊。~周星馳《功夫》",
+    "雖然你們是扮演路人甲乙丙丁，但是一樣是有生命、有靈魂的。~周星馳《喜劇之王》",
+    "鞋子破了就把它扔掉，人總是要向前看！~周星馳《少林足球》",
+]
+
+
+last_quote = ""
+quote = random.choice(quotes)
+while quote == last_quote:
+    quote = random.choice(quotes)
+quote_parts = quote.split("~")
+last_quote = quote_parts[0] + "~" + quote_parts[1]
+
+if len(sys.argv) >= 2:
+    if sys.argv[1] == "--quote-and-quotee":
+        print(quote_parts[0] + "\n\n~" + quote_parts[1])

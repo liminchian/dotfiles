@@ -1,9 +1,15 @@
 #!/usr/bin/bash
 
-swaylock \
-  --ignore-empty-password \
-  --daemonize \
-  --image "$HOME/.config/image/lock.jpg" \
-  --scaling "fit" \
-  --font "Noto Sans CJK" \
-  --font-size 20 \
+swaylock -S --effect-scale 0.5 \
+  --effect-blur 7x5 \
+  --effect-scale 2 \
+  --effect-compose "20%x20%;center;$HOME/.config/image/lock.svg" \
+  --effect-vignette 0.5:1 \
+  --indicator-radius 100 \
+  --indicator-thickness 10 \
+  --ring-color 1793d1 \
+  --key-hl-color 152c56 \
+  --line-color 00000000 \
+  --inside-color 00000000 \
+  --separator-color 00000000 \
+  --fade-in 0.2

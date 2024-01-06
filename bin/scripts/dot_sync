@@ -5,6 +5,8 @@ FIREFOX=("$HOME/.mozilla/firefox/bqr923x7.default-release")
 GIT_BRANCH="wayland"
 
 cp -rf "$HOME/.config/eww" \
+	"$HOME/.config/starship.toml" \
+	"$HOME/.gittoken" \
 	"$HOME/.config/hypr" \
 	"$HOME/.config/zathura" \
 	"$HOME/.config/kitty" \

@@ -1,0 +1,56 @@
+#!/usr/bin/python3
+
+import json
+import re
+import subprocess
+from typing import TypedDict
+
+# 沒有開啟的狀態: Battery status unavailable.
+# 開啟時，沒充電狀態: Battery: 30% 3754mV , discharging.
+# 開啟時，正在充電狀態: Battery: 30% 3754mV , recharging.
+
+
+class JsonResult(TypedDict):
+    icon: str
+    percentage: int
+    status: str
+
+
+def get_json_result(cmd_output: str) -> JsonResult:
+    find_percentage = re.compile(r"Battery: (\d+)% (\d+)mV")
+    find_status = re.compile(r"Battery:.*((dis|re)charging)\.")
+    percentage_match = find_percentage.search(cmd_output)
+    status_match = find_status.search(cmd_output)
+    match (percentage_match, status_match):
+        case (re.Match() as g1, re.Match() as g2):
+            percentage_value = int(g1.group(1))
+            status_value = str(g2.group(1))
+            return JsonResult(
+                icon="󱐋" if status_value == "recharging" else "󰋋",
+                percentage=percentage_value,
+                status="active",
+            )
+        case (None, None):
+            return JsonResult(icon="󰟎", percentage=0, status="unactive")
+        case _:
+            raise re.error(f"無法正確取得電量百分比與狀態：{cmd_output}")
+
+
+def get_headphone_info() -> str:
+    return subprocess.run(
+        ["solaar", "probe"], stdout=subprocess.PIPE
+    ).stdout.decode()
+
+
+def convert_to_eww_format(json_result: JsonResult) -> str:
+    return json.dumps(json_result, ensure_ascii=False)
+
+
+if __name__ == "__main__":
+    cmd_output = get_headphone_info()
+    try:
+        json_result = get_json_result(cmd_output)
+        eww_output = convert_to_eww_format(json_result)
+        print(eww_output)
+    except re.error as e:
+        print(e)

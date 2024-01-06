@@ -86,7 +86,7 @@
 
     # Defines width in pixels of frame around the notification window.
     # Set to 0 to disable.
-    frame_width = 3
+    frame_width = 2
 
     # Sort messages by urgency.
     sort = yes
@@ -100,7 +100,7 @@
 
     ### Text ###
 
-    font = NotoSansCJK-Regular 11
+    font = JetbrainsMono Nerd Font 11
 
     # The spacing between lines.  If the height is smaller than the
     # font height, it will get raised to the font height.
@@ -187,7 +187,7 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /home/larvasei/.local/share/icons/Tela-dark
+    icon_path = /home/larvasei/.icons/Miya-dark
 
     ### History ###
 
@@ -220,7 +220,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 16
+    corner_radius = 10
 
     # Ignore the dbus closeNotification message.
     # Useful to enforce the timeout set by dunst configuration. Without this
@@ -236,7 +236,7 @@
     # layer = top
 
     # Set this to true to use X11 output on Wayland.
-    force_xwayland = true
+    force_xwayland = false
 
     ### Legacy
 
